@@ -196,18 +196,35 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const lastScrollY = useRef(0);
+  const scrollDir = useRef<"up" | "down">("up");
+  const anchor = useRef(0);
 
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY;
       setScrolled(y > 40);
 
-      // Hide on mobile when scrolling down, show when scrolling up
       const isMobile = window.innerWidth < 1024;
       if (isMobile && y > 100) {
-        setHidden(y > lastScrollY.current && y - lastScrollY.current > 5);
+        // Only change direction after 30px of consistent movement
+        if (y > lastScrollY.current) {
+          // scrolling down
+          if (scrollDir.current === "up") anchor.current = y;
+          if (y - anchor.current > 30) {
+            scrollDir.current = "down";
+            setHidden(true);
+          }
+        } else {
+          // scrolling up
+          if (scrollDir.current === "down") anchor.current = y;
+          if (anchor.current - y > 15) {
+            scrollDir.current = "up";
+            setHidden(false);
+          }
+        }
       } else {
         setHidden(false);
+        scrollDir.current = "up";
       }
       lastScrollY.current = y;
     };

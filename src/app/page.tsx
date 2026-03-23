@@ -66,7 +66,7 @@ const GridIcon = () => (
 
 export default function HomePage() {
   return (
-    <div className="relative">
+    <div className="relative" style={{ overflowX: "clip" }}>
       <Aurora />
       <Navbar />
       <RevealObserver />
