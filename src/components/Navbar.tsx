@@ -192,11 +192,25 @@ function NestedDropdown({ label, topLinks, subLabel, subLinks, open, onToggle, o
 /* ── Main Navbar ── */
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(y > 40);
+
+      // Hide on mobile when scrolling down, show when scrolling up
+      const isMobile = window.innerWidth < 1024;
+      if (isMobile && y > 100) {
+        setHidden(y > lastScrollY.current && y - lastScrollY.current > 5);
+      } else {
+        setHidden(false);
+      }
+      lastScrollY.current = y;
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -210,7 +224,7 @@ export default function Navbar() {
           scrolled
             ? "bg-[rgba(12,14,20,0.9)] shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
             : "bg-[rgba(12,14,20,0.7)] shadow-[0_4px_24px_rgba(0,0,0,0.05)]"
-        }`}
+        } ${hidden && !menuOpen ? "-translate-y-[calc(100%+24px)]" : ""}`}
         style={{ boxShadow: scrolled ? undefined : "0 4px 24px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.06)" }}
       >
         <Link href="/" className="font-extrabold text-[17px] text-text flex items-center gap-2 mr-auto no-underline">
