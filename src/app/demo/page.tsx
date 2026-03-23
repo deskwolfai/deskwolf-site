@@ -84,10 +84,10 @@ export default function DemoPage() {
             <p className="text-sm text-text-3">
               Don&apos;t see a time that works?{" "}
               <a
-                href="mailto:hello@deskwolf.ai"
+                href="mailto:contact@deskwolf.ai"
                 className="text-brand-cyan no-underline hover:underline"
               >
-                Email us at hello@deskwolf.ai
+                Email us at contact@deskwolf.ai
               </a>
             </p>
           </div>

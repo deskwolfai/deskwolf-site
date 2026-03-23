@@ -98,8 +98,8 @@ export default function ContactPage() {
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3 text-sm text-text-2">
                     <MailIcon />
-                    <a href="mailto:hello@deskwolf.ai" className="text-text-2 no-underline hover:text-brand-cyan transition-colors">
-                      hello@deskwolf.ai
+                    <a href="mailto:contact@deskwolf.ai" className="text-text-2 no-underline hover:text-brand-cyan transition-colors">
+                      contact@deskwolf.ai
                     </a>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-text-2">
