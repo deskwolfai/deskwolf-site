@@ -10,7 +10,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 export const metadata: Metadata = {
   title: "Agency Services & Pricing | DeskWolf LLC",
   description:
-    "Personalized AI consulting and deployment for your business. Strategy, build, launch, and ongoing management. Transparent pricing, no lock-in.",
+    "AI consulting and deployment starting at $97/mo. Community access, strategy, build, launch, and ongoing management. Transparent pricing, no lock-in.",
   openGraph: {
     title: "Agency Services & Pricing | DeskWolf LLC",
     description:
@@ -101,32 +101,32 @@ const Check = () => (
 /* ── Tier data ── */
 const tiers = [
   {
-    name: "Self-Serve",
-    label: "Starter",
-    price: "$1,500",
+    name: "Community",
+    label: "Build Your Own",
+    price: "$97",
     period: "/mo",
     featured: false,
     features: [
-      "1 AI voice agent (inbound)",
-      "Business hours call handling",
-      "FAQ responses trained on your business",
-      "Appointment booking",
-      "Post-call text confirmations",
-      "Monthly performance report",
+      "Community Discord access",
+      "Group coaching sessions",
+      "Resource library and templates",
+      "DIY build guidance",
+      "Ask-anything Q&A support",
+      "Monthly live workshops",
       "Email support",
     ],
-    cta: "Start Recovering Revenue",
+    cta: "Join the Community",
     ctaHref: "/demo",
   },
   {
     name: "Core",
     label: "White-Glove",
-    price: "$2,500",
+    price: "$2,000",
     period: "/mo",
     featured: true,
     badge: "Most Popular",
     features: [
-      "Everything in Starter, plus:",
+      "Everything in Community, plus:",
       "24/7 coverage (after-hours included)",
       "Missed call-back agent",
       "Outbound lead qualifier",
@@ -175,9 +175,10 @@ const addons = [
   { icon: <CRMIcon />, color: "blue" as const, title: "CRM Automation", desc: "Full GoHighLevel or HubSpot automation: pipelines, sequences, reporting.", price: "$1,000/mo" },
   { icon: <BoltIcon />, color: "purple" as const, title: "AI Automations", desc: "Custom n8n workflows: intake forms, email routing, data sync, alerts.", price: "$500/mo" },
   { icon: <LightbulbIcon />, color: "amber" as const, title: "Tech Consulting", desc: "Ad-hoc consulting for AI strategy, vendor selection, or architecture review.", price: "$100/hr" },
-  { icon: <MicIcon />, color: "cyan" as const, title: "Voice/Video Cloning", desc: "Clone your voice or create branded video content with AI-generated media.", price: "$1,000" },
+  { icon: <MicIcon />, color: "cyan" as const, title: "Voice Clone", desc: "Professional AI clone of your voice for agents, content, and outbound calls.", price: "$500" },
+  { icon: <AvatarIcon />, color: "cyan" as const, title: "Video Clone", desc: "AI video avatar of you for marketing, training, and social content.", price: "$1,000" },
   { icon: <AvatarIcon />, color: "green" as const, title: "AI Avatar", desc: "Custom AI spokesperson for video content, training materials, or marketing.", price: "$500" },
-  { icon: <BotIcon />, color: "purple" as const, title: "Additional Agents", desc: "Deploy more AI agents across departments, locations, or use cases.", price: "$1,500/mo" },
+  { icon: <BotIcon />, color: "purple" as const, title: "Additional Agents", desc: "Deploy more AI agents across departments, locations, or use cases.", price: "$2,000/mo" },
 ];
 
 /* ── FAQ data ── */

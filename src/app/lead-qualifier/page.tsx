@@ -384,15 +384,15 @@ export default function LeadQualifierPage() {
                   $12,000–$24,000
                 </div>
                 <p className="text-[15px] text-text-2 mt-3 max-w-[500px] mx-auto">
-                  Doubling your close rate from 5% to 10–15% with instant callbacks. At $1,500/month, the Lead Qualifier pays for itself in the first week.
+                  Doubling your close rate from 5% to 10–15% with instant callbacks. At $2,000/month, the Lead Qualifier pays for itself in the first week.
                 </p>
               </div>
 
               {/* Unit economics */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
                 {[
-                  { num: "$1,500", label: "Monthly Cost" },
-                  { num: "8–16x", label: "ROI" },
+                  { num: "$2,000", label: "Monthly Cost" },
+                  { num: "6–12x", label: "ROI" },
                   { num: "<7 days", label: "Payback" },
                   { num: "$144K+", label: "Annual Gain" },
                 ].map((s) => (

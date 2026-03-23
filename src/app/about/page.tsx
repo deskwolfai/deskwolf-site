@@ -302,7 +302,7 @@ export default function AboutPage() {
                   </thead>
                   <tbody className="text-[13px]">
                     {[
-                      { feature: "Monthly Cost", dw: "$1,500–$3,000", hire: "$3,500+ (salary + benefits)", ans: "$0.75–$1.25/min", diy: "$50–$300" },
+                      { feature: "Monthly Cost", dw: "$2,000–$3,000", hire: "$3,500+ (salary + benefits)", ans: "$0.75–$1.25/min", diy: "$50–$300" },
                       { feature: "24/7 Coverage", dw: "yes", hire: "no", ans: "yes", diy: "yes" },
                       { feature: "Calls Handled Simultaneously", dw: "Unlimited", hire: "1", ans: "Limited", diy: "N/A (text only)" },
                       { feature: "Appointment Booking", dw: "yes", hire: "yes", ans: "Some", diy: "no" },

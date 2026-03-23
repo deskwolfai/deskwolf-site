@@ -84,6 +84,16 @@ const AlertIcon = () => (
     <circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" />
   </svg>
 );
+const UsersIcon = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  </svg>
+);
+const StarIcon = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+  </svg>
+);
 
 /* ── Reusable check mark for feature lists ── */
 const Check = () => (
@@ -153,7 +163,7 @@ export default function ServicesPage() {
                 <span className="font-mono text-[10px] tracking-[0.08em] uppercase px-3 py-1 rounded-[100px] bg-blue-pale text-brand-blue font-medium">Inbound</span>
               </div>
               <h3 className="text-[20px] font-extrabold text-text mb-1">AI Receptionist</h3>
-              <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent mb-3">From $1,500/mo</div>
+              <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent mb-3">From $2,000/mo</div>
               <p className="text-sm text-text-3 leading-relaxed mb-5">
                 Stop losing callers to voicemail. Your AI receptionist answers every call, books appointments, routes to the right person, and follows up by text. Always on, always ready.
               </p>
@@ -184,7 +194,7 @@ export default function ServicesPage() {
                 <span className="font-mono text-[10px] tracking-[0.08em] uppercase px-3 py-1 rounded-[100px] bg-brand-amber/10 text-brand-amber font-medium">Outbound</span>
               </div>
               <h3 className="text-[20px] font-extrabold text-text mb-1">Lead Qualifier</h3>
-              <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-amber to-[#EF4444] bg-clip-text text-transparent mb-3">From $1,500/mo</div>
+              <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-amber to-[#EF4444] bg-clip-text text-transparent mb-3">From $2,000/mo</div>
               <p className="text-sm text-text-3 leading-relaxed mb-5">
                 Turn form fills into booked appointments within seconds. Your AI calls leads back instantly, qualifies them on your criteria, and gets them on the calendar before they shop around.
               </p>
@@ -329,13 +339,25 @@ export default function ServicesPage() {
                 ],
               },
               {
-                icon: <MicIcon />, color: "amber" as const,
-                title: "AI Voice/Video Cloning",
+                icon: <MicIcon />, color: "cyan" as const,
+                title: "AI Voice Clone",
+                price: "$500",
+                features: [
+                  "Professional voice clone of you or your brand",
+                  "Use across AI agents and content",
+                  "Multi-language voice output",
+                  "Setup and calibration included",
+                  "Royalty-free commercial use",
+                ],
+              },
+              {
+                icon: <VideoIcon />, color: "amber" as const,
+                title: "AI Video Clone",
                 price: "$1,000",
                 features: [
-                  "Your voice, scaled across every channel",
-                  "Multi-language voice output",
-                  "Video avatar generation",
+                  "AI video avatar for marketing content",
+                  "Social media format optimization",
+                  "Script-to-video pipeline",
                   "Brand-consistent media assets",
                   "Royalty-free commercial use",
                 ],
@@ -350,6 +372,18 @@ export default function ServicesPage() {
                   "Script-to-video in minutes",
                   "Branded templates & overlays",
                   "Monthly content packages",
+                ],
+              },
+              {
+                icon: <UsersIcon />, color: "green" as const,
+                title: "AI Team Coach",
+                price: "$500/mo",
+                features: [
+                  "On-demand sales training via voice AI",
+                  "Script practice and objection handling",
+                  "Custom scenarios for your industry",
+                  "Team performance tracking",
+                  "Available 24/7 for practice sessions",
                 ],
               },
               {
@@ -376,6 +410,32 @@ export default function ServicesPage() {
                 </ul>
               </GlassCard>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ COMING SOON ════════════ */}
+      <section className="relative z-[2] py-[80px]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
+          <div className="text-center max-w-[560px] mx-auto rv">
+            <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-text-3">Coming Soon</span>
+            <h2 className="text-[clamp(26px,3.5vw,38px)] mb-3 text-text-2">
+              On the horizon.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 max-w-[640px] mx-auto gap-5 mt-10">
+            <GlassCard className="p-8 rv opacity-70 border-dashed">
+              <div className="flex items-start gap-5">
+                <GradientIcon color="amber"><StarIcon /></GradientIcon>
+                <div>
+                  <h3 className="text-[18px] font-extrabold text-text mb-1">Review &amp; Reputation Autopilot</h3>
+                  <p className="text-sm text-text-3 leading-relaxed">
+                    Automated review requests, Google and Yelp monitoring, negative review alerts, and reputation scoring. Coming soon.
+                  </p>
+                </div>
+              </div>
+            </GlassCard>
           </div>
         </div>
       </section>

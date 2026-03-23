@@ -352,7 +352,7 @@ export default function AIReceptionistPage() {
                   $156,000
                 </div>
                 <p className="text-[15px] text-text-2 mt-3 max-w-[500px] mx-auto">
-                  15 calls &times; $200 &times; 52 weeks = $156,000 in lost revenue every year. Your AI Receptionist costs $1,500/month. That&apos;s a <strong className="text-text">8.7x return</strong> on investment.
+                  15 calls &times; $200 &times; 52 weeks = $156,000 in lost revenue every year. Your AI Receptionist costs $2,000/month. That&apos;s a <strong className="text-text">6.5x return</strong> on investment.
                 </p>
               </div>
 
@@ -365,7 +365,7 @@ export default function AIReceptionistPage() {
                 </div>
                 <div className="p-6 bg-white/[0.04] rounded-[var(--radius-sm)] border border-brand-green/20 text-center">
                   <div className="font-mono text-[10px] tracking-[0.08em] uppercase text-brand-green mb-2">AI Receptionist</div>
-                  <div className="font-extrabold text-[28px] bg-gradient-to-r from-brand-green to-brand-cyan bg-clip-text text-transparent">$1,500/mo</div>
+                  <div className="font-extrabold text-[28px] bg-gradient-to-r from-brand-green to-brand-cyan bg-clip-text text-transparent">$2,000/mo</div>
                   <p className="text-[13px] text-text-3 mt-1">24/7/365. Unlimited concurrent calls. No sick days. No turnover.</p>
                 </div>
               </div>

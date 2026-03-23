@@ -98,7 +98,7 @@ const audience = [
 
 /* ── FAQ data ── */
 const faqs = [
-  { q: "How much can I earn per referral?", a: "You earn 10% of the referred client's first invoice. Since our plans range from $1,500 to custom enterprise pricing, a single referral can net you $150 to well over $500." },
+  { q: "How much can I earn per referral?", a: "You earn 10% of the referred client's first invoice. Since our plans range from $97 to custom enterprise pricing, a single referral can net you $10 to well over $500." },
   { q: "Is there a limit on how many people I can refer?", a: "No. There is no cap on referrals. Refer one business or refer a hundred. You earn on every single one." },
   { q: "When do I get paid?", a: "Within 5 business days after the referred client pays their first invoice. We don't hold your money." },
   { q: "Do I need to be a DeskWolf customer to be an affiliate?", a: "No. You don't need to be a client. You just need to understand what we do well enough to make genuine referrals." },

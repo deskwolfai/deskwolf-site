@@ -262,10 +262,10 @@ export default function FrontDeskBlueprintPage() {
                   <span className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-3.5 py-1.5 rounded-[100px] text-white font-medium bg-gradient-to-r from-brand-blue to-brand-purple">Recommended</span>
                 </div>
                 <h3 className="text-[20px] font-extrabold text-text mb-1">DeskWolf AI System</h3>
-                <div className="font-extrabold text-[28px] bg-gradient-to-r from-brand-green to-brand-cyan bg-clip-text text-transparent mb-6">$1,500<span className="text-sm text-text-3 font-normal">/mo</span></div>
+                <div className="font-extrabold text-[28px] bg-gradient-to-r from-brand-green to-brand-cyan bg-clip-text text-transparent mb-6">$2,000<span className="text-sm text-text-3 font-normal">/mo</span></div>
                 <ul className="list-none flex flex-col gap-2.5">
                   {[
-                    { item: "Monthly service fee", cost: "$1,500/mo" },
+                    { item: "Monthly service fee", cost: "$2,000/mo" },
                     { item: "API & phone costs", cost: "~$50-150/mo" },
                     { item: "Training & updates", cost: "Included" },
                     { item: "Coverage hours", cost: "24/7/365" },
@@ -286,7 +286,7 @@ export default function FrontDeskBlueprintPage() {
           <div className="text-center mt-8 rv">
             <GlassCard className="inline-block px-8 py-5">
               <p className="text-[15px] text-text-2">
-                Annual savings: <strong className="text-brand-green font-extrabold">$24,000+</strong> per year, with better coverage, faster response times, and zero sick days.
+                Annual savings: <strong className="text-brand-green font-extrabold">$18,000+</strong> per year, with better coverage, faster response times, and zero sick days.
               </p>
             </GlassCard>
           </div>

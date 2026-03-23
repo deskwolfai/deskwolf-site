@@ -49,7 +49,7 @@ const businessTypes = [
   { label: "Other", calls: 0, missed: 0, value: 0 },
 ];
 
-const DESKWOLF_MONTHLY_COST = 1500;
+const DESKWOLF_MONTHLY_COST = 2000;
 
 export default function ROICalculatorPage() {
   const [weeklyCalls, setWeeklyCalls] = useState(100);

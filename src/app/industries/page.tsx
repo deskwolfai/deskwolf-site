@@ -152,11 +152,11 @@ const industries = [
   {
     icon: <RocketIcon />,
     color: "cyan" as const,
-    name: "Digital Entrepreneurs & Coaches",
-    pain: "Solo operators can't scale past their own availability.",
-    stat: "3x more discovery calls booked with 24/7 intake",
-    href: "/coming-soon",
-    live: false,
+    name: "Influencers & Entrepreneurs",
+    pain: "Leads go cold in minutes. If your team takes hours to call back, the sale is already lost.",
+    stat: "$24K+/mo in additional revenue with instant callbacks",
+    href: "/industries/influencers-entrepreneurs",
+    live: true,
   },
 ];
 
