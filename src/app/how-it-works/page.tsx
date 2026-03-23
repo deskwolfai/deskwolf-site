@@ -111,7 +111,7 @@ export default function HowItWorksPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-[70vh] flex items-center pt-[140px] pb-[80px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full">
           <GlassCard className="p-[clamp(36px,5vw,56px)] max-w-[720px] mx-auto text-center rv">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
               <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse-dot" />
@@ -146,7 +146,7 @@ export default function HowItWorksPage() {
 
       {/* ════════════ 4-STEP PROCESS ════════════ */}
       <section className="relative z-[2] py-[120px]" id="process">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">
               The Process
@@ -181,7 +181,7 @@ export default function HowItWorksPage() {
 
       {/* ════════════ TIMELINE ════════════ */}
       <section className="relative z-[2] py-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">
               Timeline
@@ -211,7 +211,7 @@ export default function HowItWorksPage() {
 
       {/* ════════════ WHAT YOU DON'T HAVE TO DO ════════════ */}
       <section className="relative z-[2] py-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">
               Your Side
@@ -238,7 +238,7 @@ export default function HowItWorksPage() {
 
       {/* ════════════ WHAT'S INCLUDED ════════════ */}
       <section className="relative z-[2] py-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">
               What You Get
@@ -265,7 +265,7 @@ export default function HowItWorksPage() {
 
       {/* ════════════ FAQ ════════════ */}
       <section className="relative z-[2] py-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">
               FAQ
@@ -298,7 +298,7 @@ export default function HowItWorksPage() {
 
       {/* ════════════ CTA ════════════ */}
       <section className="relative z-[2] py-[100px]" id="cta">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] text-center rv">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center rv">
           <h2 className="text-[clamp(30px,4vw,46px)] font-extrabold text-text mb-4">
             Ready to stop missing calls?
           </h2>
@@ -327,7 +327,7 @@ export default function HowItWorksPage() {
               "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)",
           }}
         />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

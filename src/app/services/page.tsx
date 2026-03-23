@@ -101,7 +101,7 @@ export default function ServicesPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-screen flex items-center pt-[140px] pb-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full">
           <div className="max-w-[720px] mx-auto text-center">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -135,7 +135,7 @@ export default function ServicesPage() {
 
       {/* ════════════ CORE PRODUCTS ════════════ */}
       <section className="relative z-[2] py-[120px]" id="core">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Core Products</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -242,7 +242,7 @@ export default function ServicesPage() {
 
       {/* ════════════ STACK PITCH ════════════ */}
       <section className="relative z-[2] py-[100px]" id="stack">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <GlassCard className="p-[clamp(32px,5vw,52px)] rv">
             <div className="max-w-[640px] mx-auto text-center">
               <span className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-3.5 py-1.5 rounded-[100px] text-white font-medium bg-gradient-to-r from-brand-blue to-brand-purple mb-5">Best Value</span>
@@ -280,7 +280,7 @@ export default function ServicesPage() {
 
       {/* ════════════ ADDITIONAL SERVICES ════════════ */}
       <section className="relative z-[2] py-[120px]" id="services">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Additional Services</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -382,7 +382,7 @@ export default function ServicesPage() {
 
       {/* ════════════ ADD-ONS ════════════ */}
       <section className="relative z-[2] py-[100px]" id="addons">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Included</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -411,7 +411,7 @@ export default function ServicesPage() {
 
       {/* ════════════ TRANSPARENCY NOTE ════════════ */}
       <section className="relative z-[2] py-[100px]">
-        <div className="max-w-[800px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[800px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <GlassCard className="p-[clamp(32px,5vw,48px)] rv">
             <div className="flex gap-5 items-start">
               <GradientIcon color="amber"><AlertIcon /></GradientIcon>
@@ -430,7 +430,7 @@ export default function ServicesPage() {
 
       {/* ════════════ CTA ════════════ */}
       <section className="relative z-[2] py-[120px]" id="cta">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[600px] mx-auto rv">
             <h2 className="text-[clamp(30px,4vw,46px)] mb-4">
               Book Your{" "}
@@ -458,7 +458,7 @@ export default function ServicesPage() {
         style={{ background: "linear-gradient(135deg, #F1F5F9 0%, #1E293B 50%, #334155 100%)" }}>
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)" }} />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

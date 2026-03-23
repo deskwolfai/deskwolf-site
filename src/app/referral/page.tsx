@@ -80,7 +80,7 @@ export default function ReferralPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-[70vh] flex items-center pt-[140px] pb-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <div className="w-2 h-2 bg-brand-amber rounded-full animate-pulse-dot" />
             <span className="text-sm text-text-2">Coming Soon</span>
@@ -110,7 +110,7 @@ export default function ReferralPage() {
 
       {/* ════════════ FEATURES PREVIEW ════════════ */}
       <section className="relative z-[2] py-[120px]" id="features">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-purple">What&rsquo;s Coming</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -132,7 +132,7 @@ export default function ReferralPage() {
 
       {/* ════════════ NOTIFY CTA ════════════ */}
       <section className="relative z-[2] py-[120px]" id="notify">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="max-w-[600px] mx-auto rv">
             <GlassCard className="p-10 text-center">
               <h3 className="text-[clamp(24px,3vw,32px)] font-extrabold text-text mb-3">
@@ -153,7 +153,7 @@ export default function ReferralPage() {
         style={{ background: "linear-gradient(135deg, #F1F5F9 0%, #1E293B 50%, #334155 100%)" }}>
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)" }} />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

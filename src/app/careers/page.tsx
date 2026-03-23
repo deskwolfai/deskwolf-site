@@ -101,7 +101,7 @@ export default function CareersPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-[70vh] flex items-center pt-[140px] pb-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] rv">
             <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse-dot" />
             <span className="text-sm text-text-2">We&rsquo;re Hiring</span>
@@ -126,7 +126,7 @@ export default function CareersPage() {
 
       {/* ════════════ CULTURE ════════════ */}
       <section className="relative z-[2] py-[120px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Culture</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">How we work.</h2>
@@ -165,7 +165,7 @@ export default function CareersPage() {
 
       {/* ════════════ PERKS ════════════ */}
       <section className="relative z-[2] py-[120px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Why DeskWolf</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">What you get.</h2>
@@ -188,7 +188,7 @@ export default function CareersPage() {
 
       {/* ════════════ OPEN POSITIONS ════════════ */}
       <section className="relative z-[2] py-[120px]" id="positions">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Open Roles</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Open Positions</h2>
@@ -233,7 +233,7 @@ export default function CareersPage() {
 
       {/* ════════════ GENERAL APPLICATION ════════════ */}
       <section className="relative z-[2] py-[120px]">
-        <div className="max-w-[800px] mx-auto px-[clamp(20px,5vw,64px)] text-center rv">
+        <div className="max-w-[800px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center rv">
           <h2 className="text-[clamp(30px,4vw,46px)] font-extrabold text-text mb-4">
             Don&rsquo;t see your role?
           </h2>

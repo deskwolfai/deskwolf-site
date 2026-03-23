@@ -56,7 +56,7 @@ export default function ContactPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] pt-[160px] pb-[60px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] text-center rv">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center rv">
           <h1 className="text-[clamp(44px,6.5vw,72px)] font-extrabold leading-[1.08] tracking-[-0.03em] text-text mb-4">
             Let&apos;s Talk.
           </h1>
@@ -68,7 +68,7 @@ export default function ContactPage() {
 
       {/* ════════════ CONTACT FORM + INFO ════════════ */}
       <section className="relative z-[2] py-[80px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 items-start">
             {/* Left — Form */}
             <GlassCard className="p-[clamp(28px,4vw,44px)] rv">
@@ -129,7 +129,7 @@ export default function ContactPage() {
 
       {/* ════════════ SOCIAL LINKS ════════════ */}
       <section className="relative z-[2] py-[60px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] text-center rv">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center rv">
           <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue mb-5 block">
             Follow Us
           </span>
@@ -162,7 +162,7 @@ export default function ContactPage() {
               "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)",
           }}
         />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

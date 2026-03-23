@@ -19,7 +19,7 @@ export default function ComingSoonPage() {
       <RevealObserver />
 
       <section className="relative z-[2] min-h-[80vh] flex items-center justify-center pt-[140px] pb-[100px]">
-        <div className="max-w-[600px] mx-auto px-[clamp(20px,5vw,64px)] text-center">
+        <div className="max-w-[600px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] rv">
             <div className="w-2 h-2 bg-brand-amber rounded-full animate-pulse-dot" />

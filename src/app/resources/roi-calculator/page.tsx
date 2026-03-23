@@ -93,7 +93,7 @@ export default function ROICalculatorPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] pt-[160px] pb-[80px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center">
           <div className="rv">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
               <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse-dot" />
@@ -114,7 +114,7 @@ export default function ROICalculatorPage() {
 
       {/* ════════════ CALCULATOR ════════════ */}
       <section className="relative z-[2] pb-[120px]" id="calculator">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
             {/* ── INPUTS ── */}
@@ -271,7 +271,7 @@ export default function ROICalculatorPage() {
 
       {/* ════════════ CONTEXT SECTION ════════════ */}
       <section className="relative z-[2] py-[100px]" id="context">
-        <div className="max-w-[800px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[800px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <GlassCard className="p-[clamp(32px,5vw,48px)] rv">
             <div className="text-center">
               <h3 className="text-[clamp(24px,3vw,32px)] font-extrabold text-text mb-4">
@@ -306,7 +306,7 @@ export default function ROICalculatorPage() {
         style={{ background: "linear-gradient(135deg, #F1F5F9 0%, #1E293B 50%, #334155 100%)" }}>
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)" }} />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

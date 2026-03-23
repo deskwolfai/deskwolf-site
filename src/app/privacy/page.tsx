@@ -19,7 +19,7 @@ export default function PrivacyPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] pt-[160px] pb-[80px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center">
           <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue rv">Legal</span>
           <h1 className="text-[clamp(36px,5.5vw,56px)] font-extrabold leading-[1.1] tracking-[-0.03em] text-text mb-4 rv d1">
             Privacy Policy
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
       {/* ════════════ CONTENT ════════════ */}
       <section className="relative z-[2] pb-[120px]">
-        <div className="max-w-[800px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[800px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="rv d3 space-y-12 text-[16px] text-text-2 leading-relaxed [&_h2]:text-[clamp(22px,3vw,28px)] [&_h2]:font-extrabold [&_h2]:text-text [&_h2]:mb-4 [&_h3]:text-[18px] [&_h3]:font-bold [&_h3]:text-text [&_h3]:mb-2 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-4 [&_ul_li]:mb-2">
 
             <div>

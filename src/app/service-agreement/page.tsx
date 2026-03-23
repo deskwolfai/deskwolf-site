@@ -136,7 +136,7 @@ export default function ServiceAgreementPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-[60vh] flex items-center pt-[140px] pb-[80px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] rv">
             <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse-dot" />
             <span className="text-sm text-text-2">Plain Language</span>
@@ -166,7 +166,7 @@ export default function ServiceAgreementPage() {
 
       {/* ════════════ AGREEMENT CARDS ════════════ */}
       <section className="relative z-[2] py-[120px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {sections.map((s, i) => (
               <GlassCard key={s.title} className={`p-8 rv d${i + 1}`}>
@@ -190,7 +190,7 @@ export default function ServiceAgreementPage() {
 
       {/* ════════════ RESPONSE TIMES ════════════ */}
       <section className="relative z-[2] py-[120px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Support</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Response Times</h2>
@@ -217,7 +217,7 @@ export default function ServiceAgreementPage() {
 
       {/* ════════════ BOTTOM LINE ════════════ */}
       <section className="relative z-[2] py-[120px]">
-        <div className="max-w-[800px] mx-auto px-[clamp(20px,5vw,64px)] text-center rv">
+        <div className="max-w-[800px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center rv">
           <blockquote className="italic text-[clamp(22px,3vw,30px)] text-text leading-relaxed font-light">
             &ldquo;You own everything. We manage everything. You can leave anytime. That&rsquo;s how it should work.&rdquo;
           </blockquote>

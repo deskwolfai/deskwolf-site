@@ -72,7 +72,7 @@ export default function HomePage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-screen flex items-center pt-[140px] pb-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-[60px] items-center">
             {/* Left — glass card */}
             <div className="relative overflow-hidden bg-white/[0.04] backdrop-blur-[32px] saturate-[1.5] border border-white/[0.08] rounded-[var(--radius-lg)] p-[clamp(32px,5vw,52px)] shadow-[0_32px_100px_-20px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.06)]">
@@ -164,7 +164,7 @@ export default function HomePage() {
 
       {/* ════════════ LEAD MAGNET ════════════ */}
       <section className="relative z-[2] py-[100px]" id="resources">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Free Resources</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Start here.<br /><span className="font-light text-text-2">No commitment.</span></h2>
@@ -189,7 +189,7 @@ export default function HomePage() {
 
       {/* ════════════ VISION ════════════ */}
       <section className="relative z-[2] py-[120px]" id="about">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="rv">
               <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Our Approach</span>
@@ -230,7 +230,7 @@ export default function HomePage() {
 
       {/* ════════════ PRIMARY OFFER ════════════ */}
       <section className="relative z-[2] py-[120px]" id="offer">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="rv">
               <span className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-3.5 py-1.5 rounded-[100px] text-white font-medium bg-gradient-to-r from-blue-light to-brand-purple">Core Product</span>
@@ -290,7 +290,7 @@ export default function HomePage() {
 
       {/* ════════════ TESTIMONIALS ════════════ */}
       <section className="relative z-[2] py-[120px]" id="testimonials">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Results</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">What business owners<br /><span className="font-light text-text-2">are saying.</span></h2>
@@ -319,7 +319,7 @@ export default function HomePage() {
 
       {/* ════════════ OTHER OFFERS ════════════ */}
       <section className="relative z-[2] py-[120px]" id="more">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">More Products</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Stack for<br /><span className="font-light text-text-2">maximum coverage.</span></h2>
@@ -357,7 +357,7 @@ export default function HomePage() {
 
       {/* ════════════ TEAM ════════════ */}
       <section className="relative z-[2] py-[120px]" id="team">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">The Team</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Built by people who<br /><span className="font-light text-text-2">answer phones at 10pm.</span></h2>
@@ -384,7 +384,7 @@ export default function HomePage() {
         style={{ background: "linear-gradient(135deg, #F1F5F9 0%, #1E293B 50%, #334155 100%)" }}>
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)" }} />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

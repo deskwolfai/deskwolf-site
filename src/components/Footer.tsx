@@ -39,7 +39,7 @@ const partnerLinks = [
 export default function Footer() {
   return (
     <footer className="relative z-[2] pt-16 pb-7 bg-white/[0.03] backdrop-blur-[16px] border-t border-white/[0.06]">
-      <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+      <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
         {/* Top grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr] gap-8 mb-12">
           {/* Brand */}

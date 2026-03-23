@@ -11,7 +11,7 @@ export default function NotFound() {
       <RevealObserver />
 
       <section className="relative z-[2] min-h-[80vh] flex items-center justify-center pt-[140px] pb-[100px]">
-        <div className="max-w-[600px] mx-auto px-[clamp(20px,5vw,64px)] text-center">
+        <div className="max-w-[600px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center">
           {/* Big 404 */}
           <div className="text-[clamp(100px,20vw,180px)] font-extrabold leading-none tracking-[-0.04em] bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent rv">
             404

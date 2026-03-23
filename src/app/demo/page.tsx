@@ -93,7 +93,7 @@ export default function DemoPage() {
         <div className="absolute top-[20%] left-[30%] w-[400px] h-[400px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(26,95,212,0.12) 0%, transparent 70%)", animation: "glowBreath 5s ease-in-out 1s infinite" }} />
         <div className="absolute top-[25%] right-[25%] w-[350px] h-[350px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(6,182,212,0.1) 0%, transparent 70%)", animation: "glowBreath 6s ease-in-out 2s infinite" }} />
 
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full">
           <div className="max-w-[800px] mx-auto text-center">
             {/* Live badge */}
             <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/[0.06] border border-white/10 rounded-[100px] mb-8 shadow-[0_4px_16px_rgba(0,0,0,0.1)] opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -200,7 +200,7 @@ export default function DemoPage() {
 
       {/* ════════════ WHAT SHE CAN DO ════════════ */}
       <section className="relative z-[2] py-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">What to Try</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Ask her anything.<br /><span className="font-light text-text-2">She&rsquo;s ready.</span></h2>
@@ -227,7 +227,7 @@ export default function DemoPage() {
 
       {/* ════════════ SOCIAL PROOF STATS ════════════ */}
       <section className="relative z-[2] py-[80px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 rv">
             {[
               { num: "<1s", label: "Response Time" },
@@ -246,7 +246,7 @@ export default function DemoPage() {
 
       {/* ════════════ OR BOOK A HUMAN ════════════ */}
       <section className="relative z-[2] py-[120px]" id="book">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv mb-10">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-purple">Prefer a Human?</span>
             <h2 className="text-[clamp(26px,3.5vw,40px)] mt-2 mb-3">
@@ -291,7 +291,7 @@ export default function DemoPage() {
 
       {/* ════════════ PRE-DEMO CHECKLIST ════════════ */}
       <section className="relative z-[2] py-[80px]">
-        <div className="max-w-[800px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[800px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <GlassCard className="p-[clamp(28px,4vw,44px)] rv">
             <div className="text-center mb-8">
               <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Before Your Call</span>
@@ -321,7 +321,7 @@ export default function DemoPage() {
         style={{ background: "linear-gradient(135deg, #F1F5F9 0%, #1E293B 50%, #334155 100%)" }}>
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)" }} />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

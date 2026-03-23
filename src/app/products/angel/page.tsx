@@ -98,7 +98,7 @@ export default function AngelPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-[80vh] flex items-center pt-[140px] pb-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full text-center">
           {/* Application Only badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <div className="w-2 h-2 bg-brand-purple rounded-full animate-pulse-dot" />
@@ -137,7 +137,7 @@ export default function AngelPage() {
 
       {/* ════════════ CAPABILITIES GRID ════════════ */}
       <section className="relative z-[2] py-[120px]" id="capabilities">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-purple">Capabilities</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -174,7 +174,7 @@ export default function AngelPage() {
 
       {/* ════════════ WHAT SETS ANGEL APART ════════════ */}
       <section className="relative z-[2] py-[120px]" id="difference">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-16 items-center">
             {/* Left — visual */}
             <div className="rv flex items-center justify-center">
@@ -220,7 +220,7 @@ export default function AngelPage() {
 
       {/* ════════════ HOW TO GET ANGEL ════════════ */}
       <section className="relative z-[2] py-[120px]" id="access">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="max-w-[700px] mx-auto rv">
             <GlassCard className="p-10 text-center">
               <span className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-3.5 py-1.5 rounded-[100px] text-white font-medium bg-gradient-to-r from-brand-blue to-brand-purple mb-6">
@@ -266,7 +266,7 @@ export default function AngelPage() {
         style={{ background: "linear-gradient(135deg, #F1F5F9 0%, #1E293B 50%, #334155 100%)" }}>
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)" }} />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>

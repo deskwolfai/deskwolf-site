@@ -114,7 +114,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ HERO ════════════ */}
       <section className="relative z-[2] min-h-screen flex items-center pt-[140px] pb-[100px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] w-full">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] w-full">
           <div className="max-w-[720px] mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               <div className="w-2 h-2 bg-brand-blue rounded-full animate-pulse-dot" />
@@ -161,7 +161,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ CALL FLOW DIAGRAM ════════════ */}
       <section className="relative z-[2] py-[120px]" id="how-it-works">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">How It Works</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -193,7 +193,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ FEATURES GRID ════════════ */}
       <section className="relative z-[2] py-[120px]" id="features">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Features</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -223,7 +223,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ MULTILINGUAL ════════════ */}
       <section className="relative z-[2] py-[120px]" id="languages">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="rv">
               <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-cyan">Multilingual</span>
@@ -276,7 +276,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ INTEGRATIONS ════════════ */}
       <section className="relative z-[2] py-[120px]" id="integrations">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-purple">Integrations</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -312,7 +312,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ ROI ════════════ */}
       <section className="relative z-[2] py-[120px]" id="roi">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[600px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-green">ROI</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -382,7 +382,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ FAQ ════════════ */}
       <section className="relative z-[2] py-[120px]" id="faq">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">FAQ</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
@@ -412,7 +412,7 @@ export default function AIReceptionistPage() {
 
       {/* ════════════ CTA ════════════ */}
       <section className="relative z-[2] py-[120px]">
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <GlassCard className="p-[clamp(32px,5vw,52px)] rv">
             <div className="max-w-[600px] mx-auto text-center">
               <GradientIcon color="blue" className="mx-auto"><PhoneIcon /></GradientIcon>
@@ -443,7 +443,7 @@ export default function AIReceptionistPage() {
         style={{ background: "linear-gradient(135deg, #F1F5F9 0%, #1E293B 50%, #334155 100%)" }}>
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 50% 50% at 80% 20%, rgba(139,92,246,0.15), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(6,182,212,0.1), transparent)" }} />
-        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)] relative z-[1] text-center">
+        <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] relative z-[1] text-center">
           <div className="rv">
             <span className="font-mono text-[11px] tracking-[0.1em] uppercase text-white/50">Stay Connected</span>
             <h2 className="text-[clamp(30px,4vw,46px)] text-white mb-3">Get the no-fluff AI newsletter.</h2>
