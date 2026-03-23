@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const solutionTopLinks = [
   { label: "Pricing & Plans", href: "/pricing" },
+  { label: "Community", href: "/community" },
 ];
 
 const productLinks = [
@@ -255,11 +256,8 @@ export default function Navbar() {
           boxShadow: scrolled ? undefined : "0 4px 24px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.06)",
         }}
       >
-        <Link href="/" className="font-extrabold text-[17px] text-text flex items-center gap-2 mr-auto no-underline">
-          <div className="w-7 h-7 bg-gradient-to-br from-brand-blue to-brand-purple rounded-lg flex items-center justify-center text-[13px] text-white font-extrabold">
-            W
-          </div>
-          DeskWolf
+        <Link href="/" className="font-extrabold text-[17px] text-text mr-auto no-underline">
+          DeskWolf LLC
         </Link>
 
         <ul className="hidden lg:flex gap-0.5 list-none items-center">
@@ -319,9 +317,11 @@ export default function Navbar() {
       {menuOpen && (
         <div className="fixed inset-0 z-[99] bg-[rgba(8,9,13,0.97)] backdrop-blur-[40px] flex flex-col items-center gap-3 overflow-y-auto pt-24 pb-12">
           <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-text-3 mb-1">Solutions</span>
-          <Link href="/pricing" className="text-[20px] font-semibold text-text no-underline hover:text-brand-purple" onClick={() => setMenuOpen(false)}>
-            Pricing & Plans
-          </Link>
+          {solutionTopLinks.map((l) => (
+            <Link key={l.href} href={l.href} className="text-[20px] font-semibold text-text no-underline hover:text-brand-purple" onClick={() => setMenuOpen(false)}>
+              {l.label}
+            </Link>
+          ))}
           {productLinks.filter(l => l.label !== "All Products").map((l) => (
             <Link key={l.href + l.label} href={l.href} className="text-[18px] font-semibold text-text-2 no-underline hover:text-brand-purple" onClick={() => setMenuOpen(false)}>
               {l.label}
