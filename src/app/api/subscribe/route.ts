@@ -4,6 +4,15 @@ const GHL_API_KEY = process.env.GHL_API_KEY || "";
 const GHL_LOCATION_ID = process.env.GHL_LOCATION_ID || "";
 const GHL_BASE = "https://services.leadconnectorhq.com";
 
+const PIPELINE_ID = "D0L2Ia6fMwflvC0NILQ6";
+const NEWSLETTER_STAGE_ID = "3688dd31-4d6f-43e9-90f6-03bb59dd289c";
+
+const ghlHeaders = {
+  Authorization: `Bearer ${GHL_API_KEY}`,
+  Version: "2021-07-28",
+  "Content-Type": "application/json",
+};
+
 export async function POST(req: NextRequest) {
   try {
     const { email } = await req.json();
@@ -16,14 +25,12 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Server not configured" }, { status: 500 });
     }
 
-    // Create contact in GHL with newsletter tag
-    const res = await fetch(`${GHL_BASE}/contacts/`, {
+    // Step 1: Create or find contact
+    let contactId = "";
+
+    const contactRes = await fetch(`${GHL_BASE}/contacts/`, {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${GHL_API_KEY}`,
-        Version: "2021-07-28",
-        "Content-Type": "application/json",
-      },
+      headers: ghlHeaders,
       body: JSON.stringify({
         locationId: GHL_LOCATION_ID,
         email,
@@ -32,15 +39,39 @@ export async function POST(req: NextRequest) {
       }),
     });
 
-    if (!res.ok) {
-      const err = await res.text();
-      // GHL returns 422 if contact already exists — that's fine
-      if (res.status === 422 || err.includes("duplicate")) {
-        return NextResponse.json({ success: true, message: "Already subscribed" });
+    if (contactRes.ok) {
+      const data = await contactRes.json();
+      contactId = data.contact?.id || "";
+    } else {
+      // Contact likely already exists — look them up
+      const lookupRes = await fetch(
+        `${GHL_BASE}/contacts/lookup?locationId=${GHL_LOCATION_ID}&email=${encodeURIComponent(email)}`,
+        { headers: ghlHeaders }
+      );
+      if (lookupRes.ok) {
+        const lookupData = await lookupRes.json();
+        contactId = lookupData.contacts?.[0]?.id || "";
       }
-      console.error("GHL error:", res.status, err);
-      return NextResponse.json({ error: "Failed to subscribe" }, { status: 500 });
     }
+
+    if (!contactId) {
+      return NextResponse.json({ success: true, message: "Subscribed" });
+    }
+
+    // Step 2: Create opportunity in Vercel Website Leads pipeline
+    await fetch(`${GHL_BASE}/opportunities/`, {
+      method: "POST",
+      headers: ghlHeaders,
+      body: JSON.stringify({
+        pipelineId: PIPELINE_ID,
+        pipelineStageId: NEWSLETTER_STAGE_ID,
+        locationId: GHL_LOCATION_ID,
+        contactId,
+        name: `Newsletter — ${email}`,
+        status: "open",
+        source: "deskwolf.ai",
+      }),
+    });
 
     return NextResponse.json({ success: true, message: "Subscribed" });
   } catch (e) {
