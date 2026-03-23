@@ -276,6 +276,114 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ════════════ HOW WE'RE DIFFERENT ════════════ */}
+      <section className="relative z-[2] py-[120px]" id="different">
+        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+          <div className="text-center max-w-[560px] mx-auto rv">
+            <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">The Difference</span>
+            <h2 className="text-[clamp(30px,4vw,46px)] mb-3">How we compare.<br /><span className="font-light text-text-2">Side by side.</span></h2>
+          </div>
+
+          {/* Comparison table */}
+          <div className="mt-12 rv d1">
+            <GlassCard className="p-0 overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left min-w-[640px]">
+                  <thead>
+                    <tr className="border-b border-white/[0.08]">
+                      <th className="px-7 py-5 text-[13px] font-bold text-text-3 w-[200px]"></th>
+                      <th className="px-5 py-5 text-center">
+                        <div className="text-[14px] font-extrabold bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">DeskWolf</div>
+                      </th>
+                      <th className="px-5 py-5 text-center text-[13px] font-semibold text-text-3">Hiring a Receptionist</th>
+                      <th className="px-5 py-5 text-center text-[13px] font-semibold text-text-3">Answering Service</th>
+                      <th className="px-5 py-5 text-center text-[13px] font-semibold text-text-3">DIY Chatbot</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-[13px]">
+                    {[
+                      { feature: "Monthly Cost", dw: "$1,500–$3,000", hire: "$3,500+ (salary + benefits)", ans: "$0.75–$1.25/min", diy: "$50–$300" },
+                      { feature: "24/7 Coverage", dw: "yes", hire: "no", ans: "yes", diy: "yes" },
+                      { feature: "Calls Handled Simultaneously", dw: "Unlimited", hire: "1", ans: "Limited", diy: "N/A (text only)" },
+                      { feature: "Appointment Booking", dw: "yes", hire: "yes", ans: "Some", diy: "no" },
+                      { feature: "Multilingual", dw: "yes", hire: "Rare", ans: "Extra cost", diy: "Limited" },
+                      { feature: "CRM Integration", dw: "yes", hire: "Manual", ans: "Rare", diy: "Some" },
+                      { feature: "Call Transcripts", dw: "yes", hire: "no", ans: "Extra cost", diy: "N/A" },
+                      { feature: "Vendor Lock-In", dw: "no", hire: "N/A", ans: "yes", diy: "yes" },
+                      { feature: "Fully Managed", dw: "yes", hire: "You manage", ans: "Partial", diy: "You build it" },
+                    ].map((row) => (
+                      <tr key={row.feature} className="border-b border-white/[0.04] hover:bg-white/[0.02] transition-colors">
+                        <td className="px-7 py-4 font-semibold text-text">{row.feature}</td>
+                        <td className="px-5 py-4 text-center font-semibold text-brand-green">
+                          {row.dw === "yes" ? "✓" : row.dw === "no" ? "✗" : row.dw}
+                        </td>
+                        <td className="px-5 py-4 text-center text-text-3">
+                          {row.hire === "yes" ? "✓" : row.hire === "no" ? <span className="text-[#EF4444]">✗</span> : row.hire}
+                        </td>
+                        <td className="px-5 py-4 text-center text-text-3">
+                          {row.ans === "yes" ? "✓" : row.ans === "no" ? <span className="text-[#EF4444]">✗</span> : row.ans}
+                        </td>
+                        <td className="px-5 py-4 text-center text-text-3">
+                          {row.diy === "yes" ? "✓" : row.diy === "no" ? <span className="text-[#EF4444]">✗</span> : row.diy}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </GlassCard>
+          </div>
+
+          <div className="mt-8 text-center rv d2">
+            <p className="text-[15px] text-text-2 max-w-[520px] mx-auto">
+              The difference isn&rsquo;t just price — it&rsquo;s ownership. With DeskWolf, you own your tools, your data, and your system. No lock-in. No markup. No surprises.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ════════════ OUR TECH STACK ════════════ */}
+      <section className="relative z-[2] py-[120px]" id="tech-stack">
+        <div className="max-w-[1200px] mx-auto px-[clamp(20px,5vw,64px)]">
+          <div className="text-center max-w-[560px] mx-auto rv">
+            <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Under the Hood</span>
+            <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Our tech stack.<br /><span className="font-light text-text-2">Enterprise-grade. Transparent.</span></h2>
+            <p className="text-[17px] text-text-2">Every tool we deploy is set up under your accounts. You own the keys, the data, and the subscriptions.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+            {[
+              { icon: <PhoneIcon />, color: "blue" as const, title: "Voice AI Platform", desc: "VAPI-powered voice agents with natural language processing, real-time call handling, and sub-second response times. Handles unlimited concurrent calls." },
+              { icon: <GlobeIcon />, color: "green" as const, title: "CRM & Pipeline", desc: "GoHighLevel for lead management, pipeline automation, follow-up sequences, and appointment booking. Full API integration." },
+              { icon: <ShieldIcon />, color: "purple" as const, title: "Automation Engine", desc: "n8n workflow automation for data routing, webhook processing, email triggers, and multi-system orchestration." },
+              { icon: <BookIcon />, color: "amber" as const, title: "Telephony", desc: "Twilio for reliable call routing, phone number management, SMS follow-ups, and carrier-grade voice quality." },
+              { icon: <DollarIcon />, color: "cyan" as const, title: "Cloud Infrastructure", desc: "Google Cloud, Vercel, and enterprise hosting for 99.8%+ uptime. Distributed, scalable, and monitored 24/7." },
+              { icon: <PhoneIcon />, color: "blue" as const, title: "Analytics & Monitoring", desc: "Full call transcription, sentiment analysis, performance dashboards, and cost tracking. Every call is logged and searchable." },
+            ].map((item, i) => (
+              <GlassCard key={item.title} className={`p-8 rv d${(i % 3) + 1}`}>
+                <GradientIcon color={item.color}>{item.icon}</GradientIcon>
+                <h4 className="text-[17px] font-extrabold text-text mb-2 mt-5">{item.title}</h4>
+                <p className="text-sm text-text-3 leading-relaxed">{item.desc}</p>
+              </GlassCard>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center rv">
+            <GlassCard className="p-8 max-w-[600px] mx-auto">
+              <div className="font-extrabold text-[20px] text-text mb-2">You own your tools. Always.</div>
+              <p className="text-sm text-text-3 leading-relaxed mb-5">
+                Every API key, every account, every piece of data lives under your name. We charge for expertise and management — never for tool markup. If we part ways, everything stays with you.
+              </p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {["Zero tool markup", "Your accounts", "Your data", "No lock-in", "Full transparency"].map((tag) => (
+                  <span key={tag} className="text-[11px] font-medium text-text-2 bg-white/[0.06] border border-white/10 px-3 py-1.5 rounded-[100px]">{tag}</span>
+                ))}
+              </div>
+            </GlassCard>
+          </div>
+        </div>
+      </section>
+
       {/* ════════════ VISION QUOTE ════════════ */}
       <section className="relative z-[2] py-[120px]">
         <div className="max-w-[800px] mx-auto px-[clamp(20px,5vw,64px)] text-center rv">
