@@ -94,6 +94,27 @@
   to { width: 92%; }
 }
 
+@keyframes ringPulse {
+  0% { box-shadow: 0 0 0 0 rgba(139,92,246,0.5), 0 0 0 0 rgba(26,95,212,0.3); }
+  40% { box-shadow: 0 0 0 20px rgba(139,92,246,0), 0 0 0 40px rgba(26,95,212,0); }
+  100% { box-shadow: 0 0 0 20px rgba(139,92,246,0), 0 0 0 40px rgba(26,95,212,0); }
+}
+
+@keyframes waveBar {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+@keyframes glowBreath {
+  0%, 100% { opacity: 0.4; filter: blur(60px); }
+  50% { opacity: 0.7; filter: blur(80px); }
+}
+
+@keyframes floatPhone {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
 /* ── Base ── */
 html { scroll-behavior: smooth; }
 
