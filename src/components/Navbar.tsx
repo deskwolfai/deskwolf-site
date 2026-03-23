@@ -195,41 +195,47 @@ export default function Navbar() {
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const lastScrollY = useRef(0);
-  const scrollDir = useRef<"up" | "down">("up");
-  const anchor = useRef(0);
+  const lastY = useRef(0);
+  const hideAnchor = useRef(0);
+  const showAnchor = useRef(0);
+  const dirRef = useRef<"up"|"down">("up");
 
   useEffect(() => {
+    let ticking = false;
     const onScroll = () => {
-      const y = window.scrollY;
-      setScrolled(y > 40);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY || document.documentElement.scrollTop;
+        setScrolled(y > 40);
 
-      const isMobile = window.innerWidth < 1024;
-      if (isMobile && y > 100) {
-        // Only change direction after 30px of consistent movement
-        if (y > lastScrollY.current) {
-          // scrolling down — hide quickly
-          if (scrollDir.current === "up") anchor.current = y;
-          if (y - anchor.current > 20) {
-            scrollDir.current = "down";
-            setHidden(true);
+        if (window.innerWidth < 1024 && y > 80) {
+          const delta = y - lastY.current;
+          if (delta > 0) {
+            // Scrolling down
+            if (dirRef.current === "up") { hideAnchor.current = y; }
+            dirRef.current = "down";
+            if (y - hideAnchor.current > 30) setHidden(true);
+          } else if (delta < 0) {
+            // Scrolling up
+            if (dirRef.current === "down") { showAnchor.current = y; }
+            dirRef.current = "up";
+            if (showAnchor.current - y > 120) setHidden(false);
           }
         } else {
-          // scrolling up — require significant scroll before showing
-          if (scrollDir.current === "down") anchor.current = y;
-          if (anchor.current - y > 150) {
-            scrollDir.current = "up";
-            setHidden(false);
-          }
+          setHidden(false);
         }
-      } else {
-        setHidden(false);
-        scrollDir.current = "up";
-      }
-      lastScrollY.current = y;
+        lastY.current = y;
+        ticking = false;
+      });
     };
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    // Also listen on document for iOS
+    document.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   const closeAll = useCallback(() => setOpenDropdown(null), []);
