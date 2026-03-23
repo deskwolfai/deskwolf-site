@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { checkRateLimit, checkCircuitBreaker } from "@/lib/rate-limit";
 import { validateContactInput } from "@/lib/validate";
+import { verifyTurnstile } from "@/lib/turnstile";
 
 const GHL_API_KEY = process.env.GHL_API_KEY || "";
 const GHL_LOCATION_ID = process.env.GHL_LOCATION_ID || "";
@@ -72,6 +73,15 @@ export async function POST(req: NextRequest) {
 
     if (!validation.valid) {
       return NextResponse.json({ error: validation.error }, { status: 400 });
+    }
+
+    // ── Turnstile verification ──
+    const turnstileValid = await verifyTurnstile(body.turnstileToken as string || "");
+    if (!turnstileValid) {
+      return NextResponse.json(
+        { error: "Verification failed. Please try again." },
+        { status: 403 }
+      );
     }
 
     const { name, email, phone, business, industry, challenge } = validation.data!;

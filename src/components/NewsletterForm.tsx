@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Turnstile from "@/components/Turnstile";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
@@ -8,6 +9,7 @@ export default function NewsletterForm() {
   const [message, setMessage] = useState("");
 
   const [honeypot, setHoneypot] = useState("");
+  const [turnstileToken, setTurnstileToken] = useState("");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -18,7 +20,7 @@ export default function NewsletterForm() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, company: honeypot }),
+        body: JSON.stringify({ email, company: honeypot, turnstileToken }),
       });
       const data = await res.json();
 
@@ -61,6 +63,7 @@ export default function NewsletterForm() {
         tabIndex={-1}
         autoComplete="off"
       />
+      <Turnstile onToken={setTurnstileToken} />
       <input
         type="email"
         placeholder="Your email address"

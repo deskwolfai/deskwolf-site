@@ -39,58 +39,64 @@ const ArrowRightIcon = () => (
 /* ── Article data ── */
 const articles = [
   {
-    title: "Why Your Business Is Losing $50K+ to Missed Calls Every Year",
+    title: "You're Losing $52,000 a Year to Voicemail. Here's the Fix.",
     excerpt:
-      "The average local business misses 30-40% of incoming calls. At $200+ per customer, that's not a rounding error — it's a second salary walking out the door every year. Here's how to calculate your real exposure.",
-    date: "March 18, 2026",
-    readTime: "6 min read",
-    category: "Revenue",
+      "Five missed calls a week at $200 each. That's $52,000 a year walking out the door — not because you're bad at business, but because the phone rang and nobody answered. AI voice agents exist to stop that.",
+    date: "March 15, 2026",
+    readTime: "8 min read",
+    category: "Revenue Recovery",
     categoryColor: "text-brand-amber bg-brand-amber/10",
+    href: "/blog/losing-52k-to-voicemail",
   },
   {
-    title: "AI Voice Agents vs Answering Services: The Real Comparison",
+    title: "Your Phone Isn't Broken — You're Just Missing Every Call",
     excerpt:
-      "Answering services have been the default for decades. But they come with hold times, scripts that don't adapt, and per-minute billing that adds up fast. We break down the real cost and capability difference.",
+      "A salon owner looked me dead in the face and said, 'So it's like ChatGPT but for my phone?' DeskWolf isn't a chatbot — it answers your actual business phone line with a real voice, 24/7.",
     date: "March 14, 2026",
-    readTime: "8 min read",
-    category: "Comparison",
+    readTime: "7 min read",
+    category: "AI Education",
     categoryColor: "text-brand-blue bg-blue-pale",
+    href: "/blog/phone-isnt-broken",
+  },
+  {
+    title: "Most People Are Still Using AI Like a Genie. Here's Why That's Costing Them.",
+    excerpt:
+      "The AI revolution is real — but for most business owners, it's still just a buzzword. The gap between 'heard of ChatGPT' and 'built a system that runs my front desk' is where the real opportunity sits.",
+    date: "March 14, 2026",
+    readTime: "9 min read",
+    category: "Thought Leadership",
+    categoryColor: "text-brand-purple bg-brand-purple/10",
+    href: "/blog/ai-genie-mentality",
+  },
+  {
+    title: "Which Jobs AI Is Killing in 2026 (And Which Ones It Can't Touch)",
+    excerpt:
+      "Oracle cut 45,000 jobs. Block eliminated 4,000+. The displacement is already happening. Here's how to figure out which side of the line you're on — and what to do about it.",
+    date: "March 16, 2026",
+    readTime: "10 min read",
+    category: "Industry Insights",
+    categoryColor: "text-brand-cyan bg-brand-cyan/10",
+    href: "/blog/jobs-ai-is-replacing",
   },
   {
     title: "Speed-to-Lead: Why the First 60 Seconds Matter More Than Your Sales Script",
     excerpt:
-      "Harvard Business Review found that responding within 5 minutes makes you 100x more likely to connect with a lead. But most businesses take hours. Here's what happens in those lost minutes — and how to fix it.",
-    date: "March 10, 2026",
+      "Responding within 5 minutes makes you 100x more likely to connect with a lead. Most businesses take hours. Here's what happens in those lost minutes — and how to fix it.",
+    date: "Coming Soon",
     readTime: "5 min read",
     category: "Sales",
     categoryColor: "text-brand-green bg-brand-green/10",
-  },
-  {
-    title: "The True Cost of a Missed Call (It's Not What You Think)",
-    excerpt:
-      "A missed call isn't just one lost customer. It's the referrals they would have sent, the reviews they would have left, and the lifetime value they would have generated. The real number is 5-10x what you'd expect.",
-    date: "March 6, 2026",
-    readTime: "7 min read",
-    category: "Revenue",
-    categoryColor: "text-brand-amber bg-brand-amber/10",
+    href: "/coming-soon",
   },
   {
     title: "How to Evaluate AI Phone Systems for Your Business",
     excerpt:
-      "Not all AI voice agents are created equal. From voice quality to integration depth to data ownership, here are the 12 questions you should ask any vendor before signing a contract.",
-    date: "March 2, 2026",
+      "Not all AI voice agents are created equal. From voice quality to integration depth to data ownership — the 12 questions you should ask any vendor before signing a contract.",
+    date: "Coming Soon",
     readTime: "9 min read",
     category: "Guide",
-    categoryColor: "text-brand-purple bg-brand-purple/10",
-  },
-  {
-    title: "What Business Owners Get Wrong About AI in 2026",
-    excerpt:
-      "Most business owners either think AI is a magic button or a passing fad. Both are wrong. The real opportunity is in targeted automation — solving specific, expensive problems with the right tool for the job.",
-    date: "February 26, 2026",
-    readTime: "6 min read",
-    category: "Opinion",
-    categoryColor: "text-brand-cyan bg-brand-cyan/10",
+    categoryColor: "text-brand-amber bg-brand-amber/10",
+    href: "/coming-soon",
   },
 ];
 
@@ -126,7 +132,7 @@ export default function BlogPage() {
       {/* ════════════ FEATURED ARTICLE ════════════ */}
       <section className="relative z-[2] pb-[80px]" id="featured">
         <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
-          <Link href="/coming-soon" className="block no-underline rv">
+          <Link href={articles[0].href} className="block no-underline rv">
             <GlassCard className="p-0 overflow-hidden transition-all duration-300 hover:border-brand-purple/30 hover:shadow-[0_0_60px_-12px_rgba(139,92,246,0.15)]">
               <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] items-center">
                 {/* Content */}
@@ -167,7 +173,7 @@ export default function BlogPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
             {articles.map((article, i) => (
-              <Link key={article.title} href="/coming-soon" className="block no-underline">
+              <Link key={article.title} href={article.href} className="block no-underline">
                 <GlassCard className={`p-0 h-full flex flex-col transition-all duration-300 hover:border-brand-purple/30 hover:shadow-[0_0_40px_-12px_rgba(139,92,246,0.12)] hover:-translate-y-1 rv d${(i % 3) + 1}`}>
                   {/* Top color bar */}
                   <div className="h-1 bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan" />

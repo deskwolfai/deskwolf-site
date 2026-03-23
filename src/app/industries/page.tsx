@@ -50,6 +50,11 @@ const ShieldIcon = () => (
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
   </svg>
 );
+const SolarIcon = () => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
+    <circle cx="12" cy="12" r="5" /><line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" /><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /><line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" /><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+  </svg>
+);
 const BedIcon = () => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">
     <path d="M2 4v16" /><path d="M2 8h18a2 2 0 0 1 2 2v10" /><path d="M2 17h20" /><path d="M6 8v2a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V8" />
@@ -127,13 +132,13 @@ const industries = [
     live: false,
   },
   {
-    icon: <ShieldIcon />,
+    icon: <SolarIcon />,
     color: "amber" as const,
-    name: "Insurance Agencies",
-    pain: "Quote requests expire fast. Missed calls go to the next agency.",
-    stat: "$1,200+ average annual policy premium at risk",
-    href: "/coming-soon",
-    live: false,
+    name: "Solar Installation & Energy",
+    pain: "Homeowners call once. If you miss it, the next installer gets the job.",
+    stat: "$15,000+ average residential solar installation at risk",
+    href: "/industries/solar",
+    live: true,
   },
   {
     icon: <BedIcon />,
