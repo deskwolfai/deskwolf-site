@@ -121,7 +121,7 @@ const tiers = [
   {
     name: "Core",
     label: "White-Glove",
-    price: "$2,500–$3,000",
+    price: "$2,500",
     period: "/mo",
     featured: true,
     badge: "Most Popular",
