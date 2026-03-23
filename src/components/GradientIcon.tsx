@@ -1,5 +1,5 @@
 interface GradientIconProps {
-  color: "blue" | "green" | "amber" | "purple";
+  color: "blue" | "green" | "amber" | "purple" | "cyan";
   children: React.ReactNode;
   className?: string;
 }
@@ -9,6 +9,7 @@ const colorMap = {
   green: "from-brand-green to-brand-cyan shadow-[0_4px_16px_rgba(16,185,129,0.25)]",
   amber: "from-brand-amber to-[#EF4444] shadow-[0_4px_16px_rgba(245,158,11,0.25)]",
   purple: "from-brand-purple to-[#EC4899] shadow-[0_4px_16px_rgba(139,92,246,0.25)]",
+  cyan: "from-brand-cyan to-brand-green shadow-[0_4px_16px_rgba(6,182,212,0.25)]",
 };
 
 export default function GradientIcon({ color, children, className = "" }: GradientIconProps) {

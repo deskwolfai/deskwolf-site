@@ -1,15 +1,15 @@
 import Link from "next/link";
 
 const productLinks = [
-  { label: "AI Receptionist", href: "/products/ai-receptionist" },
-  { label: "Lead Qualifier", href: "/products/lead-qualifier" },
-  { label: "Call-Back Agent", href: "/products/call-back-agent" },
+  { label: "AI Receptionist", href: "/services#core" },
+  { label: "Lead Qualifier", href: "/services#core" },
+  { label: "Call-Back Agent", href: "/services#core" },
 ];
 
 const companyLinks = [
   { label: "About", href: "/about" },
-  { label: "Results", href: "/#testimonials" },
-  { label: "Team", href: "/#team" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Free Tools", href: "https://tools.deskwolf.ai" },
 ];
 

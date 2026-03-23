@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const links = [
-  { label: "Products", href: "#offer" },
-  { label: "Results", href: "#testimonials" },
-  { label: "Team", href: "#team" },
+  { label: "Services", href: "/services" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "About", href: "/about" },
+  { label: "How It Works", href: "/how-it-works" },
 ];
 
 export default function Navbar() {
@@ -39,22 +40,22 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-0.5 list-none">
           {links.map((l) => (
             <li key={l.href}>
-              <a
+              <Link
                 href={l.href}
                 className="text-[13px] font-medium text-text-2 no-underline px-3.5 py-2 rounded-[100px] transition-all duration-200 hover:bg-brand-purple/15 hover:text-brand-purple"
               >
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
-        <a
-          href="#newsletter"
+        <Link
+          href="/demo"
           className="hidden md:block text-[13px] font-semibold text-[#0F172A] bg-white px-5 py-2.5 rounded-[100px] no-underline transition-all duration-250 hover:bg-[#E2E8F0] hover:scale-[1.03]"
         >
           Book a Demo
-        </a>
+        </Link>
 
         {/* Hamburger */}
         <button
@@ -72,22 +73,22 @@ export default function Navbar() {
       {menuOpen && (
         <div className="fixed inset-0 z-[99] bg-[rgba(8,9,13,0.97)] backdrop-blur-[40px] flex flex-col items-center justify-center gap-5">
           {links.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               className="text-[22px] font-semibold text-text no-underline hover:text-brand-purple"
               onClick={() => setMenuOpen(false)}
             >
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#newsletter"
+          <Link
+            href="/demo"
             className="text-[22px] font-semibold text-brand-purple no-underline"
             onClick={() => setMenuOpen(false)}
           >
             Book a Demo
-          </a>
+          </Link>
         </div>
       )}
     </>
