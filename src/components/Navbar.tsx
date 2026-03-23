@@ -208,16 +208,16 @@ export default function Navbar() {
       if (isMobile && y > 100) {
         // Only change direction after 30px of consistent movement
         if (y > lastScrollY.current) {
-          // scrolling down
+          // scrolling down — hide quickly
           if (scrollDir.current === "up") anchor.current = y;
-          if (y - anchor.current > 30) {
+          if (y - anchor.current > 20) {
             scrollDir.current = "down";
             setHidden(true);
           }
         } else {
-          // scrolling up
+          // scrolling up — require significant scroll before showing
           if (scrollDir.current === "down") anchor.current = y;
-          if (anchor.current - y > 15) {
+          if (anchor.current - y > 150) {
             scrollDir.current = "up";
             setHidden(false);
           }
