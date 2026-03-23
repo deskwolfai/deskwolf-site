@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+import { checkRateLimit, checkCircuitBreaker } from "@/lib/rate-limit";
+import { validateSubscribeInput } from "@/lib/validate";
 
 const GHL_API_KEY = process.env.GHL_API_KEY || "";
 const GHL_LOCATION_ID = process.env.GHL_LOCATION_ID || "";
@@ -13,13 +15,66 @@ const ghlHeaders = {
   "Content-Type": "application/json",
 };
 
+/**
+ * SECURITY CONFIG
+ * - Rate limit: 3 signups per IP per hour
+ * - Circuit breaker: 500 total signups per day (all IPs combined)
+ */
+const RATE_LIMIT = { max: 3, windowSeconds: 3600, prefix: "subscribe" };
+const DAILY_MAX = 500;
+
 export async function POST(req: NextRequest) {
   try {
-    const { email } = await req.json();
-
-    if (!email || !email.includes("@")) {
-      return NextResponse.json({ error: "Valid email required" }, { status: 400 });
+    // ── Circuit breaker ──
+    const circuit = checkCircuitBreaker("subscribe", DAILY_MAX);
+    if (circuit.open) {
+      console.warn(`[SECURITY] Circuit breaker OPEN on /api/subscribe — ${circuit.count} hits today`);
+      return NextResponse.json(
+        { error: "Service temporarily unavailable. Please try again later." },
+        { status: 503 }
+      );
     }
+
+    // ── Rate limiting ──
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      req.headers.get("x-real-ip") ||
+      "unknown";
+
+    const limit = checkRateLimit(ip, RATE_LIMIT);
+    if (!limit.allowed) {
+      console.warn(`[SECURITY] Rate limited IP ${ip} on /api/subscribe`);
+      return NextResponse.json(
+        { error: "Too many attempts. Please try again later." },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": String(Math.ceil((limit.resetAt - Date.now()) / 1000)),
+          },
+        }
+      );
+    }
+
+    // ── Input validation + honeypot ──
+    let body: Record<string, unknown>;
+    try {
+      body = await req.json();
+    } catch {
+      return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
+    }
+
+    const validation = validateSubscribeInput(body);
+
+    // Honeypot triggered — silently succeed to fool the bot
+    if (!validation.valid && validation.error === "__honeypot__") {
+      return NextResponse.json({ success: true, message: "Subscribed" });
+    }
+
+    if (!validation.valid) {
+      return NextResponse.json({ error: validation.error }, { status: 400 });
+    }
+
+    const email = validation.email!;
 
     if (!GHL_API_KEY) {
       return NextResponse.json({ error: "Server not configured" }, { status: 500 });

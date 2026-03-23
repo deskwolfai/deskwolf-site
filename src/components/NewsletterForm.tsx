@@ -7,6 +7,8 @@ export default function NewsletterForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
 
+  const [honeypot, setHoneypot] = useState("");
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
@@ -16,7 +18,7 @@ export default function NewsletterForm() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, company: honeypot }),
       });
       const data = await res.json();
 
@@ -48,6 +50,17 @@ export default function NewsletterForm() {
       className="flex gap-1.5 max-w-[420px] mx-auto bg-white/10 backdrop-blur-[12px] border border-white/15 rounded-[100px] p-[5px] max-[480px]:flex-col max-[480px]:rounded-[var(--radius-std)] max-[480px]:p-3"
       onSubmit={handleSubmit}
     >
+      {/* Honeypot */}
+      <input
+        type="text"
+        name="company"
+        value={honeypot}
+        onChange={(e) => setHoneypot(e.target.value)}
+        className="absolute -left-[9999px] -top-[9999px]"
+        aria-hidden="true"
+        tabIndex={-1}
+        autoComplete="off"
+      />
       <input
         type="email"
         placeholder="Your email address"
