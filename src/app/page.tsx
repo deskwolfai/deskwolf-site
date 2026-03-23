@@ -66,7 +66,7 @@ const GridIcon = () => (
 
 export default function HomePage() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-x-hidden">
       <Aurora />
       <Navbar />
       <RevealObserver />
