@@ -18,13 +18,13 @@ const team = [
     initials: "VR",
     name: "Vic Roque",
     role: "Founder & CEO",
-    calendlyUrl: "https://calendly.com/vic-deskwolf",
+    calendlyUrl: "https://api.leadconnectorhq.com/widget/booking/PAZngiXrh9onw0xo48Yv",
   },
   {
     initials: "CM",
     name: "Curtis Maki",
     role: "CMO",
-    calendlyUrl: "https://calendly.com/curtis-deskwolf",
+    calendlyUrl: "https://api.leadconnectorhq.com/widget/booking/VuR2YwbHSs9XboqPFolj",
   },
 ];
 
