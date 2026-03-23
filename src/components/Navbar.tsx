@@ -237,12 +237,17 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 pr-2 py-2 backdrop-blur-[24px] saturate-[1.6] border border-white/[0.08] rounded-[100px] flex items-center gap-1 max-w-[720px] w-[calc(100%-24px)] transition-all duration-300 ${
+        className={`fixed z-[100] px-6 pr-2 py-2 backdrop-blur-[24px] saturate-[1.6] border border-white/[0.08] rounded-[100px] flex items-center gap-1 max-w-[720px] w-[calc(100%-24px)] transition-all duration-300 ${
           scrolled
             ? "bg-[rgba(12,14,20,0.9)] shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
             : "bg-[rgba(12,14,20,0.7)] shadow-[0_4px_24px_rgba(0,0,0,0.05)]"
-        } ${hidden && !menuOpen ? "-translate-y-[calc(100%+24px)]" : ""}`}
-        style={{ boxShadow: scrolled ? undefined : "0 4px 24px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.06)" }}
+        }`}
+        style={{
+          left: "50%",
+          transform: `translateX(-50%) translateY(${hidden && !menuOpen ? "calc(-100% - 24px)" : "0px"})`,
+          top: "16px",
+          boxShadow: scrolled ? undefined : "0 4px 24px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.06)",
+        }}
       >
         <Link href="/" className="font-extrabold text-[17px] text-text flex items-center gap-2 mr-auto no-underline">
           <div className="w-7 h-7 bg-gradient-to-br from-brand-blue to-brand-purple rounded-lg flex items-center justify-center text-[13px] text-white font-extrabold">
@@ -306,7 +311,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-[99] bg-[rgba(8,9,13,0.97)] backdrop-blur-[40px] flex flex-col items-center justify-center gap-3 overflow-y-auto py-20">
+        <div className="fixed inset-0 z-[99] bg-[rgba(8,9,13,0.97)] backdrop-blur-[40px] flex flex-col items-center gap-3 overflow-y-auto pt-24 pb-12">
           <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-text-3 mb-1">Solutions</span>
           <Link href="/pricing" className="text-[20px] font-semibold text-text no-underline hover:text-brand-purple" onClick={() => setMenuOpen(false)}>
             Pricing & Plans
