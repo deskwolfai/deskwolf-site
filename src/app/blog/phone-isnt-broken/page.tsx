@@ -7,7 +7,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Your Phone Isn't Broken — You're Just Missing Every Call — DeskWolf LLC",
+  title: "Your Phone Isn't Broken. You're Just Missing Every Call | DeskWolf LLC",
   description:
     "DeskWolf isn't a chatbot or an app. It answers your actual business phone line with a real voice, 24/7. Here's how it works.",
 };
@@ -28,7 +28,7 @@ export default function PhoneIsntBroken() {
           </div>
 
           <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold leading-[1.1] tracking-[-0.03em] text-text mb-[18px] opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-            Your Phone Isn&apos;t Broken &mdash;{" "}
+            Your Phone Isn&apos;t Broken.{" "}
             <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
               You&apos;re Just Missing Every Call
             </span>
@@ -81,7 +81,7 @@ export default function PhoneIsntBroken() {
               We&apos;re not a chatbot. We&apos;re not a mobile app. We&apos;re not a dashboard you have to learn. We answer your phone.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              When someone calls your business line, they hear a natural voice that knows your services, your hours, your pricing, and your scheduling rules. It handles the conversation the way a trained receptionist would &mdash; except it doesn&apos;t take breaks, doesn&apos;t call in sick, and doesn&apos;t put anyone on hold.
+              When someone calls your business line, they hear a natural voice that knows your services, your hours, your pricing, and your scheduling rules. It handles the conversation the way a trained receptionist would, except it doesn&apos;t take breaks, doesn&apos;t call in sick, and doesn&apos;t put anyone on hold.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
               We offer three products, and each one solves a specific problem:
@@ -98,7 +98,7 @@ export default function PhoneIsntBroken() {
               Missed Call-Back Agent
             </h3>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              When a call does slip through &mdash; maybe you were on another call, maybe it happened before you went live with us &mdash; this agent calls them back. Not in five minutes. Not in an hour. In under five seconds. The lead is still holding their phone. They&apos;re still thinking about the problem they called you about. And now you&apos;re calling them back before they&apos;ve had time to Google your competitor.
+              When a call does slip through (maybe you were on another call, maybe it happened before you went live with us) this agent calls them back. Not in five minutes. Not in an hour. In under five seconds. The lead is still holding their phone. They&apos;re still thinking about the problem they called you about. And now you&apos;re calling them back before they&apos;ve had time to Google your competitor.
             </p>
 
             <h3 className="text-[18px] font-bold text-text mb-3">
@@ -119,7 +119,7 @@ export default function PhoneIsntBroken() {
               Most businesses respond to missed calls in hours. Some take days. A few never call back at all. They just hope the person will try again. They won&apos;t.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
-              DeskWolf calls back in under five seconds. Not five minutes. Five seconds. The caller barely has time to put their phone down. That&apos;s not a small edge &mdash; it&apos;s the kind of speed that turns a missed opportunity into a booked appointment before the customer even knows they were missed.
+              DeskWolf calls back in under five seconds. Not five minutes. Five seconds. The caller barely has time to put their phone down. That&apos;s not a small edge. It&apos;s the kind of speed that turns a missed opportunity into a booked appointment before the customer even knows they were missed.
             </p>
 
             {/* ── Section: Done-for-You ── */}
@@ -144,7 +144,7 @@ export default function PhoneIsntBroken() {
               Your phone isn&apos;t broken. It rings plenty. The problem is that no one&apos;s there to answer it when it does.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8]">
-              That&apos;s not a technology problem &mdash; it&apos;s a capacity problem. And now there&apos;s a technology solution for it that actually works, sounds natural, and doesn&apos;t require you to learn a single new tool. Your phone rings. Someone answers. That&apos;s it.
+              That&apos;s not a technology problem. It&apos;s a capacity problem. And now there&apos;s a technology solution for it that actually works, sounds natural, and doesn&apos;t require you to learn a single new tool. Your phone rings. Someone answers. That&apos;s it.
             </p>
           </article>
         </div>

@@ -8,11 +8,11 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Partner With Us — DeskWolf LLC",
+  title: "Partner With Us | DeskWolf LLC",
   description:
     "Partner with DeskWolf to offer AI voice agents and automation to your clients. Referral, integration, and white-label partnership tiers available.",
   openGraph: {
-    title: "Partner With Us — DeskWolf LLC",
+    title: "Partner With Us | DeskWolf LLC",
     description:
       "Partner with DeskWolf to offer AI voice agents and automation to your clients.",
     url: "https://deskwolf.ai/partners",
@@ -169,12 +169,12 @@ export default function PartnersPage() {
           </h1>
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[620px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-            You serve businesses. We make those businesses more efficient. Together, we create a complete solution — and you earn revenue doing it.
+            You serve businesses. We make those businesses more efficient. Together, we create a complete offering, and you earn revenue doing it.
           </p>
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
             <a href="/contact" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-              Apply to Partner
+              Start a Partnership Application
             </a>
             <a href="/referral" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
               Already a Partner? Sign In
@@ -306,11 +306,11 @@ export default function PartnersPage() {
               <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">together.</span>
             </h2>
             <p className="text-[17px] text-text-2 max-w-[440px] mx-auto mb-8">
-              Apply to become a DeskWolf partner. Tell us about your business and how you serve your clients — we&rsquo;ll find the right fit.
+              Tell us about your business and how you serve your clients. We&rsquo;ll match you with the right partnership tier.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/contact" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Apply to Partner
+                Start a Partnership Application
               </a>
               <a href="/referral" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                 Already a Partner? Sign In

@@ -10,7 +10,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 export const metadata: Metadata = {
   title: "About DeskWolf LLC",
   description:
-    "The founding story behind DeskWolf — born from a decade of answering calls, managing systems, and watching businesses lose money to problems that shouldn't exist.",
+    "The founding story behind DeskWolf. Born from a decade of answering calls, managing systems, and watching businesses lose money to problems that shouldn't exist.",
 };
 
 /* ── SVG Icons (inline for zero deps) ── */
@@ -118,7 +118,7 @@ export default function AboutPage() {
 
               {/* Quote */}
               <div className="italic text-[19px] text-text leading-relaxed p-8 bg-white/[0.04] backdrop-blur-[16px] border-l-[3px] border-l-brand-purple rounded-r-[var(--radius-std)] shadow-[var(--shadow-std)]">
-                &ldquo;Not just automating things because we can — only automating what we should. Intelligently, cleanly, and securely.&rdquo;
+                &ldquo;We don&rsquo;t automate because we can. We automate because we should. Intelligently, cleanly, and securely.&rdquo;
                 <div className="mt-3 text-[13px] text-text-3 not-italic font-medium">— Vic Roque, Founder</div>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
                 name: "Vic Roque",
                 role: "Founder & CEO",
                 desc: "A decade inside seven-figure digital businesses. Built DeskWolf to bring practical AI to the businesses that need it most.",
-                quote: "Only automate what you should — intelligently, cleanly, and securely.",
+                quote: "Only automate what you should. Intelligently, cleanly, and securely.",
               },
               {
                 initials: "OL",
@@ -155,7 +155,7 @@ export default function AboutPage() {
                 name: "Curtis Maki",
                 role: "CMO",
                 desc: "40,000+ doors knocked. $3.6M in lifetime value generated. Sales-to-systems operator who turned the grind into a growth engine.",
-                quote: "Smart marketing isn't louder — it's more precise.",
+                quote: "Smart marketing isn't louder. It's more precise.",
               },
             ].map((m, i) => (
               <GlassCard key={m.name} className={`p-9 text-center rv d${i + 1}`}>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                 icon: <PhoneIcon />,
                 color: "blue" as const,
                 title: "Every call matters",
-                desc: "One missed call is a missed opportunity. We built DeskWolf because we've seen what happens when phones go unanswered — and it's not acceptable.",
+                desc: "One missed call is a missed opportunity. We built DeskWolf because we've seen what happens when phones go unanswered. It's not acceptable.",
               },
             ].map((v, i) => (
               <GlassCard key={v.title} className={`p-8 rv d${i + 1}`}>
@@ -247,7 +247,7 @@ export default function AboutPage() {
                   {
                     icon: <FaceplateIcon />,
                     title: "The Steel Faceplate",
-                    desc: "\"Desk\" isn't about a piece of furniture. It's about the front desk — the first point of contact. The steel barrier between your business and chaos. DeskWolf is that faceplate: always on, always ready, always professional.",
+                    desc: "\"Desk\" isn't about a piece of furniture. It's about the front desk, the first point of contact. The steel barrier between your business and chaos. DeskWolf is that faceplate: always on, always ready, always professional.",
                   },
                   {
                     icon: <WolfIcon />,
@@ -281,7 +281,7 @@ export default function AboutPage() {
         <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">The Difference</span>
-            <h2 className="text-[clamp(30px,4vw,46px)] mb-3">How we compare.<br /><span className="font-light text-text-2">Side by side.</span></h2>
+            <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Why this is different.<br /><span className="font-light text-text-2">Side by side.</span></h2>
           </div>
 
           {/* Comparison table */}
@@ -336,7 +336,7 @@ export default function AboutPage() {
 
           <div className="mt-8 text-center rv d2">
             <p className="text-[15px] text-text-2 max-w-[520px] mx-auto">
-              The difference isn&rsquo;t just price — it&rsquo;s ownership. With DeskWolf, you own your tools, your data, and your system. No lock-in. No markup. No surprises.
+              The difference isn&rsquo;t just price. It&rsquo;s ownership. With DeskWolf, you own your tools, your data, and your system. No lock-in. No markup. No surprises.
             </p>
           </div>
         </div>
@@ -372,7 +372,7 @@ export default function AboutPage() {
             <GlassCard className="p-8 max-w-[600px] mx-auto">
               <div className="font-extrabold text-[20px] text-text mb-2">You own your tools. Always.</div>
               <p className="text-sm text-text-3 leading-relaxed mb-5">
-                Every API key, every account, every piece of data lives under your name. We charge for expertise and management — never for tool markup. If we part ways, everything stays with you.
+                Every API key, every account, every piece of data lives under your name. We charge for expertise and management, never for tool markup. If we part ways, everything stays with you.
               </p>
               <div className="flex flex-wrap justify-center gap-2">
                 {["Zero tool markup", "Your accounts", "Your data", "No lock-in", "Full transparency"].map((tag) => (
@@ -391,10 +391,10 @@ export default function AboutPage() {
             &ldquo;Every business deserves a front desk that never sleeps, never misses, and never stops learning.&rdquo;
           </blockquote>
           <p className="text-[17px] text-text-2 mt-6 max-w-[520px] mx-auto">
-            That&rsquo;s the vision. Not AI for the sake of AI — but intelligent systems that protect revenue, save time, and let business owners focus on what they do best.
+            That&rsquo;s the vision. Not AI for the sake of AI, but intelligent systems that protect revenue, save time, and let business owners focus on what they do best.
           </p>
           <div className="mt-8 font-mono text-[11px] tracking-[0.1em] uppercase text-text-3">
-            San Bernardino, CA — Est. March 2026
+            San Bernardino, CA | Est. March 2026
           </div>
           <div className="mt-8">
             <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">

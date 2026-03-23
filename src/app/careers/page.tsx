@@ -9,7 +9,7 @@ import RevealObserver from "@/components/RevealObserver";
 export const metadata: Metadata = {
   title: "Careers at DeskWolf LLC",
   description:
-    "Join a small, remote-first team building practical AI for local businesses. No corporate politics — just smart people solving real problems.",
+    "Join a small, remote-first team building practical AI for local businesses. No corporate politics. Just smart people solving real problems.",
 };
 
 /* ── SVG Icons ── */
@@ -39,13 +39,13 @@ const openPositions = [
     type: "Remote",
     color: "blue" as const,
     description:
-      "Manage client relationships from onboarding through optimization. You'll be the primary point of contact for businesses using our AI systems — coordinating deployments, handling escalations, and making sure every client feels taken care of.",
+      "Manage client relationships from onboarding through optimization. You'll be the primary point of contact for businesses using our AI systems, coordinating deployments, handling escalations, and making sure every client feels taken care of.",
     requirements: [
       "2+ years in a client-facing account management or customer success role",
       "Strong written and verbal communication skills",
       "Experience with CRM platforms (GoHighLevel, HubSpot, Salesforce, or similar)",
       "Ability to explain technical concepts to non-technical business owners",
-      "Self-motivated — you don't need someone watching over your shoulder",
+      "Self-motivated. You don't need someone watching over your shoulder",
     ],
   },
   {

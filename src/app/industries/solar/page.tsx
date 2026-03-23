@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "AI Phone Systems for Solar Installation & Energy — DeskWolf LLC",
+  title: "AI Phone Systems for Solar Installation & Energy | DeskWolf LLC",
   description:
     "Stop losing $15K+ installations to missed calls. DeskWolf answers every call 24/7, qualifies leads, books site surveys, and handles solar FAQs instantly.",
 };
@@ -73,12 +73,12 @@ export default function SolarPage() {
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[600px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
             Homeowners research 3&ndash;5 installers. They call once. If nobody picks up, they move to the next company on the list.
-            DeskWolf answers 24/7, qualifies leads, books site surveys, and handles solar FAQs&nbsp;&mdash; so you never lose a $15K+ installation to voicemail.
+            DeskWolf answers 24/7, qualifies leads, books site surveys, and handles solar FAQs. You never lose a $15K+ installation to voicemail.
           </p>
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
             <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white text-[#0F172A] shadow-[0_4px_20px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(255,255,255,0.15)]">
-              Book a Demo
+              Catch Every $15K Lead
             </a>
             <a href="#problem" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
               See the Problem
@@ -104,19 +104,19 @@ export default function SolarPage() {
                 icon: <PhoneOffIcon />,
                 color: "amber" as const,
                 title: "One Call, One Chance",
-                desc: "Homeowners research 3-5 installers and call down the list. If you don't answer, they don't leave a voicemail — they call the next company. Solar sales cycles are long and competitive, and the first installer to connect wins.",
+                desc: "Homeowners research 3-5 installers and call down the list. If you don't answer, they don't leave a voicemail. They call the next company. Solar sales cycles are long and competitive, and the first installer to connect wins.",
               },
               {
                 icon: <ClockIcon />,
                 color: "blue" as const,
                 title: "Research Happens After Hours",
-                desc: "Homeowners research solar in the evenings and on weekends — exactly when your office is closed. By Monday morning, the leads that called Friday night have already talked to two other installers.",
+                desc: "Homeowners research solar in the evenings and on weekends, exactly when your office is closed. By Monday morning, the leads that called Friday night have already talked to two other installers.",
               },
               {
                 icon: <ClipboardIcon />,
                 color: "green" as const,
                 title: "Unqualified Leads Waste Time",
-                desc: "Renters, shaded roofs, HOA restrictions — your sales team wastes hours on calls that were never going to close. Every minute spent on a bad lead is a minute not spent on a $20K installation.",
+                desc: "Renters, shaded roofs, HOA restrictions. Your sales team wastes hours on calls that were never going to close. Every minute spent on a bad lead is a minute not spent on a $20K installation.",
               },
             ].map((card, i) => (
               <GlassCard key={card.title} className={`p-8 rv d${i + 1}`}>
@@ -182,9 +182,9 @@ export default function SolarPage() {
               {
                 title: "Speed-to-Lead on Every Submission",
                 items: [
-                  "Instant callback on website form submissions — connects within seconds",
+                  "Instant callback on website form submissions, connecting within seconds",
                   "Calls back leads from canvassing QR codes and tablet forms automatically",
-                  "Speed-to-lead is everything in solar — first to connect wins the deal",
+                  "Speed-to-lead is everything in solar. First to connect wins the deal",
                   "No leads sitting in a queue waiting for Monday morning follow-up",
                 ],
               },
@@ -211,7 +211,7 @@ export default function SolarPage() {
                 items: [
                   "Screens for homeowner vs. renter before booking appointments",
                   "Asks qualifying questions: roof type, shade, HOA restrictions",
-                  "Handles common FAQs — financing options, ROI, panel types, timelines",
+                  "Handles common FAQs: financing options, ROI, panel types, timelines",
                   "Routes only qualified, ready-to-buy leads to your sales team",
                 ],
               },
@@ -262,19 +262,19 @@ export default function SolarPage() {
             {[
               {
                 q: "Can the AI handle technical questions about solar panels?",
-                a: "Yes. During setup, we train the AI on your specific products, financing options, and installation process. It can answer questions about panel efficiency, warranty terms, net metering, tax credits, and payback timelines — all customized to your offerings.",
+                a: "Yes. During setup, we train the AI on your specific products, financing options, and installation process. It can answer questions about panel efficiency, warranty terms, net metering, tax credits, and payback timelines, all customized to your offerings.",
               },
               {
                 q: "What about leads from door-to-door canvassing?",
-                a: "Our Outbound Lead Qualifier calls back form submissions from canvassing QR codes and tablets within seconds. When a homeowner scans your code and fills out a form, DeskWolf connects with them before they lose interest — dramatically increasing your canvassing conversion rate.",
+                a: "Our Outbound Lead Qualifier calls back form submissions from canvassing QR codes and tablets within seconds. When a homeowner scans your code and fills out a form, DeskWolf connects with them before they lose interest. That alone can dramatically increase your canvassing conversion rate.",
               },
               {
                 q: "Do you handle HOA and permitting questions?",
-                a: "The AI is trained on common HOA and permitting FAQs specific to your service area. It can walk homeowners through typical approval timelines, common restrictions, and what documentation they'll need — reducing friction and keeping leads moving forward.",
+                a: "The AI is trained on common HOA and permitting FAQs specific to your service area. It can walk homeowners through typical approval timelines, common restrictions, and what documentation they'll need. That reduces friction and keeps leads moving forward.",
               },
               {
                 q: "How does it work with our CRM?",
-                a: "Full integration with common solar CRMs — Salesforce, HubSpot, GHL, and more. Leads, appointments, and call summaries sync automatically. Your sales team sees every interaction in their existing workflow without switching tools or manual data entry.",
+                a: "Full integration with common solar CRMs: Salesforce, HubSpot, GHL, and more. Leads, appointments, and call summaries sync automatically. Your sales team sees every interaction in their existing workflow without switching tools or manual data entry.",
               },
             ].map((faq, i) => (
               <GlassCard key={i} className={`p-7 rv d${(i % 3) + 1}`}>
@@ -301,7 +301,7 @@ export default function SolarPage() {
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Book a Demo
+                Close More Installs This Month
               </a>
               <a href="/industries" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                 Back to Industries

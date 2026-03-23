@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "AI Phone Systems for Gyms & Fitness Studios — DeskWolf LLC",
+  title: "AI Phone Systems for Gyms & Fitness Studios | DeskWolf LLC",
   description:
     "Stop losing members to missed calls. DeskWolf answers every call 24/7, books trial classes, handles membership inquiries, and recovers no-shows automatically.",
 };
@@ -65,7 +65,7 @@ export default function GymsFitnessPage() {
           </div>
 
           <h1 className="text-[clamp(36px,5.5vw,60px)] font-extrabold leading-[1.08] tracking-[-0.03em] text-text mb-[18px] max-w-[800px] mx-auto opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-            Your Trainers Should Be Coaching&nbsp;&mdash;{" "}
+            Your Trainers Should Be Coaching.{" "}
             <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
               Not Answering Phones.
             </span>
@@ -73,12 +73,12 @@ export default function GymsFitnessPage() {
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[600px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
             Every unanswered call is a potential member who signs up somewhere else.
-            DeskWolf picks up 24/7, books trials, answers class questions, and recovers no-shows&nbsp;&mdash; so your staff stays on the floor.
+            DeskWolf picks up 24/7, books trials, answers class questions, and recovers no-shows. Your staff stays on the floor.
           </p>
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
             <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white text-[#0F172A] shadow-[0_4px_20px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(255,255,255,0.15)]">
-              Book a Demo
+              Recover Lost Memberships
             </a>
             <a href="#problem" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
               See the Problem
@@ -140,7 +140,7 @@ export default function GymsFitnessPage() {
               </h2>
               <p className="text-[17px] text-text-2 leading-relaxed mb-8">
                 Most gyms miss at least 15 calls per month from prospective members.
-                At an average membership value of $100/month, that adds up fast&nbsp;&mdash; and those are conservative numbers.
+                At an average membership value of $100/month, that adds up fast. Those are conservative numbers.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
@@ -301,7 +301,7 @@ export default function GymsFitnessPage() {
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Book a Demo
+                Book More Trials This Week
               </a>
               <a href="/industries" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                 Back to Industries

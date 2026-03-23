@@ -7,7 +7,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "You're Losing $52,000 a Year to Voicemail — DeskWolf LLC",
+  title: "You're Losing $52,000 a Year to Voicemail | DeskWolf LLC",
   description:
     "Five missed calls a week at $200 each adds up to $52,000 a year. Here's the math, the technology, and the fix.",
 };
@@ -67,10 +67,10 @@ export default function Losing52kToVoicemail() {
               Two years ago, AI voice agents sounded like robots reading a teleprompter. You could spot them in the first three seconds. That era is over.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              In 2026, the voice quality is nearly indistinguishable from a human receptionist. Natural pauses, appropriate tone, the ability to handle interruptions and pivot mid-conversation. Most callers don&apos;t realize they&apos;re not talking to a person. And frankly, they don&apos;t care &mdash; they care that someone answered.
+              In 2026, the voice quality is nearly indistinguishable from a human receptionist. Natural pauses, appropriate tone, the ability to handle interruptions and pivot mid-conversation. Most callers don&apos;t realize they&apos;re not talking to a person. And frankly, they don&apos;t care. They care that someone answered.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
-              The gap between &ldquo;AI voice&rdquo; and &ldquo;human voice&rdquo; has shrunk to the point where the only meaningful question is: does it solve the problem? For answering phones, booking appointments, and qualifying leads &mdash; it does.
+              The gap between &ldquo;AI voice&rdquo; and &ldquo;human voice&rdquo; has shrunk to the point where the only meaningful question is: does it solve the problem? For answering phones, booking appointments, and qualifying leads, it does.
             </p>
 
             {/* ── Section: Competitive Equalizer ── */}
@@ -84,7 +84,7 @@ export default function Losing52kToVoicemail() {
               A five-person law firm with an AI voice agent has the same phone responsiveness as a 200-attorney practice with a full reception team. A solo plumber with AI answering his calls presents the same professional front as a franchise operation with a call center.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
-              Before this technology, competing on responsiveness meant competing on headcount. That&apos;s no longer true. The business that answers every call wins &mdash; and now any business can be that business.
+              Before this technology, competing on responsiveness meant competing on headcount. That&apos;s no longer true. The business that answers every call wins, and now any business can be that business.
             </p>
 
             {/* ── Section: The Real Numbers ── */}
@@ -98,7 +98,7 @@ export default function Losing52kToVoicemail() {
               The generic AI sales pitch says &ldquo;never miss a call again!&rdquo; Cool slogan. Means nothing without the math behind it.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              So let&apos;s do the math. Take a salon. Forty calls per week is normal for a busy location. During peak hours &mdash; lunch, late afternoon, Saturday morning &mdash; they&apos;re missing 8 to 11 of those calls. Not because they&apos;re ignoring people, but because they&apos;re cutting hair. That&apos;s their job.
+              So let&apos;s do the math. Take a salon. Forty calls per week is normal for a busy location. During peak hours (lunch, late afternoon, Saturday morning) they&apos;re missing 8 to 11 of those calls. Not because they&apos;re ignoring people, but because they&apos;re cutting hair. That&apos;s their job.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
               At an average ticket of $60, those missed calls represent $480 to $660 in lost revenue. Every single week. That&apos;s not a marketing problem. That&apos;s not a lead generation problem. That&apos;s a phone problem. And it has a phone solution.
@@ -112,7 +112,7 @@ export default function Losing52kToVoicemail() {
               I&apos;m going to be straight with you because too many companies in this space aren&apos;t: setting up an AI voice agent is not a five-minute install. It&apos;s not &ldquo;flip a switch and you&apos;re done.&rdquo;
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              A real deployment takes one to three weeks. The agent needs to learn your business &mdash; your services, your pricing, your scheduling rules, your FAQ, the way you talk to customers. That takes configuration, testing, and iteration. Cutting corners on setup is how you end up with an AI that books a root canal at a dog groomer.
+              A real deployment takes one to three weeks. The agent needs to learn your business: your services, your pricing, your scheduling rules, your FAQ, the way you talk to customers. That takes configuration, testing, and iteration. Cutting corners on setup is how you end up with an AI that books a root canal at a dog groomer.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
               The tradeoff is worth it. Once it&apos;s dialed in, it runs 24/7 with no sick days, no hold times, and no attitude on a Monday morning. But that &ldquo;once it&apos;s dialed in&rdquo; part? That&apos;s real work, and you should expect it.
@@ -137,14 +137,14 @@ export default function Losing52kToVoicemail() {
               2. Call back missed leads in under 5 seconds
             </h3>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              Speed-to-lead isn&apos;t a marketing buzzword. Harvard Business Review found that calling a lead back within five minutes makes you 100x more likely to make contact. Five minutes. Most businesses take hours. Some take days. An AI agent calls back in under five seconds. That&apos;s not an incremental improvement &mdash; it&apos;s a category shift.
+              Speed-to-lead isn&apos;t a marketing buzzword. Harvard Business Review found that calling a lead back within five minutes makes you 100x more likely to make contact. Five minutes. Most businesses take hours. Some take days. An AI agent calls back in under five seconds. That&apos;s not an incremental improvement. It&apos;s a category shift.
             </p>
 
             <h3 className="text-[18px] font-bold text-text mb-3">
               3. Deliver a transcript after every call
             </h3>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
-              You should know exactly what was said, what was promised, and what needs follow-up &mdash; without having to listen to recordings. A clean transcript after every conversation means nothing falls through the cracks. It also means accountability: you can see exactly how the AI is representing your business.
+              You should know exactly what was said, what was promised, and what needs follow-up, all without having to listen to recordings. A clean transcript after every conversation means nothing falls through the cracks. It also means accountability: you can see exactly how the AI is representing your business.
             </p>
 
             {/* ── Section: Bottom Line ── */}
@@ -152,10 +152,10 @@ export default function Losing52kToVoicemail() {
               The Bottom Line
             </h2>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              Fifty-two thousand dollars a year. That&apos;s what&apos;s leaking out of your business through voicemail. Not because you&apos;re doing anything wrong &mdash; but because you physically can&apos;t answer every call while also doing the work that earns the call in the first place.
+              Fifty-two thousand dollars a year. That&apos;s what&apos;s leaking out of your business through voicemail. Not because you&apos;re doing anything wrong, but because you physically can&apos;t answer every call while also doing the work that earns the call in the first place.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              The technology to fix it exists today. It works. It&apos;s not magic and it&apos;s not instant &mdash; but it&apos;s real, and it&apos;s proven.
+              The technology to fix it exists today. It works. It&apos;s not magic and it&apos;s not instant, but it&apos;s real, and it&apos;s proven.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8]">
               The only question is how long you want to keep paying $52K for the privilege of sending people to voicemail.
@@ -172,7 +172,7 @@ export default function Losing52kToVoicemail() {
               Ready to stop losing revenue to voicemail?
             </h2>
             <p className="text-[16px] text-text-2 mb-8 max-w-[480px] mx-auto">
-              Book a 15-minute demo. We&apos;ll show you exactly how many calls your business is missing &mdash; and what it&apos;s costing you.
+              Book a 15-minute demo. We&apos;ll show you exactly how many calls your business is missing, and what it&apos;s costing you.
             </p>
             <Link
               href="/demo"

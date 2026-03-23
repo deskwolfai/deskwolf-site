@@ -8,11 +8,11 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Agency Services & Pricing — DeskWolf LLC",
+  title: "Agency Services & Pricing | DeskWolf LLC",
   description:
-    "Personalized AI consulting and deployment for your business. We work inside your operations — strategy, build, launch, and ongoing management. Transparent pricing, no lock-in.",
+    "Personalized AI consulting and deployment for your business. Strategy, build, launch, and ongoing management. Transparent pricing, no lock-in.",
   openGraph: {
-    title: "Agency Services & Pricing — DeskWolf LLC",
+    title: "Agency Services & Pricing | DeskWolf LLC",
     description:
       "Personalized AI consulting and deployment. We work inside your business.",
     url: "https://deskwolf.ai/pricing",
@@ -115,7 +115,7 @@ const tiers = [
       "Monthly performance report",
       "Email support",
     ],
-    cta: "Get Started",
+    cta: "Start Recovering Revenue",
     ctaHref: "/demo",
   },
   {
@@ -136,7 +136,7 @@ const tiers = [
       "Weekly optimization reviews",
       "Priority support (Slack/Discord)",
     ],
-    cta: "Book a Demo",
+    cta: "Hear It Live",
     ctaHref: "/demo",
   },
   {
@@ -155,7 +155,7 @@ const tiers = [
       "Quarterly business reviews",
       "Volume pricing",
     ],
-    cta: "Contact Sales",
+    cta: "Talk to Our Team",
     ctaHref: "/demo",
   },
 ];
@@ -164,7 +164,7 @@ const tiers = [
 const included = [
   { icon: <WrenchIcon />, color: "green" as const, title: "Break-Fix Support", desc: "Something breaks, we fix it. No extra charge, no ticket queues. Your system stays online." },
   { icon: <RefreshIcon />, color: "blue" as const, title: "Tech Evolution", desc: "As AI improves, your system improves. We upgrade models, retrain agents, and deploy updates automatically." },
-  { icon: <PuzzleIcon />, color: "purple" as const, title: "Deeper Integrations", desc: "CRM, calendar, PMS, EHR — we connect your AI to the tools you already use." },
+  { icon: <PuzzleIcon />, color: "purple" as const, title: "Deeper Integrations", desc: "CRM, calendar, PMS, EHR. We connect your AI to the tools you already use." },
   { icon: <DollarIcon />, color: "amber" as const, title: "Cost Optimization", desc: "We monitor your usage, optimize API calls, and fight for the lowest possible cost every month." },
   { icon: <UserIcon />, color: "cyan" as const, title: "AM Consultation", desc: "Your dedicated account manager is available for monthly strategy calls and system reviews." },
   { icon: <ChartIcon />, color: "green" as const, title: "Monthly Optimization", desc: "Call analysis, script refinement, and agent tuning based on real performance data." },
@@ -172,8 +172,8 @@ const included = [
 
 /* ── Add-on data ── */
 const addons = [
-  { icon: <CRMIcon />, color: "blue" as const, title: "CRM Automation", desc: "Full GoHighLevel or HubSpot automation — pipelines, sequences, reporting.", price: "$1,000/mo" },
-  { icon: <BoltIcon />, color: "purple" as const, title: "AI Automations", desc: "Custom n8n workflows — intake forms, email routing, data sync, alerts.", price: "$500/mo" },
+  { icon: <CRMIcon />, color: "blue" as const, title: "CRM Automation", desc: "Full GoHighLevel or HubSpot automation: pipelines, sequences, reporting.", price: "$1,000/mo" },
+  { icon: <BoltIcon />, color: "purple" as const, title: "AI Automations", desc: "Custom n8n workflows: intake forms, email routing, data sync, alerts.", price: "$500/mo" },
   { icon: <LightbulbIcon />, color: "amber" as const, title: "Tech Consulting", desc: "Ad-hoc consulting for AI strategy, vendor selection, or architecture review.", price: "$100/hr" },
   { icon: <MicIcon />, color: "cyan" as const, title: "Voice/Video Cloning", desc: "Clone your voice or create branded video content with AI-generated media.", price: "$1,000" },
   { icon: <AvatarIcon />, color: "green" as const, title: "AI Avatar", desc: "Custom AI spokesperson for video content, training materials, or marketing.", price: "$500" },
@@ -183,12 +183,12 @@ const addons = [
 /* ── FAQ data ── */
 const faqs = [
   { q: "How long does setup take?", a: "Most deployments go live within 2–3 weeks. That includes discovery, agent training, integration setup, and testing. Complex multi-location builds may take 4–6 weeks." },
-  { q: "What happens if I cancel?", a: "You keep everything. Your trained agents, your accounts, your data — it's all yours. We don't hold anything hostage. We'll even help you transition if needed." },
+  { q: "What happens if I cancel?", a: "You keep everything. Your trained agents, your accounts, your data. It's all yours. We don't hold anything hostage. We'll even help you transition if needed." },
   { q: "Do I need to buy other software?", a: "You'll need accounts for the underlying APIs (phone provider, calendar, CRM) but we help you set those up and choose the most cost-effective options. No markup on any tool." },
   { q: "Can it handle multiple languages?", a: "Yes. Our agents support English, Spanish, French, and Haitian Creole out of the box. Additional languages can be added on request." },
-  { q: "What if customers don't like talking to AI?", a: "Our agents are designed to be natural and helpful — not robotic. That said, every call can include a live-transfer option so callers can reach a human when they prefer." },
+  { q: "What if customers don't like talking to AI?", a: "Our agents are designed to be natural and helpful, not robotic. That said, every call can include a live-transfer option so callers can reach a human when they prefer." },
   { q: "How many calls can it handle at once?", a: "There's no practical limit. Unlike a human receptionist, AI agents handle concurrent calls without hold times or missed rings." },
-  { q: "Do you offer a trial?", a: "We offer a free demo call where you can hear the agent in action on a live line. After onboarding, we include a 30-day performance guarantee." },
+  { q: "Do you offer a trial?", a: "We offer a free demo call where you can hear the agent in action on a live line. After onboarding, you get a full 30-day performance guarantee. If the system doesn't meet agreed-upon benchmarks within that window, we make it right or you walk away. No long-term contracts required." },
 ];
 
 export default function PricingPage() {
@@ -207,13 +207,13 @@ export default function PricingPage() {
               <span className="text-sm text-text-2">Agency Services</span>
             </div>
             <h1 className="text-[clamp(36px,5.5vw,60px)] font-extrabold leading-[1.1] tracking-[-0.03em] text-text mb-5 max-w-[800px] mx-auto">
-              We Work Inside Your Business.{" "}
+              Your Phones Handled.{" "}
               <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
-                Not From a Dashboard.
+                Your Revenue Protected.
               </span>
             </h1>
             <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[640px] mx-auto">
-              This isn&rsquo;t a product you install yourself. It&rsquo;s a personalized consultation and deployment — we learn your business, build your AI systems, and manage them ongoing. Transparent pricing, no lock-in, you own everything.
+              This isn&rsquo;t a product you install yourself. We learn your business, build your AI systems, and manage them ongoing. Transparent pricing, no lock-in, you own everything.
             </p>
           </div>
         </div>
@@ -350,7 +350,7 @@ export default function PricingPage() {
                 <span className="bg-gradient-to-r from-brand-green to-brand-cyan bg-clip-text text-transparent">Always.</span>
               </h3>
               <p className="text-[16px] text-text-2 leading-relaxed max-w-[520px] mx-auto mb-7">
-                Every API key, every account, every piece of data lives under your name. We never mark up tool costs, and if you leave, everything stays with you. Zero vendor lock-in is not a talking point — it&apos;s how we operate.
+                Every API key, every account, every piece of data lives under your name. We never mark up tool costs, and if you leave, everything stays with you. Zero vendor lock-in is not a talking point. It&apos;s how we operate.
               </p>
               <div className="flex flex-wrap justify-center gap-3">
                 {[
@@ -407,18 +407,18 @@ export default function PricingPage() {
         <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center">
           <div className="rv">
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">
-              Ready to see it<br />
-              <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">in action?</span>
+              Hear your AI receptionist<br />
+              <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">on a live call.</span>
             </h2>
             <p className="text-[17px] text-text-2 max-w-[440px] mx-auto mb-8">
-              Book your free demo and hear what your AI receptionist sounds like — live, on a real call.
+              Book your free demo. We&rsquo;ll build a sample agent for your business and let you hear it handle a real call.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Book a Free Demo
+                Hear It Live
               </a>
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
-                Contact Sales
+                Talk to Our Team
               </a>
             </div>
           </div>

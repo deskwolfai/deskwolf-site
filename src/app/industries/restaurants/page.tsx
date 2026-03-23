@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "AI Phone Systems for Restaurants & Food Service — DeskWolf LLC",
+  title: "AI Phone Systems for Restaurants & Food Service | DeskWolf LLC",
   description:
     "Stop losing orders to missed calls during the dinner rush. DeskWolf answers every call 24/7, handles FAQs, takes reservation requests, and routes catering inquiries.",
 };
@@ -78,7 +78,7 @@ export default function RestaurantsPage() {
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
             <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white text-[#0F172A] shadow-[0_4px_20px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(255,255,255,0.15)]">
-              Book a Demo
+              Free Your Staff From the Phone
             </a>
             <a href="#problem" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
               See the Problem
@@ -140,7 +140,7 @@ export default function RestaurantsPage() {
               </h2>
               <p className="text-[17px] text-text-2 leading-relaxed mb-8">
                 Restaurants miss an average of 20 calls per week.
-                With an average ticket of $40, that adds up to over $41,000 per year in lost revenue&nbsp;&mdash; and that doesn&rsquo;t count catering inquiries.
+                With an average ticket of $40, that adds up to over $41,000 per year in lost revenue. And that doesn&rsquo;t count catering inquiries.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
@@ -301,7 +301,7 @@ export default function RestaurantsPage() {
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Book a Demo
+                Catch Every Call During the Rush
               </a>
               <a href="/industries" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                 Back to Industries

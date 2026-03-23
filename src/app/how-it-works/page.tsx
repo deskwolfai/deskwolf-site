@@ -7,9 +7,9 @@ import GlassCard from "@/components/GlassCard";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "How It Works — DeskWolf LLC",
+  title: "How It Works | DeskWolf LLC",
   description:
-    "From first call to full coverage in 30 days. Discovery, build, launch, manage — done-for-you AI phone systems.",
+    "From first call to full coverage in 30 days. Discovery, build, launch, manage. Done-for-you AI phone systems.",
 };
 
 /* ── Step data ── */
@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: "Are there any special requirements?",
-    a: "Nope. You just need a phone number and a business. We handle everything else — the tech, the setup, the integrations, the monitoring. That's the whole point.",
+    a: "Nope. You just need a phone number and a business. We handle everything else: the tech, the setup, the integrations, the monitoring. That's the whole point.",
   },
   {
     q: "Can I keep my existing phone number?",
@@ -86,7 +86,7 @@ const faqs = [
   },
   {
     q: "What if something breaks?",
-    a: "We fix it. Break-fix is included in every plan. If your AI agent goes down or a call doesn't route correctly, we're on it — usually before you even notice.",
+    a: "We fix it. Break-fix is included in every plan. If your AI agent goes down or a call doesn't route correctly, we're on it. Usually before you even notice.",
   },
   {
     q: "Can I cancel anytime?",
@@ -96,7 +96,7 @@ const faqs = [
 
 /* ── Timeline data ── */
 const timeline = [
-  { label: "Day 1", desc: "Discovery call — we learn your business" },
+  { label: "Day 1", desc: "Discovery call. We learn your business." },
   { label: "Week 2", desc: "AI agent built and tested" },
   { label: "Month 1", desc: "Live with 30-day monitoring" },
   { label: "Month 3", desc: "Fully optimized, running on autopilot" },
@@ -300,7 +300,7 @@ export default function HowItWorksPage() {
       <section className="relative z-[2] py-[100px]" id="cta">
         <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)] text-center rv">
           <h2 className="text-[clamp(30px,4vw,46px)] font-extrabold text-text mb-4">
-            Ready to stop missing calls?
+            Ready to capture every call, around the clock?
           </h2>
           <p className="text-[17px] text-text-2 max-w-[460px] mx-auto mb-8">
             Start with a 15-minute discovery call. No commitment, no pressure.

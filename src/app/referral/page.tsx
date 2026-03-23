@@ -8,11 +8,11 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Referral Dashboard — DeskWolf LLC",
+  title: "Referral Dashboard | DeskWolf LLC",
   description:
     "Track your referrals, view payouts, and access marketing assets. The DeskWolf referral portal is coming soon.",
   openGraph: {
-    title: "Referral Dashboard — DeskWolf LLC",
+    title: "Referral Dashboard | DeskWolf LLC",
     description:
       "Track your referrals, view payouts, and access marketing assets.",
     url: "https://deskwolf.ai/referral",
@@ -49,13 +49,13 @@ const features = [
     icon: <ChartIcon />,
     color: "blue" as const,
     title: "Referral Tracking",
-    desc: "See every referral in real time — who clicked, who signed up, and where they are in the onboarding process.",
+    desc: "See every referral in real time: who clicked, who signed up, and where they are in the onboarding process.",
   },
   {
     icon: <DollarIcon />,
     color: "green" as const,
     title: "Payout History",
-    desc: "View your complete earnings history. Every commission, every payment, every date — all in one place.",
+    desc: "View your complete earnings history. Every commission, every payment, every date, all in one place.",
   },
   {
     icon: <LinkIcon />,
@@ -94,7 +94,7 @@ export default function ReferralPage() {
           </h1>
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[620px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-            We&rsquo;re building a self-serve portal where you can track your referrals, view payouts, access marketing assets, and manage your affiliate account — all in one place.
+            We&rsquo;re building a self-serve portal where you can track your referrals, view payouts, access marketing assets, and manage your affiliate account. Everything in one place.
           </p>
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>

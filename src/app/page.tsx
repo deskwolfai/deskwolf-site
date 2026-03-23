@@ -94,16 +94,15 @@ export default function HomePage() {
               </h1>
 
               <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[460px] mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-                Done-for-you voice AI and automation for high call-volume businesses.
-                We answer your calls, recover the ones you miss, and qualify every new lead instantly.
+                Your phones answered 24/7, missed calls recovered automatically, and every lead qualified before you even check your phone. We handle everything.
               </p>
 
               <div className="flex gap-3 flex-wrap opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
                 <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white text-[#0F172A] shadow-[0_4px_20px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(255,255,255,0.15)]">
-                  Book a Free Demo
+                  Hear Your AI Receptionist Live
                 </a>
                 <a href="/how-it-works" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
-                  See How It Works
+                  See What You're Missing
                 </a>
               </div>
 
@@ -122,10 +121,10 @@ export default function HomePage() {
             {/* Right — notification stack */}
             <div className="relative h-[480px] opacity-0 animate-fade-up hidden lg:block" style={{ animationDelay: "0.4s" }}>
               {[
-                { icon: <PhoneIcon />, color: "blue", title: "Call Answered", desc: "Martinez Family Dental — inbound", time: "Just now", top: 0, left: 20, delay: "0.6s" },
-                { icon: <CalendarIcon />, color: "green", title: "Appointment Booked", desc: "Tuesday 2:00 PM — cleaning", time: "12s ago", top: 100, left: 80, delay: "0.9s" },
-                { icon: <RecoverIcon />, color: "amber", title: "Missed Call Recovered", desc: "Peak HVAC — callback successful", time: "2m ago", top: 200, left: 40, delay: "1.2s" },
-                { icon: <BoltIcon />, color: "purple", title: "Lead Qualified", desc: "Web form → Score: 94 — auto-booked", time: "5m ago", top: 300, left: 100, delay: "1.5s" },
+                { icon: <PhoneIcon />, color: "blue", title: "Call Answered", desc: "Martinez Family Dental, inbound", time: "Just now", top: 0, left: 20, delay: "0.6s" },
+                { icon: <CalendarIcon />, color: "green", title: "Appointment Booked", desc: "Tuesday 2:00 PM, cleaning", time: "12s ago", top: 100, left: 80, delay: "0.9s" },
+                { icon: <RecoverIcon />, color: "amber", title: "Missed Call Recovered", desc: "Peak HVAC, callback successful", time: "2m ago", top: 200, left: 40, delay: "1.2s" },
+                { icon: <BoltIcon />, color: "purple", title: "Lead Qualified", desc: "Web form → Score: 94, auto-booked", time: "5m ago", top: 300, left: 100, delay: "1.5s" },
               ].map((n) => (
                 <div
                   key={n.title}
@@ -168,13 +167,13 @@ export default function HomePage() {
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Free Resources</span>
             <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Start here.<br /><span className="font-light text-text-2">No commitment.</span></h2>
-            <p className="text-[17px] text-text-2">Tools and guides for business owners who want to understand AI before investing.</p>
+            <p className="text-[17px] text-text-2">Free tools to see exactly what unanswered calls are costing you, and whether AI is the right fix.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
             {[
-              { icon: <GridIcon />, color: "blue" as const, title: "Missed Call Revenue Calculator", desc: "Find out how much unanswered calls cost your business every year.", tag: "Calculator", delay: "d1" },
-              { icon: <CheckIcon />, color: "green" as const, title: "AI Readiness Checklist", desc: "Is your business ready for an AI phone system? 5 minutes to find out.", tag: "Checklist", delay: "d2" },
-              { icon: <BookIcon />, color: "purple" as const, title: "Voice AI Guide for Business Owners", desc: "Plain-English guide. No jargon, no fluff, no pitch.", tag: "Guide", delay: "d3" },
+              { icon: <GridIcon />, color: "blue" as const, title: "Missed Call Revenue Calculator", desc: "Plug in your call volume. See the dollar amount you're losing to voicemail every month.", tag: "Calculator", delay: "d1" },
+              { icon: <CheckIcon />, color: "green" as const, title: "AI Readiness Checklist", desc: "Answer 10 questions, get a clear yes or not-yet. Takes 5 minutes.", tag: "Checklist", delay: "d2" },
+              { icon: <BookIcon />, color: "purple" as const, title: "Voice AI Guide for Business Owners", desc: "How AI phone systems actually work, what they cost, and what to watch out for. Plain English, no pitch.", tag: "Guide", delay: "d3" },
             ].map((card) => (
               <GlassCard key={card.title} className={`p-8 rv ${card.delay}`}>
                 <GradientIcon color={card.color}>{card.icon}</GradientIcon>
@@ -194,11 +193,11 @@ export default function HomePage() {
             <div className="rv">
               <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">Our Approach</span>
               <h2 className="text-[clamp(30px,4vw,46px)] mb-4">Understand first.<br /><span className="font-light text-text-2">Automate second.</span></h2>
-              <p className="mt-3.5 max-w-[460px] text-text-2">DeskWolf is an AI operations partner. We design, build, deploy, and manage intelligent phone systems for local businesses. Not a SaaS platform. Not a call center. We build it, run it, and treat your money like our own.</p>
+              <p className="mt-3.5 max-w-[460px] text-text-2">DeskWolf is an AI operations partner. We design, build, deploy, and manage intelligent phone systems for local businesses. Not a SaaS platform. Not a call center. A completely new approach to phone operations that didn't exist two years ago. We build it, run it, and treat your money like our own.</p>
             </div>
             <div className="rv d2">
               <div className="italic text-[19px] text-text leading-relaxed p-8 bg-white/[0.04] backdrop-blur-[16px] border-l-[3px] border-l-brand-purple rounded-r-[var(--radius-std)] shadow-[var(--shadow-std)]">
-                &ldquo;Not just automating things because we can — only automating what we should. Intelligently, cleanly, and securely.&rdquo;
+                &ldquo;We only automate what we should. Intelligently, cleanly, and securely.&rdquo;
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-7">
                 {[
@@ -234,8 +233,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="rv">
               <span className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.08em] uppercase px-3.5 py-1.5 rounded-[100px] text-white font-medium bg-gradient-to-r from-blue-light to-brand-purple">Core Product</span>
-              <h2 className="text-[clamp(30px,4vw,46px)] mt-4 mb-3.5">Inbound AI Receptionist</h2>
-              <p className="text-[17px] text-text-2 max-w-[460px]">Answers calls 24/7, handles FAQs, books appointments, routes calls, and sends follow-up texts. Your front desk, always on.</p>
+              <h2 className="text-[clamp(30px,4vw,46px)] mt-4 mb-3.5">Stop Losing Revenue to Voicemail</h2>
+              <p className="text-[17px] text-text-2 max-w-[460px]">Your AI receptionist answers every call, books appointments, and follows up by text. Live in two weeks, running 24/7 from day one.</p>
               <ul className="list-none mt-6 flex flex-col gap-2.5">
                 {[
                   "24/7 natural voice call handling",
@@ -252,7 +251,7 @@ export default function HomePage() {
               </ul>
               <div className="mt-7">
                 <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                  See It In Action
+                  Hear It Handle a Call
                 </a>
               </div>
             </div>
@@ -322,22 +321,22 @@ export default function HomePage() {
         <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[560px] mx-auto rv">
             <span className="font-mono font-medium text-[11px] tracking-[0.1em] uppercase text-brand-blue">More Products</span>
-            <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Stack for<br /><span className="font-light text-text-2">maximum coverage.</span></h2>
-            <p className="text-[17px] text-text-2">Each product targets a different pain point. Sold independently or combined.</p>
+            <h2 className="text-[clamp(30px,4vw,46px)] mb-3">Close the gaps<br /><span className="font-light text-text-2">in your phone coverage.</span></h2>
+            <p className="text-[17px] text-text-2">Each product recovers revenue from a different blind spot. Run them solo or stack them together.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-12">
             {[
               {
                 badge: "Expansion", badgeColor: "from-brand-amber to-[#D97706]",
                 title: "Outbound Lead Qualifier",
-                desc: "Form submits, phone rings within seconds. Greets leads by name, qualifies them, books appointments.",
-                features: ["Instant callback from form submissions", "Lead qualification via custom script", "Appointment booking into your calendar", "CRM integration & full call logging"],
+                desc: "A lead fills out your form. The phone rings seconds later. They're greeted by name, qualified, and booked before they start browsing your competitor.",
+                features: ["Instant callback from form submissions", "Lead qualification via custom script", "Appointment booking into your calendar", "CRM integration and full call logging"],
               },
               {
                 badge: "Recovery", badgeColor: "from-brand-green to-brand-cyan",
                 title: "Missed Call-Back Agent",
-                desc: "Every dropped call, every missed ring — automatically called back. No lead left behind.",
-                features: ["Auto-detect all dropped & missed calls", "Immediate outbound callback attempt", "Custom greeting & qualification", "Appointment booking on callback"],
+                desc: "Every dropped call and missed ring gets called back automatically within minutes. No lead left behind.",
+                features: ["Auto-detect all dropped and missed calls", "Immediate outbound callback attempt", "Custom greeting and qualification", "Appointment booking on callback"],
               },
             ].map((card, i) => (
               <GlassCard key={card.title} className={`p-10 rv d${i + 1}`}>

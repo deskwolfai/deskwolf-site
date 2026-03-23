@@ -8,13 +8,13 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "AI Receptionist — DeskWolf LLC",
+  title: "AI Receptionist | DeskWolf LLC",
   description:
-    "24/7 AI-powered call handling that answers, books, routes, and follows up — in four languages. Never miss another call.",
+    "24/7 AI-powered call handling that answers, books, routes, and follows up in four languages. Never miss another call.",
   openGraph: {
-    title: "AI Receptionist — DeskWolf LLC",
+    title: "AI Receptionist | DeskWolf LLC",
     description:
-      "24/7 AI-powered call handling that answers, books, routes, and follows up — in four languages.",
+      "24/7 AI-powered call handling that answers, books, routes, and follows up in four languages.",
     url: "https://deskwolf.ai/ai-receptionist",
     siteName: "DeskWolf",
     type: "website",
@@ -80,7 +80,7 @@ const Check = () => (
 
 /* ── Call flow steps ── */
 const callFlowSteps = [
-  { num: "01", title: "Call Comes In", desc: "A customer calls your business number. The AI agent picks up in under one second — no rings, no hold music." },
+  { num: "01", title: "Call Comes In", desc: "A customer calls your business number. The AI agent picks up in under one second. No rings, no hold music." },
   { num: "02", title: "Greeting & Intent", desc: "The agent greets the caller by your business name and identifies the reason for their call using natural conversation." },
   { num: "03", title: "Answer or Route", desc: "If it is an FAQ, the agent answers from your trained knowledge base. If it needs a human, the call is warm-transferred instantly." },
   { num: "04", title: "Book or Capture", desc: "The agent books appointments directly into your calendar, captures contact details, and logs everything to your CRM." },
@@ -90,8 +90,8 @@ const callFlowSteps = [
 /* ── FAQ data ── */
 const faqs = [
   { q: "How does the AI know about my business?", a: "During onboarding, we train the agent on your FAQs, services, pricing, hours, policies, and anything else your receptionist would need to know. We can update the knowledge base anytime." },
-  { q: "Will callers know it is AI?", a: "The voice sounds natural and conversational, not robotic. Most callers won't realize they're speaking with AI. But we never hide it — if asked directly, the agent will say it's an AI assistant." },
-  { q: "Can it transfer to a real person?", a: "Absolutely. You define routing rules — by department, by caller type, by time of day — and the agent warm-transfers live with context so the caller never repeats themselves." },
+  { q: "Will callers know it is AI?", a: "The voice sounds natural and conversational, not robotic. Most callers won't realize they're speaking with AI. That said, we never hide it. If asked directly, the agent will say it's an AI assistant." },
+  { q: "Can it transfer to a real person?", a: "Absolutely. You define routing rules by department, caller type, or time of day. The agent warm-transfers live with context so the caller never repeats themselves." },
   { q: "Which calendars does it integrate with?", a: "Google Calendar, Outlook/Microsoft 365, Calendly, GoHighLevel, and most calendar systems that support API or iCal connections." },
   { q: "What if I already have a receptionist?", a: "The AI handles overflow, after-hours, and high-volume periods. Your human receptionist handles the calls they want to take. The two work together seamlessly." },
   { q: "How fast is the setup?", a: "Most businesses are live within 2–3 weeks. That includes discovery, knowledge base training, integration setup, and testing with your team." },
@@ -129,12 +129,12 @@ export default function AIReceptionistPage() {
             </h1>
 
             <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[580px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-              Your AI Receptionist picks up in under one second, handles FAQs, books appointments, routes calls, and sends follow-ups — in English, Spanish, French, and Creole. No hold music. No missed revenue.
+              Your AI Receptionist picks up in under one second, handles FAQs, books appointments, routes calls, and sends follow-ups. Four languages: English, Spanish, French, and Creole. No hold music. No missed revenue.
             </p>
 
             <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Book a Live Demo
+                Hear It Answer Your Phone
               </a>
               <a href="#how-it-works" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                 See How It Works
@@ -206,7 +206,7 @@ export default function AIReceptionistPage() {
             {[
               { icon: <PhoneIcon />, color: "blue" as const, title: "Instant Pickup", desc: "Answers every call in under one second. No rings, no hold music, no voicemail black hole." },
               { icon: <CalendarIcon />, color: "purple" as const, title: "Live Booking", desc: "Books, reschedules, and cancels appointments directly in your calendar. Real-time availability checks." },
-              { icon: <ShuffleIcon />, color: "amber" as const, title: "Smart Routing", desc: "Routes calls to the right person or department based on your rules — by intent, time of day, or caller type." },
+              { icon: <ShuffleIcon />, color: "amber" as const, title: "Smart Routing", desc: "Routes calls to the right person or department based on your rules: by intent, time of day, or caller type." },
               { icon: <MessageIcon />, color: "green" as const, title: "SMS & Email Follow-Up", desc: "Sends confirmation texts and emails immediately after every call with booking details and next steps." },
               { icon: <FileTextIcon />, color: "cyan" as const, title: "Full Transcripts", desc: "Every call is transcribed, summarized, and logged. Searchable history with call recordings." },
               { icon: <ShieldIcon />, color: "purple" as const, title: "HIPAA-Ready Handling", desc: "Sensitive call handling protocols for healthcare, legal, and financial services with configurable guardrails." },
@@ -247,7 +247,7 @@ export default function AIReceptionistPage() {
                     <Check />
                     <div>
                       <span className="font-semibold text-text">{item.lang}</span>
-                      <span className="text-text-3"> — {item.detail}</span>
+                      <span className="text-text-3">: {item.detail}</span>
                     </div>
                   </li>
                 ))}
@@ -259,7 +259,7 @@ export default function AIReceptionistPage() {
                 <GradientIcon color="cyan" className="mx-auto"><GlobeIcon /></GradientIcon>
                 <h3 className="text-[24px] font-extrabold text-text mt-6 mb-3">Automatic Language Detection</h3>
                 <p className="text-[15px] text-text-2 leading-relaxed max-w-[400px] mx-auto mb-6">
-                  The agent identifies the caller&apos;s language within the first few words and switches seamlessly — no prompts, no menus, no delays.
+                  The agent identifies the caller&apos;s language within the first few words and switches seamlessly. No prompts, no menus, no delays.
                 </p>
                 <div className="grid grid-cols-2 gap-3">
                   {["English", "Espa\u00f1ol", "Fran\u00e7ais", "Krey\u00f2l"].map((lang) => (
@@ -352,7 +352,7 @@ export default function AIReceptionistPage() {
                   $156,000
                 </div>
                 <p className="text-[15px] text-text-2 mt-3 max-w-[500px] mx-auto">
-                  15 calls &times; $200 &times; 52 weeks = $156,000 in lost revenue every year. Your AI Receptionist costs $1,500/month — that&apos;s a <strong className="text-text">8.7x return</strong> on investment.
+                  15 calls &times; $200 &times; 52 weeks = $156,000 in lost revenue every year. Your AI Receptionist costs $1,500/month. That&apos;s a <strong className="text-text">8.7x return</strong> on investment.
                 </p>
               </div>
 
@@ -427,7 +427,7 @@ export default function AIReceptionistPage() {
               </p>
               <div className="flex gap-3 flex-wrap justify-center">
                 <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                  Book a Live Demo
+                  Hear It Answer Your Phone
                 </a>
                 <a href="/pricing" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                   View Pricing

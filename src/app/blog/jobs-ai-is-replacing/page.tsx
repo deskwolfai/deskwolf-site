@@ -7,9 +7,9 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Which Jobs AI Is Killing in 2026 (And Which Ones It Can't Touch) — DeskWolf LLC",
+  title: "Which Jobs AI Is Killing in 2026 (And Which Ones It Can't Touch) | DeskWolf LLC",
   description:
-    "Oracle cut 45K jobs. JPMorgan is using AI for team-level work. Here's what's actually happening to jobs in 2026 — and which careers are more valuable than ever.",
+    "Oracle cut 45K jobs. JPMorgan is using AI for team-level work. Here's what's actually happening to jobs in 2026, and which careers are more valuable than ever.",
 };
 
 export default function JobsAIIsReplacing() {
@@ -50,7 +50,7 @@ export default function JobsAIIsReplacing() {
           <article className="rv">
             {/* ── Intro ── */}
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              Oracle cut 45,000 jobs. Block laid off over 4,000. JPMorgan is deploying AI to handle work that used to require entire teams. These aren&apos;t startups trimming fat &mdash; these are the largest companies in the world restructuring around technology that didn&apos;t exist three years ago.
+              Oracle cut 45,000 jobs. Block laid off over 4,000. JPMorgan is deploying AI to handle work that used to require entire teams. These aren&apos;t startups trimming fat. These are the largest companies in the world restructuring around technology that didn&apos;t exist three years ago.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
               The question everyone&apos;s asking is: which jobs are next? But that&apos;s the wrong question. The better one is: what makes a job safe, and what makes it vulnerable? Because the answer isn&apos;t as simple as &ldquo;robots are coming for everyone.&rdquo;
@@ -81,10 +81,10 @@ export default function JobsAIIsReplacing() {
               People assume that complex jobs are safe and simple jobs aren&apos;t. That&apos;s wrong. The test isn&apos;t difficulty. It&apos;s predictability.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              A radiologist reading an X-ray is doing something incredibly skilled. But it&apos;s also highly pattern-based &mdash; which is why AI can now match or exceed human accuracy on certain types of medical imaging. The job is hard, but the process is predictable.
+              A radiologist reading an X-ray is doing something incredibly skilled. But it&apos;s also highly pattern-based, which is why AI can now match or exceed human accuracy on certain types of medical imaging. The job is hard, but the process is predictable.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
-              On the other hand, a kindergarten teacher manages unpredictable situations all day long. Emotional outbursts, creative problem-solving on the fly, reading the room, adapting to thirty different personalities simultaneously. The job doesn&apos;t pay what radiology pays, but it&apos;s far less automatable &mdash; because it&apos;s fundamentally unpredictable.
+              On the other hand, a kindergarten teacher manages unpredictable situations all day long. Emotional outbursts, creative problem-solving on the fly, reading the room, adapting to thirty different personalities simultaneously. The job doesn&apos;t pay what radiology pays, but it&apos;s far less automatable, because it&apos;s fundamentally unpredictable.
             </p>
 
             {/* ── Section: What Holds Up ── */}
@@ -99,17 +99,17 @@ export default function JobsAIIsReplacing() {
               Physical Dexterity: Skilled Trades
             </h3>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              Electricians score 94 out of 100 on the WEF scale. Plumbers, HVAC technicians, welders &mdash; all in the 90s. Why? Because every job site is different. The walls are different, the wiring is different, the access points are different. You can&apos;t send a robot into a crawl space in a 1940s house and expect it to figure out what the previous homeowner did with the plumbing.
+              Electricians score 94 out of 100 on the WEF scale. Plumbers, HVAC technicians, welders: all in the 90s. Why? Because every job site is different. The walls are different, the wiring is different, the access points are different. You can&apos;t send a robot into a crawl space in a 1940s house and expect it to figure out what the previous homeowner did with the plumbing.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              MIT&apos;s research is clear on this: general-purpose robotics won&apos;t reach the trades until after 2030 at the earliest. The physical world is too variable, and the cost of robotic systems that can handle that variability is still orders of magnitude too high. Skilled trades aren&apos;t just safe &mdash; they&apos;re getting more valuable as fewer people enter them.
+              MIT&apos;s research is clear on this: general-purpose robotics won&apos;t reach the trades until after 2030 at the earliest. The physical world is too variable, and the cost of robotic systems that can handle that variability is still orders of magnitude too high. Skilled trades aren&apos;t just safe. They&apos;re getting more valuable as fewer people enter them.
             </p>
 
             <h3 className="text-[18px] font-bold text-text mb-3">
               High-Stakes Judgment: Medicine, Law, Strategy
             </h3>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              Surgeons score 96 out of 100. Not because surgery is physically impossible for machines &mdash; robotic surgery already exists &mdash; but because the judgment calls during surgery are life-and-death decisions that depend on context, experience, and adaptation. AI can assist. It can&apos;t replace the person making the call.
+              Surgeons score 96 out of 100. Not because surgery is physically impossible for machines (robotic surgery already exists) but because the judgment calls during surgery are life-and-death decisions that depend on context, experience, and adaptation. AI can assist. It can&apos;t replace the person making the call.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
               The same applies to senior attorneys, strategic consultants, and crisis managers. The work involves navigating ambiguity where the stakes are too high for a statistical model to be the final decision-maker. AI is the best research assistant these professionals have ever had. It&apos;s not their replacement.
@@ -130,10 +130,10 @@ export default function JobsAIIsReplacing() {
               The advice you hear everywhere is &ldquo;learn AI.&rdquo; Take a prompt engineering course. Learn to use the tools. That&apos;s fine, but it misses the point.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              The real pivot isn&apos;t learning how to use AI tools. It&apos;s understanding where human judgment gets amplified by AI &mdash; and positioning yourself at that intersection.
+              The real pivot isn&apos;t learning how to use AI tools. It&apos;s understanding where human judgment gets amplified by AI, and positioning yourself at that intersection.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
-              Anthropic published research showing that AI is currently handling roughly 15% of tasks across most professional roles with no measurable quality loss. Not 15% of jobs. Fifteen percent of tasks within each job. That&apos;s augmentation, not replacement. The person who understands which 15% to delegate &mdash; and uses the freed-up time to do higher-value work &mdash; becomes more productive, not less relevant.
+              Anthropic published research showing that AI is currently handling roughly 15% of tasks across most professional roles with no measurable quality loss. Not 15% of jobs. Fifteen percent of tasks within each job. That&apos;s augmentation, not replacement. The person who understands which 15% to delegate, and uses the freed-up time to do higher-value work, becomes more productive, not less relevant.
             </p>
 
             {/* ── Section: What to Watch ── */}
@@ -166,7 +166,7 @@ export default function JobsAIIsReplacing() {
               Strategic Roles
             </h3>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
-              CEOs, creative directors, product strategists, senior architects &mdash; roles where the job is to synthesize information from multiple domains, weigh competing priorities, and make decisions under uncertainty. AI gives these people better data and faster analysis. It doesn&apos;t replace the judgment they apply to it.
+              CEOs, creative directors, product strategists, senior architects: roles where the job is to synthesize information from multiple domains, weigh competing priorities, and make decisions under uncertainty. AI gives these people better data and faster analysis. It doesn&apos;t replace the judgment they apply to it.
             </p>
 
             {/* ── Bottom Line ── */}
@@ -174,10 +174,10 @@ export default function JobsAIIsReplacing() {
               The Bottom Line
             </h2>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              AI is not coming for all jobs. It&apos;s coming for predictable tasks within jobs. The roles that are entirely predictable &mdash; pure rule-following with no judgment required &mdash; are the ones that contract. Everything else adapts.
+              AI is not coming for all jobs. It&apos;s coming for predictable tasks within jobs. The roles that are entirely predictable (pure rule-following with no judgment required) are the ones that contract. Everything else adapts.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              The people who thrive in this environment won&apos;t be the ones who &ldquo;learned AI.&rdquo; They&apos;ll be the ones who understood their own value clearly enough to know which parts of their work to hand off &mdash; and which parts to double down on.
+              The people who thrive in this environment won&apos;t be the ones who &ldquo;learned AI.&rdquo; They&apos;ll be the ones who understood their own value clearly enough to know which parts of their work to hand off, and which parts to double down on.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8]">
               The technology is moving fast. The fundamentals of human value haven&apos;t changed at all.

@@ -6,7 +6,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 import RevealObserver from "@/components/RevealObserver";
 
 export const metadata: Metadata = {
-  title: "Coming Soon — DeskWolf LLC",
+  title: "Coming Soon | DeskWolf LLC",
   description:
     "This feature is on the way. Sign up to get notified when it launches.",
 };

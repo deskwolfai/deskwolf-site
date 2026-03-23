@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "AI Voice Operations Glossary — DeskWolf LLC",
+  title: "AI Voice Operations Glossary | DeskWolf LLC",
   description:
     "Plain-language definitions for every term in AI voice operations. From automated callbacks to warm transfers, learn what it all means.",
 };
@@ -161,7 +161,7 @@ export default function GlossaryPage() {
           </h1>
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[580px] mx-auto opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-            Plain-language definitions for every term you&rsquo;ll encounter in AI voice operations. No jargon, no fluff&nbsp;&mdash; just clear explanations.
+            Plain-language definitions for every term you&rsquo;ll encounter in AI voice operations. No jargon, no fluff. Just clear explanations.
           </p>
         </div>
       </section>

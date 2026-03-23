@@ -46,7 +46,7 @@ export default function ContactForm() {
       }
     } catch {
       setStatus("error");
-      setMessage("Network error — try again.");
+      setMessage("Network error. Please try again.");
     }
   }
 

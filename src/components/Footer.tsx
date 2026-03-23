@@ -43,7 +43,7 @@ export default function Footer() {
               live by the phone.
             </p>
             <div className="font-mono text-[11px] text-text-3 mt-3">
-              San Bernardino, CA — Est. 2026
+              San Bernardino, CA. Est. 2026
             </div>
           </div>
 

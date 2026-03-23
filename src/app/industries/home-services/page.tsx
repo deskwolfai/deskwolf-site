@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "AI Phone Systems for Home Services & Contractors — DeskWolf LLC",
+  title: "AI Phone Systems for Home Services & Contractors | DeskWolf LLC",
   description:
     "Stop losing $500+ jobs to missed calls. DeskWolf answers every call 24/7, dispatches emergencies, books estimates, and routes by service area.",
 };
@@ -73,12 +73,12 @@ export default function HomeServicesPage() {
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[600px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
             Every missed call is a $500+ job walking to your competitor.
-            DeskWolf answers 24/7, books estimates, triages emergencies, and routes by service area&nbsp;&mdash; while you stay focused on the work.
+            DeskWolf answers 24/7, books estimates, triages emergencies, and routes by service area. You stay focused on the work.
           </p>
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
             <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white text-[#0F172A] shadow-[0_4px_20px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(255,255,255,0.15)]">
-              Book a Demo
+              Stop Losing $500 Jobs
             </a>
             <a href="#problem" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
               See the Problem
@@ -274,7 +274,7 @@ export default function HomeServicesPage() {
               },
               {
                 q: "Do I need to change my phone number?",
-                a: "No. DeskWolf forwards from your existing business number. Your customers, your Google listing, your truck wraps — nothing changes. The AI picks up when you can't, and you can override it any time you want to answer yourself.",
+                a: "No. DeskWolf forwards from your existing business number. Your customers, your Google listing, your truck wraps: nothing changes. The AI picks up when you can't, and you can override it any time you want to answer yourself.",
               },
             ].map((faq, i) => (
               <GlassCard key={i} className={`p-7 rv d${(i % 3) + 1}`}>
@@ -301,7 +301,7 @@ export default function HomeServicesPage() {
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Book a Demo
+                See It Catch Your Next Emergency Call
               </a>
               <a href="/industries" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                 Back to Industries

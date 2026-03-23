@@ -7,9 +7,9 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Most People Are Still Using AI Like a Genie — DeskWolf LLC",
+  title: "Most People Are Still Using AI Like a Genie | DeskWolf LLC",
   description:
-    "The AI hype bubble exists inside a very small room. Most business owners haven't walked in yet — and the ones who have are using it wrong.",
+    "The AI hype bubble exists inside a very small room. Most business owners haven't walked in yet, and the ones who have are using it wrong.",
 };
 
 export default function AIGenieMentality() {
@@ -50,7 +50,7 @@ export default function AIGenieMentality() {
           <article className="rv">
             {/* ── Intro ── */}
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              There&apos;s a bubble around AI right now. But it&apos;s not the kind of bubble most people think. It&apos;s not a market bubble or a valuation bubble. It&apos;s an awareness bubble &mdash; and it exists inside a very small room.
+              There&apos;s a bubble around AI right now. But it&apos;s not the kind of bubble most people think. It&apos;s not a market bubble or a valuation bubble. It&apos;s an awareness bubble, and it exists inside a very small room.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
               If you spend time in tech circles, on Twitter, in startup communities, it feels like everyone is using AI for everything. New tools every week. New frameworks every day. Agents, copilots, orchestrators. The conversation moves so fast it feels like the whole world has already made the shift.
@@ -64,7 +64,7 @@ export default function AIGenieMentality() {
               The Numbers Tell a Different Story
             </h2>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              Pew Research has been tracking AI adoption for years. Their data is consistent: about 65% of Americans have heard of ChatGPT. That sounds like a lot until you see the next number &mdash; only 23% have actually used it.
+              Pew Research has been tracking AI adoption for years. Their data is consistent: about 65% of Americans have heard of ChatGPT. That sounds like a lot until you see the next number: only 23% have actually used it.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
               That means roughly three out of four people who know about the most famous AI tool in history have never opened it. Not once. They&apos;ve heard the name. They&apos;ve seen the headlines. They haven&apos;t touched it.
@@ -87,7 +87,7 @@ export default function AIGenieMentality() {
               That&apos;s not an AI problem. That&apos;s a framing problem.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              The businesses getting real value from AI aren&apos;t asking genies for wishes. They&apos;re building workflows. Automated sequences where AI handles specific, repeatable tasks inside a larger process. The AI doesn&apos;t decide what to do &mdash; it executes a well-defined step in a chain that was designed by a human who understands the problem.
+              The businesses getting real value from AI aren&apos;t asking genies for wishes. They&apos;re building workflows. Automated sequences where AI handles specific, repeatable tasks inside a larger process. The AI doesn&apos;t decide what to do. It executes a well-defined step in a chain that was designed by a human who understands the problem.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-10">
               That&apos;s the difference between asking AI to &ldquo;write me a business plan&rdquo; and using AI to automatically qualify every inbound lead, route them to the right person, and book a meeting before they call your competitor. Same technology. Completely different result.
@@ -98,7 +98,7 @@ export default function AIGenieMentality() {
               The Biggest Gap in Business Right Now
             </h2>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              The gap between awareness and actual use is massive. And it&apos;s not closing as fast as the tech industry thinks. Most business owners &mdash; the plumber, the salon owner, the law firm partner, the property manager &mdash; are still on the outside of this. They&apos;ve heard the noise. They haven&apos;t felt the value.
+              The gap between awareness and actual use is massive. And it&apos;s not closing as fast as the tech industry thinks. Most business owners (the plumber, the salon owner, the law firm partner, the property manager) are still on the outside of this. They&apos;ve heard the noise. They haven&apos;t felt the value.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
               And here&apos;s the thing: that gap is exactly where the opportunity sits. Not for people selling AI tools. For people solving real problems with AI as the engine underneath.
@@ -115,7 +115,7 @@ export default function AIGenieMentality() {
               When we talk to business owners, we don&apos;t lead with AI. We lead with the problem.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
-              &ldquo;You&apos;re missing 30% of your calls during business hours. Do you know how much that&apos;s costing you?&rdquo; That&apos;s a conversation they understand. That&apos;s a number they can feel. The fact that the solution runs on AI is a technical detail &mdash; like telling someone their car uses internal combustion. They don&apos;t care about the engine. They care that it gets them to work.
+              &ldquo;You&apos;re missing 30% of your calls during business hours. Do you know how much that&apos;s costing you?&rdquo; That&apos;s a conversation they understand. That&apos;s a number they can feel. The fact that the solution runs on AI is a technical detail, like telling someone their car uses internal combustion. They don&apos;t care about the engine. They care that it gets them to work.
             </p>
             <p className="text-[16px] text-text-2 leading-[1.8] mb-6">
               A dental practice drowning in calls during cleaning season doesn&apos;t need &ldquo;AI.&rdquo; They need every call answered and every appointment booked. That&apos;s a use case.
@@ -163,7 +163,7 @@ export default function AIGenieMentality() {
               Curious what AI can actually do for your business?
             </h2>
             <p className="text-[16px] text-text-2 mb-8 max-w-[480px] mx-auto">
-              Book a 15-minute demo. We&apos;ll show you the specific use case that makes sense for your industry &mdash; no genie lamps required.
+              Book a 15-minute demo. We&apos;ll show you the specific use case that makes sense for your industry. No genie lamps required.
             </p>
             <Link
               href="/demo"

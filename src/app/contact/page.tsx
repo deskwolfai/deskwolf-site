@@ -9,9 +9,9 @@ import NewsletterForm from "@/components/NewsletterForm";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — DeskWolf LLC",
+  title: "Contact | DeskWolf LLC",
   description:
-    "Get in touch with DeskWolf. Submit the form and get a live AI demo call — your phone will ring.",
+    "Get in touch with DeskWolf. Submit the form and get a live AI demo call. Your phone will ring.",
 };
 
 /* ── SVG Icons ── */
@@ -61,7 +61,7 @@ export default function ContactPage() {
             Let&apos;s Talk.
           </h1>
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[520px] mx-auto">
-            Fill out the form and your phone will ring. That&apos;s our AI calling you back with a live demo. Pick up — that&apos;s all you need to do.
+            Fill out the form and your phone will ring. That&apos;s our AI calling you back with a live demo. Pick up. That&apos;s all you need to do.
           </p>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   <div>
                     <h4 className="text-[15px] font-extrabold text-text mb-1.5">What happens next</h4>
                     <p className="text-sm text-text-2 leading-relaxed">
-                      After you submit, your phone will ring. That&apos;s our AI. Pick up — that&apos;s your demo.
+                      After you submit, your phone will ring. That&apos;s our AI. Pick up, and that&apos;s your demo.
                     </p>
                   </div>
                 </div>

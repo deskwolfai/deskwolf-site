@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Case Studies & Testimonials — DeskWolf LLC",
+  title: "Case Studies & Testimonials | DeskWolf LLC",
   description:
     "Real results from real businesses. See how DeskWolf AI voice agents recover missed calls, book appointments, and protect revenue for local businesses.",
 };
@@ -63,7 +63,7 @@ const caseStudies = [
     business: "Martinez Family Dental",
     location: "Riverside, CA",
     challenge:
-      "During peak hours, the front desk was overwhelmed. With two hygienists, one dentist, and a single receptionist, the practice was missing 20+ calls per week. Patients calling for cleanings, emergency appointments, and insurance questions were going straight to voicemail — and most never called back.",
+      "During peak hours, the front desk was overwhelmed. With two hygienists, one dentist, and a single receptionist, the practice was missing 20+ calls per week. Patients calling for cleanings, emergency appointments, and insurance questions were going straight to voicemail. Most never called back.",
     solution:
       "DeskWolf deployed an AI Receptionist trained on Martinez Family Dental's full service menu, insurance accepted, and scheduling rules. The agent handles inbound calls 24/7, answers FAQs, books appointments directly into their practice management system, and sends text confirmations to patients.",
     results: [
@@ -83,7 +83,7 @@ const caseStudies = [
     business: "Peak HVAC Services",
     location: "Denver, CO",
     challenge:
-      "The owner and lead technician were on job sites 10+ hours a day. Calls from potential customers — many worth $500 or more per service call — were going to voicemail. By the time they returned calls at the end of the day, most prospects had already hired a competitor.",
+      "The owner and lead technician were on job sites 10+ hours a day. Calls from potential customers, many worth $500 or more per service call, were going to voicemail. By the time they returned calls at the end of the day, most prospects had already hired a competitor.",
     solution:
       "DeskWolf deployed an AI Receptionist for inbound calls and a Call-Back Agent to recover any calls that slipped through. The AI books service appointments, provides instant quotes for common jobs, and routes emergency calls directly to the on-call technician.",
     results: [
@@ -103,9 +103,9 @@ const caseStudies = [
     business: "Sunrise Med Spa",
     location: "Scottsdale, AZ",
     challenge:
-      "Sunrise Med Spa's busiest inquiry window was evenings and weekends — exactly when no one was answering the phone. After-hours calls were going to a generic voicemail, and follow-up was inconsistent. They estimated 30-40% of first-time callers never rebooked after reaching voicemail.",
+      "Sunrise Med Spa's busiest inquiry window was evenings and weekends, exactly when no one was answering the phone. After-hours calls were going to a generic voicemail, and follow-up was inconsistent. They estimated 30-40% of first-time callers never rebooked after reaching voicemail.",
     solution:
-      "DeskWolf deployed a 24/7 AI Receptionist with full service knowledge — from Botox and filler pricing to package deals and membership plans. The agent books consultations, answers treatment questions, and sends follow-up texts with booking links after every call.",
+      "DeskWolf deployed a 24/7 AI Receptionist with full service knowledge: Botox and filler pricing, package deals, and membership plans. The agent books consultations, answers treatment questions, and sends follow-up texts with booking links after every call.",
     results: [
       { metric: "47%", label: "Increase in after-hours bookings" },
       { metric: "62", label: "Consultations booked by AI (first 90 days)" },
@@ -181,7 +181,7 @@ export default function CaseStudiesPage() {
           </h1>
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[620px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-            These aren&rsquo;t hypotheticals. Every number below comes from businesses that were losing revenue to missed calls&nbsp;&mdash; until they weren&rsquo;t.
+            These aren&rsquo;t hypotheticals. Every number below comes from businesses that were losing revenue to missed calls. Then they stopped.
           </p>
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
@@ -303,13 +303,13 @@ export default function CaseStudiesPage() {
         <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[600px] mx-auto rv">
             <h2 className="text-[clamp(30px,4vw,46px)] mb-4">
-              Ready to be our{" "}
+              Ready to recover{" "}
               <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
-                next case study?
+                your missed revenue?
               </span>
             </h2>
             <p className="text-[17px] text-text-2 mb-8">
-              Book a free demo and see exactly how DeskWolf would work for your business. No pressure, no commitment&nbsp;&mdash; just a live walkthrough.
+              Book a free demo and see exactly how DeskWolf would work for your business. No pressure, no commitment. Just a live walkthrough of your custom setup.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">

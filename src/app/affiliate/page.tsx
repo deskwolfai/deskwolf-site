@@ -8,11 +8,11 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Affiliate Program — DeskWolf LLC",
+  title: "Affiliate Program | DeskWolf LLC",
   description:
     "Earn 10% of every first invoice when you refer businesses to DeskWolf. Unlimited referrals, paid within 5 business days. No caps, no catches.",
   openGraph: {
-    title: "Affiliate Program — DeskWolf LLC",
+    title: "Affiliate Program | DeskWolf LLC",
     description:
       "Earn 10% of every first invoice when you refer businesses to DeskWolf.",
     url: "https://deskwolf.ai/affiliate",
@@ -99,7 +99,7 @@ const audience = [
 /* ── FAQ data ── */
 const faqs = [
   { q: "How much can I earn per referral?", a: "You earn 10% of the referred client's first invoice. Since our plans range from $1,500 to custom enterprise pricing, a single referral can net you $150 to well over $500." },
-  { q: "Is there a limit on how many people I can refer?", a: "No. There is no cap on referrals. Refer one business or refer a hundred — you earn on every single one." },
+  { q: "Is there a limit on how many people I can refer?", a: "No. There is no cap on referrals. Refer one business or refer a hundred. You earn on every single one." },
   { q: "When do I get paid?", a: "Within 5 business days after the referred client pays their first invoice. We don't hold your money." },
   { q: "Do I need to be a DeskWolf customer to be an affiliate?", a: "No. You don't need to be a client. You just need to understand what we do well enough to make genuine referrals." },
   { q: "How do I track my referrals?", a: "We're building a self-serve referral dashboard (coming soon). In the meantime, we track every referral manually and send you confirmation when a referred client signs up." },
@@ -234,7 +234,7 @@ export default function AffiliatePage() {
                 "Marketing assets and swipe copy to help you promote",
                 "Real-time referral tracking (dashboard coming soon)",
                 "Dedicated affiliate support from the DeskWolf team",
-                "No cap on earnings — refer as many businesses as you want",
+                "No cap on earnings. Refer as many businesses as you want",
                 "Early access to new products and features",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[15px] text-text-2">

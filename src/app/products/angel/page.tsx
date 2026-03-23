@@ -8,13 +8,13 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "A.N.G.E.L. — DeskWolf LLC",
+  title: "A.N.G.E.L. | DeskWolf LLC",
   description:
-    "Meet A.N.G.E.L. — DeskWolf's flagship AI All-in-One Assistant. Autonomous Networked General Enterprise Layer. Application only.",
+    "Meet A.N.G.E.L., DeskWolf's flagship AI All-in-One Assistant. Autonomous Networked General Enterprise Layer. Application only.",
   openGraph: {
-    title: "A.N.G.E.L. — DeskWolf LLC",
+    title: "A.N.G.E.L. | DeskWolf LLC",
     description:
-      "Meet A.N.G.E.L. — DeskWolf's flagship AI All-in-One Assistant. Application only.",
+      "Meet A.N.G.E.L., DeskWolf's flagship AI All-in-One Assistant. Application only.",
     url: "https://deskwolf.ai/products/angel",
     siteName: "DeskWolf",
     type: "website",
@@ -145,7 +145,7 @@ export default function AngelPage() {
               <span className="font-light text-text-2">One system.</span>
             </h2>
             <p className="text-[17px] text-text-2">
-              Every tool, integration, and workflow — orchestrated by a single AI that understands your business.
+              Every tool, integration, and workflow, orchestrated by a single AI that understands your business.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3 mt-12">
@@ -194,11 +194,11 @@ export default function AngelPage() {
                 {[
                   {
                     title: "Orchestration, Not Conversation",
-                    desc: "A.N.G.E.L. reads workflows, executes tools, handles failures, and improves systems autonomously. She doesn't wait for prompts — she follows SOPs and makes intelligent decisions.",
+                    desc: "A.N.G.E.L. reads workflows, executes tools, handles failures, and improves systems autonomously. She doesn't wait for prompts. She follows SOPs and makes intelligent decisions.",
                   },
                   {
                     title: "Deterministic Execution",
-                    desc: "AI handles reasoning while Python scripts handle execution. Every API call, data transformation, and file operation runs through tested, reliable code — not probabilistic guesses.",
+                    desc: "AI handles reasoning while Python scripts handle execution. Every API call, data transformation, and file operation runs through tested, reliable code, not probabilistic guesses.",
                   },
                   {
                     title: "Self-Improving System",
@@ -234,7 +234,7 @@ export default function AngelPage() {
                 A.N.G.E.L. is not self-serve. We evaluate your business, your needs, and your readiness. If it&rsquo;s a fit, we onboard you personally.
               </p>
               <p className="text-[14px] text-text-3 leading-relaxed max-w-[480px] mx-auto mb-8">
-                This isn&rsquo;t gatekeeping — it&rsquo;s quality control. A.N.G.E.L. is deeply integrated into your operations, and we need to make sure the deployment is set up for success. Every client gets a custom configuration built around their specific workflows, tools, and goals.
+                This isn&rsquo;t gatekeeping. It&rsquo;s quality control. A.N.G.E.L. is deeply integrated into your operations, and we need to make sure the deployment is set up for success. Every client gets a custom configuration built around their specific workflows, tools, and goals.
               </p>
 
               <div className="flex flex-col gap-3 text-left max-w-[400px] mx-auto mb-8">

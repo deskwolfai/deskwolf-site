@@ -250,7 +250,7 @@ export default function MissedCallCalculatorPage() {
                 color: "purple" as const,
                 stat: "78%",
                 title: "buy from the first responder",
-                desc: "Research shows that the first business to respond wins the deal the vast majority of the time. Speed-to-lead isn't a nice-to-have — it's the entire game.",
+                desc: "Research shows that the first business to respond wins the deal the vast majority of the time. Speed-to-lead isn't a nice-to-have. It's the entire game.",
               },
             ].map((card, i) => (
               <GlassCard key={card.title} className={`p-8 text-center rv d${i + 1}`}>

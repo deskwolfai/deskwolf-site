@@ -9,7 +9,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Blog — DeskWolf LLC",
+  title: "Blog | DeskWolf LLC",
   description:
     "Practical AI insights for local business owners. Articles on missed calls, voice agents, speed-to-lead, and how to evaluate AI phone systems.",
 };
@@ -41,7 +41,7 @@ const articles = [
   {
     title: "You're Losing $52,000 a Year to Voicemail. Here's the Fix.",
     excerpt:
-      "Five missed calls a week at $200 each. That's $52,000 a year walking out the door — not because you're bad at business, but because the phone rang and nobody answered. AI voice agents exist to stop that.",
+      "Five missed calls a week at $200 each. That's $52,000 a year walking out the door, not because you're bad at business, but because the phone rang and nobody answered. AI voice agents exist to stop that.",
     date: "March 15, 2026",
     readTime: "8 min read",
     category: "Revenue Recovery",
@@ -49,9 +49,9 @@ const articles = [
     href: "/blog/losing-52k-to-voicemail",
   },
   {
-    title: "Your Phone Isn't Broken — You're Just Missing Every Call",
+    title: "Your Phone Isn't Broken. You're Just Missing Every Call",
     excerpt:
-      "A salon owner looked me dead in the face and said, 'So it's like ChatGPT but for my phone?' DeskWolf isn't a chatbot — it answers your actual business phone line with a real voice, 24/7.",
+      "A salon owner looked me dead in the face and said, 'So it's like ChatGPT but for my phone?' DeskWolf isn't a chatbot. It answers your actual business phone line with a real voice, 24/7.",
     date: "March 14, 2026",
     readTime: "7 min read",
     category: "AI Education",
@@ -61,7 +61,7 @@ const articles = [
   {
     title: "Most People Are Still Using AI Like a Genie. Here's Why That's Costing Them.",
     excerpt:
-      "The AI revolution is real — but for most business owners, it's still just a buzzword. The gap between 'heard of ChatGPT' and 'built a system that runs my front desk' is where the real opportunity sits.",
+      "The AI revolution is real, but for most business owners, it's still just a buzzword. The gap between 'heard of ChatGPT' and 'built a system that runs my front desk' is where the real opportunity sits.",
     date: "March 14, 2026",
     readTime: "9 min read",
     category: "Thought Leadership",
@@ -71,7 +71,7 @@ const articles = [
   {
     title: "Which Jobs AI Is Killing in 2026 (And Which Ones It Can't Touch)",
     excerpt:
-      "Oracle cut 45,000 jobs. Block eliminated 4,000+. The displacement is already happening. Here's how to figure out which side of the line you're on — and what to do about it.",
+      "Oracle cut 45,000 jobs. Block eliminated 4,000+. The displacement is already happening. Here's how to figure out which side of the line you're on, and what to do about it.",
     date: "March 16, 2026",
     readTime: "10 min read",
     category: "Industry Insights",
@@ -81,7 +81,7 @@ const articles = [
   {
     title: "Speed-to-Lead: Why the First 60 Seconds Matter More Than Your Sales Script",
     excerpt:
-      "Responding within 5 minutes makes you 100x more likely to connect with a lead. Most businesses take hours. Here's what happens in those lost minutes — and how to fix it.",
+      "Responding within 5 minutes makes you 100x more likely to connect with a lead. Most businesses take hours. Here's what happens in those lost minutes, and how to fix it.",
     date: "Coming Soon",
     readTime: "5 min read",
     category: "Sales",
@@ -91,7 +91,7 @@ const articles = [
   {
     title: "How to Evaluate AI Phone Systems for Your Business",
     excerpt:
-      "Not all AI voice agents are created equal. From voice quality to integration depth to data ownership — the 12 questions you should ask any vendor before signing a contract.",
+      "Not all AI voice agents are created equal. From voice quality to integration depth to data ownership: the 12 questions you should ask any vendor before signing a contract.",
     date: "Coming Soon",
     readTime: "9 min read",
     category: "Guide",
@@ -124,7 +124,7 @@ export default function BlogPage() {
           </h1>
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[560px] mx-auto opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-            Practical AI insights for local business owners. No fluff, no jargon&nbsp;&mdash; just actionable ideas you can use today.
+            Practical AI insights for local business owners. No fluff, no jargon. Just actionable ideas you can use today.
           </p>
         </div>
       </section>

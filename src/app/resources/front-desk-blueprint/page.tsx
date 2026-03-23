@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "The 24/7 Front Desk Blueprint — DeskWolf LLC",
+  title: "The 24/7 Front Desk Blueprint | DeskWolf LLC",
   description:
     "A complete guide to building an AI-powered front desk that never sleeps. Architecture, cost breakdown, and implementation timeline for local businesses.",
 };
@@ -159,17 +159,17 @@ export default function FrontDeskBlueprintPage() {
             </div>
             <div className="rv d2">
               <p className="text-[17px] text-text-2 leading-relaxed mb-6">
-                An AI voice agent is software that answers phone calls using natural language processing. It doesn&rsquo;t sound like a robot reading a script. It listens, understands context, and responds conversationally&nbsp;&mdash; like a well-trained receptionist who knows your business inside and out.
+                An AI voice agent is software that answers phone calls using natural language processing. It doesn&rsquo;t sound like a robot reading a script. It listens, understands context, and responds conversationally, like a well-trained receptionist who knows your business inside and out.
               </p>
               <p className="text-[17px] text-text-2 leading-relaxed mb-8">
-                These agents are trained on your specific business data: your services, pricing, FAQ responses, scheduling rules, and preferred call flow. They can answer questions, book appointments, route calls to the right person, and send follow-up texts&nbsp;&mdash; all without human intervention.
+                These agents are trained on your specific business data: your services, pricing, FAQ responses, scheduling rules, and preferred call flow. They can answer questions, book appointments, route calls to the right person, and send follow-up texts, all without human intervention.
               </p>
               <div className="flex flex-col gap-3">
                 {[
-                  "Answers calls in under 1 second — no rings, no hold music",
-                  "Handles unlimited simultaneous calls — no busy signals, ever",
-                  "Works 24/7/365 — evenings, weekends, holidays",
-                  "Speaks multiple languages — English, Spanish, French, Creole",
+                  "Answers calls in under 1 second. No rings, no hold music",
+                  "Handles unlimited simultaneous calls. No busy signals, ever",
+                  "Works 24/7/365: evenings, weekends, holidays",
+                  "Speaks multiple languages: English, Spanish, French, Creole",
                   "Learns and improves from every conversation",
                   "Costs a fraction of a human receptionist",
                 ].map((item) => (

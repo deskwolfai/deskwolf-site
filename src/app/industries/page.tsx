@@ -9,7 +9,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Industries — DeskWolf LLC",
+  title: "Industries | DeskWolf LLC",
   description:
     "AI phone systems built for your industry. Gyms, home services, restaurants, real estate, legal, auto shops, and more.",
 };
@@ -184,12 +184,12 @@ export default function IndustriesPage() {
 
           <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[600px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
             Every industry has different call patterns, different pain points, and different revenue at stake.
-            We build voice AI that understands yours.
+            We build voice AI custom-fitted to yours.
           </p>
 
           <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
             <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white text-[#0F172A] shadow-[0_4px_20px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(255,255,255,0.15)]">
-              Book a Demo
+              See It Handle Your Calls
             </a>
             <a href="#industries" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
               Browse Industries
@@ -249,7 +249,7 @@ export default function IndustriesPage() {
                 Tell us what you need and we&rsquo;ll show you exactly how it works.
               </p>
               <a href="/contact" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Contact Us
+                Tell Us About Your Business
               </a>
             </div>
           </GlassCard>

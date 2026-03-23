@@ -8,11 +8,11 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Outbound Lead Qualifier — DeskWolf LLC",
+  title: "Outbound Lead Qualifier | DeskWolf LLC",
   description:
-    "AI-powered speed-to-lead. Every form submission gets an instant callback that qualifies, books, and logs — automatically.",
+    "AI-powered speed-to-lead. Every form submission gets an instant callback that qualifies, books, and logs automatically.",
   openGraph: {
-    title: "Outbound Lead Qualifier — DeskWolf LLC",
+    title: "Outbound Lead Qualifier | DeskWolf LLC",
     description:
       "AI-powered speed-to-lead. Every form submission gets an instant callback that qualifies, books, and logs.",
     url: "https://deskwolf.ai/lead-qualifier",
@@ -90,10 +90,10 @@ const Check = () => (
 
 /* ── Trigger sources ── */
 const triggerSources = [
-  { icon: <FormIcon />, color: "amber" as const, title: "Form Submissions", desc: "Website contact forms, landing pages, Facebook Lead Ads, Google Ads forms — any form that captures a lead." },
+  { icon: <FormIcon />, color: "amber" as const, title: "Form Submissions", desc: "Website contact forms, landing pages, Facebook Lead Ads, Google Ads forms. Any form that captures a lead." },
   { icon: <TableIcon />, color: "green" as const, title: "Spreadsheet Rows", desc: "Add a new row to Google Sheets or upload a CSV. The agent calls every new entry automatically." },
   { icon: <UserPlusIcon />, color: "blue" as const, title: "Manual Entry", desc: "Paste a phone number into the dashboard or push a contact from your CRM. The agent calls immediately." },
-  { icon: <CRMIcon />, color: "purple" as const, title: "CRM Triggers", desc: "New contact created, deal stage changed, or tag applied — any CRM event can trigger an outbound call." },
+  { icon: <CRMIcon />, color: "purple" as const, title: "CRM Triggers", desc: "New contact created, deal stage changed, or tag applied. Any CRM event can trigger an outbound call." },
 ];
 
 /* ── Qualification flow steps ── */
@@ -101,18 +101,18 @@ const qualSteps = [
   { num: "01", title: "Lead Triggers Call", desc: "A form is submitted, a spreadsheet row is added, or a CRM event fires. The system detects the new lead instantly." },
   { num: "02", title: "Phone Rings in Seconds", desc: "The AI agent calls the lead within seconds of the trigger. Not minutes. Not hours. Seconds. While they're still on your website." },
   { num: "03", title: "Personalized Greeting", desc: "The agent greets the lead by name, references what they submitted, and establishes context immediately." },
-  { num: "04", title: "Qualification Script", desc: "Custom questions designed for your business — budget, timeline, scope, decision-maker status. Every answer is captured and scored." },
-  { num: "05", title: "Objection Handling", desc: "The agent handles common pushback naturally. 'I'm just browsing,' 'Send me an email,' 'What's the cost?' — all scripted and tested." },
+  { num: "04", title: "Qualification Script", desc: "Custom questions designed for your business: budget, timeline, scope, decision-maker status. Every answer is captured and scored." },
+  { num: "05", title: "Objection Handling", desc: "The agent handles common pushback naturally. 'I'm just browsing,' 'Send me an email,' 'What's the cost?' All scripted and tested." },
   { num: "06", title: "Book or Route", desc: "Qualified leads get booked directly into your calendar. Hot leads get live-transferred to your sales team. Unqualified leads get tagged for nurture." },
 ];
 
 /* ── FAQ data ── */
 const faqs = [
-  { q: "How fast does the callback actually happen?", a: "Typically under 30 seconds from the moment the form is submitted. The speed depends on the trigger source — direct form integrations are fastest. CRM and spreadsheet triggers add a few seconds for processing." },
+  { q: "How fast does the callback actually happen?", a: "Typically under 30 seconds from the moment the form is submitted. The speed depends on the trigger source. Direct form integrations are fastest, while CRM and spreadsheet triggers add a few seconds for processing." },
   { q: "Can I customize the qualification questions?", a: "Completely. We build the script with you during onboarding. You define what qualifies a lead, what disqualifies one, and what questions matter most to your sales process." },
-  { q: "What if the lead doesn't answer?", a: "The agent retries on a configurable schedule — for example, 3 attempts over 24 hours. You define the cadence, number of retries, and what happens if they never pick up (text, email, or nurture sequence)." },
+  { q: "What if the lead doesn't answer?", a: "The agent retries on a configurable schedule. For example, 3 attempts over 24 hours. You define the cadence, number of retries, and what happens if they never pick up (text, email, or nurture sequence)." },
   { q: "Does it work with Facebook/Google Lead Ads?", a: "Yes. We connect directly to Facebook Lead Ads and Google Ads lead form extensions via API. When a lead form is submitted on any platform, the call fires instantly." },
-  { q: "Can the agent transfer to a live person?", a: "Absolutely. You define hot-lead criteria and the agent will warm-transfer the call in real-time to your sales rep — with full context from the qualification conversation." },
+  { q: "Can the agent transfer to a live person?", a: "Absolutely. You define hot-lead criteria and the agent will warm-transfer the call in real-time to your sales rep, complete with full context from the qualification conversation." },
   { q: "How do I see the results?", a: "Every call is logged with a full transcript, qualification score, outcome (booked, transferred, nurture, disqualified), and recording. Results sync to your CRM and are visible in a reporting dashboard." },
   { q: "What CRMs do you integrate with?", a: "GoHighLevel, HubSpot, Salesforce, Pipedrive, and any CRM that supports webhooks or Zapier. We also integrate directly with Google Sheets for simpler setups." },
 ];
@@ -141,12 +141,12 @@ export default function LeadQualifierPage() {
             </h1>
 
             <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[580px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-              Your Outbound Lead Qualifier calls every new lead within seconds of submission, qualifies them with your custom script, handles objections, and books appointments — automatically.
+              Your Outbound Lead Qualifier calls every new lead within seconds of submission, qualifies them with your custom script, handles objections, and books appointments. Fully automatic, zero manual follow-up.
             </p>
 
             <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-amber to-[#EF4444] text-white shadow-[0_4px_20px_rgba(245,158,11,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(245,158,11,0.35)]">
-                Book a Live Demo
+                Watch It Call a Lead Live
               </a>
               <a href="#speed-to-lead" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                 See the Speed Advantage
@@ -254,7 +254,7 @@ export default function LeadQualifierPage() {
               <ul className="list-none flex flex-col gap-3">
                 {[
                   "Custom qualification questions tailored to your sales process",
-                  "Lead scoring based on answers — hot, warm, or nurture",
+                  "Lead scoring based on answers: hot, warm, or nurture",
                   "Budget, authority, need, and timeline (BANT) framework built in",
                   "Multi-path conversation flows based on caller responses",
                   "Disqualification criteria to protect your team's time",
@@ -308,7 +308,7 @@ export default function LeadQualifierPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
             {[
               { icon: <CRMIcon />, color: "blue" as const, title: "Contact Sync", desc: "New leads are created automatically. Existing contacts are updated with call notes, qualification scores, and outcomes." },
-              { icon: <ClipboardIcon />, color: "green" as const, title: "Full Call Logging", desc: "Transcripts, recordings, duration, qualification answers, and disposition — all logged to the contact record." },
+              { icon: <ClipboardIcon />, color: "green" as const, title: "Full Call Logging", desc: "Transcripts, recordings, duration, qualification answers, and disposition. Everything logged to the contact record." },
               { icon: <CalendarIcon />, color: "purple" as const, title: "Auto-Booking", desc: "Qualified leads are booked into your calendar with context. Your sales team sees who they're meeting and why." },
               { icon: <TargetIcon />, color: "amber" as const, title: "Lead Scoring", desc: "Every lead gets a qualification score based on their answers. Hot leads are flagged for immediate follow-up." },
               { icon: <ChartIcon />, color: "cyan" as const, title: "Pipeline Updates", desc: "Deals are moved through pipeline stages automatically based on call outcomes and qualification results." },
@@ -460,7 +460,7 @@ export default function LeadQualifierPage() {
               </p>
               <div className="flex gap-3 flex-wrap justify-center">
                 <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-amber to-[#EF4444] text-white shadow-[0_4px_20px_rgba(245,158,11,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(245,158,11,0.35)]">
-                  Book a Live Demo
+                  Watch It Call a Lead Live
                 </a>
                 <a href="/pricing" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
                   View Pricing

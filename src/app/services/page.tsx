@@ -8,7 +8,7 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Services — DeskWolf LLC",
+  title: "Services | DeskWolf LLC",
   description:
     "Done-for-you AI voice agents, CRM automation, consulting, and content creation.",
 };
@@ -110,15 +110,15 @@ export default function ServicesPage() {
             </div>
 
             <h1 className="text-[clamp(36px,5.5vw,60px)] font-extrabold leading-[1.08] tracking-[-0.03em] text-text mb-[18px] opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              Everything Your Front Desk Should Be Doing&nbsp;&mdash;{" "}
+              Every Call Answered. Every Lead Captured.{" "}
               <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
-                Without Hiring Anyone New.
+                Every Opportunity Recovered.
               </span>
             </h1>
 
             <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[580px] mx-auto mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
               AI voice agents, CRM automation, consulting, and content creation.
-              All done-for-you. All managed by us. Pick what you need, or stack them all.
+              All built for you. All managed by us. Pick what you need, or stack them all.
             </p>
 
             <div className="flex gap-3 flex-wrap justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.35s" }}>
@@ -155,7 +155,7 @@ export default function ServicesPage() {
               <h3 className="text-[20px] font-extrabold text-text mb-1">AI Receptionist</h3>
               <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent mb-3">From $1,500/mo</div>
               <p className="text-sm text-text-3 leading-relaxed mb-5">
-                24/7 call handling. Answers FAQs, books appointments, routes calls, and sends follow-up texts. Your front desk, always on.
+                Stop losing callers to voicemail. Your AI receptionist answers every call, books appointments, routes to the right person, and follows up by text. Always on, always ready.
               </p>
               <ul className="list-none flex flex-col gap-2">
                 {[
@@ -186,7 +186,7 @@ export default function ServicesPage() {
               <h3 className="text-[20px] font-extrabold text-text mb-1">Lead Qualifier</h3>
               <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-amber to-[#EF4444] bg-clip-text text-transparent mb-3">From $1,500/mo</div>
               <p className="text-sm text-text-3 leading-relaxed mb-5">
-                Instant callback on every form submission. Greets leads by name, qualifies them via custom script, and books appointments automatically.
+                Turn form fills into booked appointments within seconds. Your AI calls leads back instantly, qualifies them on your criteria, and gets them on the calendar before they shop around.
               </p>
               <ul className="list-none flex flex-col gap-2">
                 {[
@@ -216,7 +216,7 @@ export default function ServicesPage() {
               <h3 className="text-[20px] font-extrabold text-text mb-1">Call-Back Agent</h3>
               <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-green to-brand-cyan bg-clip-text text-transparent mb-3">From $500/mo</div>
               <p className="text-sm text-text-3 leading-relaxed mb-5">
-                Every dropped call, every missed ring&nbsp;&mdash; automatically called back. No lead left behind.
+                Every dropped call and missed ring gets an automatic callback. No lead left behind, no revenue walking out the door.
               </p>
               <ul className="list-none flex flex-col gap-2">
                 {[
@@ -249,11 +249,11 @@ export default function ServicesPage() {
               <h2 className="text-[clamp(26px,3.5vw,40px)] font-extrabold leading-[1.15] tracking-[-0.02em] text-text mb-4">
                 All three products.{" "}
                 <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
-                  Total phone coverage.
+                  Zero calls lost.
                 </span>
               </h2>
               <p className="text-[17px] text-text-2 leading-relaxed mb-8">
-                When you stack all three agents, you get a complete phone system that answers every inbound call, qualifies every new lead instantly, and recovers every missed opportunity&nbsp;&mdash; 24/7, in four languages, without hiring a single person.
+                Stack all three agents and your phones are fully covered. Every inbound call answered, every new lead qualified in seconds, every missed opportunity recovered. Running 24/7, in four languages, live within weeks. You focus on the work. The phones take care of themselves.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
@@ -271,7 +271,7 @@ export default function ServicesPage() {
               </div>
 
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
-                Book a Demo
+                Hear It Live
               </a>
             </div>
           </GlassCard>
@@ -297,11 +297,11 @@ export default function ServicesPage() {
                 title: "CRM Automation",
                 price: "From $1,000",
                 features: [
-                  "Pipeline & deal stage automation",
-                  "Lead scoring & routing rules",
-                  "Automated follow-up sequences",
-                  "Reporting dashboards",
-                  "Integration with your existing tools",
+                  "Leads move through your pipeline automatically",
+                  "Scoring & routing so reps only see qualified leads",
+                  "Follow-up sequences that run without you",
+                  "Reporting dashboards with real numbers",
+                  "Plugs into the tools you already use",
                 ],
               },
               {
@@ -309,11 +309,11 @@ export default function ServicesPage() {
                 title: "AI Automations",
                 price: "From $500",
                 features: [
-                  "Workflow design & implementation",
-                  "Data enrichment pipelines",
-                  "Document processing & extraction",
-                  "Custom AI integrations",
-                  "Monitoring & maintenance",
+                  "Eliminate manual data entry and handoffs",
+                  "Enrich leads and contacts automatically",
+                  "Extract data from documents in seconds",
+                  "Connect any tool to any other tool",
+                  "Monitored and maintained by our team",
                 ],
               },
               {
@@ -321,10 +321,10 @@ export default function ServicesPage() {
                 title: "Tech & AI Consulting",
                 price: "From $100",
                 features: [
-                  "AI readiness assessment",
-                  "Technology stack audit",
-                  "Implementation roadmap",
-                  "Vendor evaluation & selection",
+                  "Know exactly where AI fits your operation",
+                  "Full technology stack audit",
+                  "Clear implementation roadmap",
+                  "Unbiased vendor evaluation",
                   "Ongoing advisory retainer",
                 ],
               },
@@ -333,7 +333,7 @@ export default function ServicesPage() {
                 title: "AI Voice/Video Cloning",
                 price: "$1,000",
                 features: [
-                  "Professional voice clone",
+                  "Your voice, scaled across every channel",
                   "Multi-language voice output",
                   "Video avatar generation",
                   "Brand-consistent media assets",
@@ -345,9 +345,9 @@ export default function ServicesPage() {
                 title: "AI Avatar Content Creator",
                 price: "$500",
                 features: [
-                  "AI-generated video content",
-                  "Social media format optimization",
-                  "Script-to-video pipeline",
+                  "Publish video content without filming",
+                  "Optimized for every social platform",
+                  "Script-to-video in minutes",
                   "Branded templates & overlays",
                   "Monthly content packages",
                 ],
@@ -357,7 +357,7 @@ export default function ServicesPage() {
                 title: "Custom Builds",
                 price: "Custom Quote",
                 features: [
-                  "Bespoke AI tool development",
+                  "Purpose-built AI tools for your workflow",
                   "API integrations & middleware",
                   "Internal dashboard builds",
                   "Data pipeline architecture",
@@ -419,7 +419,7 @@ export default function ServicesPage() {
                 <h3 className="text-[20px] font-extrabold text-text mb-3">Full transparency on tool costs.</h3>
                 <p className="text-[15px] text-text-2 leading-relaxed">
                   Every tool we deploy is set up under <strong className="text-text">your accounts</strong>. You own the API keys, the subscriptions, and the data. We never mark up third-party costs.
-                  Our fee covers the build, deployment, training, and ongoing management&nbsp;&mdash; the tools themselves are at-cost, paid directly by you.
+                  Our fee covers the build, deployment, training, and ongoing management. The tools themselves are at-cost, paid directly by you.
                   No hidden fees. No vendor lock-in. If we part ways, everything stays yours.
                 </p>
               </div>
@@ -433,20 +433,20 @@ export default function ServicesPage() {
         <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
           <div className="text-center max-w-[600px] mx-auto rv">
             <h2 className="text-[clamp(30px,4vw,46px)] mb-4">
-              Book Your{" "}
+              See What Your Business{" "}
               <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
-                Free Demo
+                Sounds Like on Autopilot
               </span>
             </h2>
             <p className="text-[17px] text-text-2 mb-8">
-              See exactly how DeskWolf would work for your business. No pressure, no commitment&nbsp;&mdash; just a live walkthrough tailored to your setup.
+              We&rsquo;ll walk you through a live demo tailored to your setup. No pressure, no commitment. Just results you can hear.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white text-[#0F172A] shadow-[0_4px_20px_rgba(15,23,42,0.2)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(255,255,255,0.15)]">
-                Book a Demo
+                Hear It Live
               </a>
               <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-white/[0.06] text-text backdrop-blur-[12px] border border-glass-border transition-all duration-300 hover:bg-white/90 hover:-translate-y-[3px] hover:shadow-[var(--shadow-std)]">
-                Schedule a Call
+                Talk to Our Team
               </a>
             </div>
           </div>

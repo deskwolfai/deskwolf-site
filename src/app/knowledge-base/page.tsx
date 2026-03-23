@@ -8,11 +8,11 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Knowledge Base — DeskWolf LLC",
+  title: "Knowledge Base | DeskWolf LLC",
   description:
     "Find answers about AI voice agents, CRM integration, call analytics, billing, and more. The DeskWolf knowledge base has everything you need.",
   openGraph: {
-    title: "Knowledge Base — DeskWolf LLC",
+    title: "Knowledge Base | DeskWolf LLC",
     description:
       "Find answers about AI voice agents, CRM integration, call analytics, billing, and more.",
     url: "https://deskwolf.ai/knowledge-base",
@@ -208,7 +208,7 @@ export default function KnowledgeBasePage() {
                 Can&rsquo;t find what you need?
               </h3>
               <p className="text-[16px] text-text-2 leading-relaxed max-w-[440px] mx-auto mb-7">
-                Our team is here to help. Reach out and we&rsquo;ll get you the answer — usually within a few hours.
+                Our team is here to help. Reach out and we&rsquo;ll get you the answer, usually within a few hours.
               </p>
               <a href="/contact" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">
                 Contact Support

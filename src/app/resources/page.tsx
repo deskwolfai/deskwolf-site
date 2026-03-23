@@ -9,11 +9,11 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Resources — DeskWolf LLC",
+  title: "Resources | DeskWolf LLC",
   description:
     "Calculators, guides, and tools to help you understand the ROI of AI voice agents for your business.",
   openGraph: {
-    title: "Resources — DeskWolf LLC",
+    title: "Resources | DeskWolf LLC",
     description:
       "Calculators, guides, and tools to help you understand the ROI of AI voice agents for your business.",
     url: "https://deskwolf.ai/resources",
@@ -139,7 +139,7 @@ export default function ResourcesPage() {
               </span>
             </h1>
             <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[560px] mx-auto">
-              Calculators, guides, and reference material to help you understand the ROI of AI voice agents — before you commit.
+              Calculators, guides, and reference material to help you understand the ROI of AI voice agents before you commit.
             </p>
           </div>
         </div>

@@ -9,9 +9,9 @@ import NewsletterForm from "@/components/NewsletterForm";
 import CalendlyEmbed from "./CalendlyEmbed";
 
 export const metadata: Metadata = {
-  title: "Try It Now — Call A.N.G.E.L. Live — DeskWolf LLC",
+  title: "Try It Now | Call A.N.G.E.L. Live | DeskWolf LLC",
   description:
-    "Call A.N.G.E.L. right now and experience DeskWolf's AI receptionist live. No signup, no demo booking required — just dial.",
+    "Call A.N.G.E.L. right now and experience DeskWolf's AI receptionist live. No signup, no demo booking required. Just dial.",
 };
 
 /* ── SVG Icons ── */
@@ -134,7 +134,7 @@ export default function DemoPage() {
                   </div>
 
                   {/* Label */}
-                  <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-text-3 mb-3 text-center">Try it now — call A.N.G.E.L.</div>
+                  <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-text-3 mb-3 text-center">Try it now. Call A.N.G.E.L.</div>
 
                   {/* Phone number */}
                   <a
@@ -192,7 +192,7 @@ export default function DemoPage() {
 
             {/* Bottom tagline */}
             <p className="text-sm text-text-3 mt-8 max-w-[400px] mx-auto opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
-              She answers calls, books appointments, handles FAQs, and follows up — just like your best receptionist, but she never sleeps.
+              She answers calls, books appointments, handles FAQs, and follows up. Just like your best receptionist, but she never sleeps.
             </p>
           </div>
         </div>
@@ -208,9 +208,9 @@ export default function DemoPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
             {[
-              { icon: <PhoneIcon />, color: "blue" as const, title: "Ask About Services", desc: "\"What services does DeskWolf offer?\" — hear how she handles a real FAQ with natural conversation." },
-              { icon: <ClockIcon />, color: "green" as const, title: "Book an Appointment", desc: "\"I'd like to schedule a demo\" — watch her walk you through booking a time that works." },
-              { icon: <WaveIcon />, color: "purple" as const, title: "Ask Tough Questions", desc: "\"How much does it cost?\" or \"How is this different from an answering service?\" — she handles objections." },
+              { icon: <PhoneIcon />, color: "blue" as const, title: "Ask About Services", desc: "\"What services does DeskWolf offer?\" Hear how she handles a real FAQ with natural conversation." },
+              { icon: <ClockIcon />, color: "green" as const, title: "Book an Appointment", desc: "\"I'd like to schedule a demo.\" She'll walk you through booking a time that works." },
+              { icon: <WaveIcon />, color: "purple" as const, title: "Ask Tough Questions", desc: "\"How much does it cost?\" or \"How is this different from an answering service?\" She handles objections." },
               { icon: <GlobeIcon />, color: "amber" as const, title: "Try Another Language", desc: "Switch to Spanish mid-call. She speaks English, Spanish, French, and Haitian Creole fluently." },
               { icon: <ShieldIcon />, color: "cyan" as const, title: "Test Her Knowledge", desc: "Ask about specific industries, pricing tiers, or technical details. She knows the business inside out." },
               { icon: <CheckIcon />, color: "blue" as const, title: "Just Chat", desc: "Have a conversation. See how natural she sounds. Notice there's no hold music, no \"press 1\", no waiting." },
@@ -255,7 +255,7 @@ export default function DemoPage() {
                 team.
               </span>
             </h2>
-            <p className="text-[17px] text-text-2">15-minute discovery call. No pitch, no pressure — just a walkthrough tailored to your business.</p>
+            <p className="text-[17px] text-text-2">15-minute discovery call. No pitch, no pressure. Just a walkthrough tailored to your business.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
