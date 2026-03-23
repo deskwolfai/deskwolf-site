@@ -5,6 +5,7 @@ import GlassCard from "@/components/GlassCard";
 import GradientIcon from "@/components/GradientIcon";
 import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
+import ScrollTransform from "@/components/ScrollTransform";
 
 /* ── SVG Icons (inline for zero deps) ── */
 const PhoneIcon = () => (
@@ -128,7 +129,7 @@ export default function HomePage() {
               ].map((n) => (
                 <div
                   key={n.title}
-                  className="absolute w-[340px] bg-white/65 backdrop-blur-[20px] saturate-[1.4] border border-white/75 rounded-[var(--radius-std)] px-6 py-5 flex items-center gap-4 shadow-[0_12px_40px_-8px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.5)] transition-all duration-[400ms] cursor-pointer hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.12),var(--shadow-glow)] animate-notif-in"
+                  className="absolute w-[340px] bg-[rgba(15,18,27,0.85)] backdrop-blur-[20px] saturate-[1.4] border border-white/[0.1] rounded-[var(--radius-std)] px-6 py-5 flex items-center gap-4 shadow-[0_12px_40px_-8px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.06)] transition-all duration-[400ms] cursor-pointer hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.5),var(--shadow-glow)] animate-notif-in"
                   style={{ top: n.top, left: n.left, animationDelay: n.delay }}
                 >
                   <div className={`w-12 h-12 rounded-[14px] flex items-center justify-center shrink-0 bg-gradient-to-br ${
@@ -140,7 +141,7 @@ export default function HomePage() {
                     {n.icon}
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#0F172A] mb-0.5">{n.title}</h4>
+                    <h4 className="text-sm font-bold text-text mb-0.5">{n.title}</h4>
                     <p className="text-xs text-text-3 leading-snug">{n.desc}</p>
                   </div>
                   <span className="font-mono text-[10px] text-text-3 ml-auto shrink-0">{n.time}</span>
@@ -148,11 +149,11 @@ export default function HomePage() {
               ))}
 
               {/* Floating stats */}
-              <div className="absolute bottom-10 left-0 bg-glass-strong backdrop-blur-[16px] border border-white/80 rounded-[var(--radius-sm)] px-4 py-3 shadow-[var(--shadow-std)] text-center opacity-0 animate-fade-up" style={{ animationDelay: "1.8s" }}>
+              <div className="absolute bottom-10 left-0 bg-[rgba(15,18,27,0.85)] backdrop-blur-[16px] border border-white/[0.1] rounded-[var(--radius-sm)] px-4 py-3 shadow-[var(--shadow-std)] text-center opacity-0 animate-fade-up" style={{ animationDelay: "1.8s" }}>
                 <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">$18,250</div>
                 <div className="font-mono text-[9px] tracking-[0.08em] uppercase text-text-3">Saved / Year</div>
               </div>
-              <div className="absolute bottom-[100px] right-0 bg-glass-strong backdrop-blur-[16px] border border-white/80 rounded-[var(--radius-sm)] px-4 py-3 shadow-[var(--shadow-std)] text-center opacity-0 animate-fade-up" style={{ animationDelay: "2s" }}>
+              <div className="absolute bottom-[100px] right-0 bg-[rgba(15,18,27,0.85)] backdrop-blur-[16px] border border-white/[0.1] rounded-[var(--radius-sm)] px-4 py-3 shadow-[var(--shadow-std)] text-center opacity-0 animate-fade-up" style={{ animationDelay: "2s" }}>
                 <div className="font-extrabold text-[22px] bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">99.8%</div>
                 <div className="font-mono text-[9px] tracking-[0.08em] uppercase text-text-3">Uptime</div>
               </div>
@@ -160,6 +161,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ════════════ SCROLL TRANSFORMATION ════════════ */}
+      <ScrollTransform />
 
       {/* ════════════ LEAD MAGNET ════════════ */}
       <section className="relative z-[2] py-[100px]" id="resources">
