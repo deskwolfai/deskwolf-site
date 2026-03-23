@@ -1,26 +1,20 @@
 import Link from "next/link";
 
-const productLinks = [
-  { label: "AI Receptionist", href: "/ai-receptionist" },
-  { label: "Lead Qualifier", href: "/lead-qualifier" },
-  { label: "Call-Back Agent", href: "/services#core" },
-  { label: "A.N.G.E.L.", href: "/products/angel" },
+/* Footer only shows links NOT already in the main nav.
+   Nav has: Products (3), Learn (5), Pricing, About (2 + Industries).
+   Footer covers: resources tools, partners, legal, careers, contact. */
+
+const resourceLinks = [
+  { label: "Free Resources", href: "/resources" },
+  { label: "Front Desk Blueprint", href: "/resources/front-desk-blueprint" },
+  { label: "Missed Call Calculator", href: "/resources/missed-call-calculator" },
 ];
 
 const companyLinks = [
-  { label: "About", href: "/about" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Industries", href: "/industries" },
+  { label: "Affiliate Program", href: "/affiliate" },
+  { label: "Partner With Us", href: "/partners" },
+  { label: "Referral Portal", href: "/referral" },
   { label: "Careers", href: "/careers" },
-];
-
-const resourceLinks = [
-  { label: "Blog", href: "/blog" },
-  { label: "Knowledge Base", href: "/knowledge-base" },
-  { label: "ROI Calculator", href: "/resources/roi-calculator" },
-  { label: "Glossary", href: "/glossary" },
-  { label: "Case Studies", href: "/case-studies" },
 ];
 
 const legalLinks = [
@@ -30,18 +24,12 @@ const legalLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
-const partnerLinks = [
-  { label: "Affiliate Program", href: "/affiliate" },
-  { label: "Partner With Us", href: "/partners" },
-  { label: "Referral Portal", href: "/referral" },
-];
-
 export default function Footer() {
   return (
     <footer className="relative z-[2] pt-16 pb-7 bg-white/[0.03] backdrop-blur-[16px] border-t border-white/[0.06]">
       <div className="max-w-[1440px] mx-auto px-[clamp(16px,3.5vw,40px)]">
         {/* Top grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr_1fr] gap-8 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-[2.5fr_1fr_1fr_1fr] gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <h3 className="text-[17px] mb-3 flex items-center gap-2">
@@ -59,45 +47,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Product links */}
-          <div>
-            <h4 className="font-mono text-[10px] font-medium tracking-[0.1em] uppercase text-text-3 mb-4">
-              Products
-            </h4>
-            <ul className="list-none">
-              {productLinks.map((l) => (
-                <li key={l.href} className="mb-2">
-                  <Link
-                    href={l.href}
-                    className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company links */}
-          <div>
-            <h4 className="font-mono text-[10px] font-medium tracking-[0.1em] uppercase text-text-3 mb-4">
-              Company
-            </h4>
-            <ul className="list-none">
-              {companyLinks.map((l) => (
-                <li key={l.href} className="mb-2">
-                  <Link
-                    href={l.href}
-                    className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources links */}
+          {/* Resources (items NOT in main nav) */}
           <div>
             <h4 className="font-mono text-[10px] font-medium tracking-[0.1em] uppercase text-text-3 mb-4">
               Resources
@@ -105,10 +55,7 @@ export default function Footer() {
             <ul className="list-none">
               {resourceLinks.map((l) => (
                 <li key={l.href} className="mb-2">
-                  <Link
-                    href={l.href}
-                    className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan"
-                  >
+                  <Link href={l.href} className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan">
                     {l.label}
                   </Link>
                 </li>
@@ -116,18 +63,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Partner links */}
+          {/* Company */}
           <div>
             <h4 className="font-mono text-[10px] font-medium tracking-[0.1em] uppercase text-text-3 mb-4">
-              Partners
+              Company
             </h4>
             <ul className="list-none">
-              {partnerLinks.map((l) => (
+              {companyLinks.map((l) => (
                 <li key={l.href} className="mb-2">
-                  <Link
-                    href={l.href}
-                    className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan"
-                  >
+                  <Link href={l.href} className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan">
                     {l.label}
                   </Link>
                 </li>
@@ -135,7 +79,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal links */}
+          {/* Legal */}
           <div>
             <h4 className="font-mono text-[10px] font-medium tracking-[0.1em] uppercase text-text-3 mb-4">
               Legal
@@ -143,10 +87,7 @@ export default function Footer() {
             <ul className="list-none">
               {legalLinks.map((l) => (
                 <li key={l.href} className="mb-2">
-                  <Link
-                    href={l.href}
-                    className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan"
-                  >
+                  <Link href={l.href} className="text-sm text-text-2 no-underline transition-colors duration-200 hover:text-brand-cyan">
                     {l.label}
                   </Link>
                 </li>

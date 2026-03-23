@@ -8,13 +8,13 @@ import RevealObserver from "@/components/RevealObserver";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
-  title: "Pricing — DeskWolf LLC",
+  title: "Agency Services & Pricing — DeskWolf LLC",
   description:
-    "Transparent pricing for done-for-you AI systems. No hidden fees, no vendor lock-in. You own your tools, you see every cost, and you can leave anytime.",
+    "Personalized AI consulting and deployment for your business. We work inside your operations — strategy, build, launch, and ongoing management. Transparent pricing, no lock-in.",
   openGraph: {
-    title: "Pricing — DeskWolf LLC",
+    title: "Agency Services & Pricing — DeskWolf LLC",
     description:
-      "Transparent pricing for done-for-you AI systems. No hidden fees, no vendor lock-in.",
+      "Personalized AI consulting and deployment. We work inside your business.",
     url: "https://deskwolf.ai/pricing",
     siteName: "DeskWolf",
     type: "website",
@@ -204,16 +204,16 @@ export default function PricingPage() {
           <div className="rv">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 pl-2.5 bg-white/[0.06] border border-white/10 rounded-[100px] mb-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)]">
               <div className="w-2 h-2 bg-brand-blue rounded-full animate-pulse-dot" />
-              <span className="text-sm text-text-2">Pricing</span>
+              <span className="text-sm text-text-2">Agency Services</span>
             </div>
             <h1 className="text-[clamp(36px,5.5vw,60px)] font-extrabold leading-[1.1] tracking-[-0.03em] text-text mb-5 max-w-[800px] mx-auto">
-              Transparent Pricing. No Hidden Fees.{" "}
+              We Work Inside Your Business.{" "}
               <span className="bg-gradient-to-r from-brand-blue via-brand-purple to-brand-cyan bg-clip-text text-transparent">
-                No Lock-In.
+                Not From a Dashboard.
               </span>
             </h1>
-            <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[600px] mx-auto">
-              Simple, honest pricing for done-for-you AI systems. You own your tools, you see every cost, and you can leave anytime.
+            <p className="text-[clamp(16px,1.6vw,18px)] text-text-2 max-w-[640px] mx-auto">
+              This isn&rsquo;t a product you install yourself. It&rsquo;s a personalized consultation and deployment — we learn your business, build your AI systems, and manage them ongoing. Transparent pricing, no lock-in, you own everything.
             </p>
           </div>
         </div>
