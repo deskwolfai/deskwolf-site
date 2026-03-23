@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 
 const resourceLinks = [
+  { label: "Case Studies", href: "/case-studies" },
   { label: "ROI Calculator", href: "/resources/roi-calculator" },
   { label: "Missed Call Calculator", href: "/resources/missed-call-calculator" },
   { label: "Front Desk Blueprint", href: "/resources/front-desk-blueprint" },
@@ -22,6 +23,7 @@ const links = [
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
   { label: "Pricing", href: "/pricing" },
+  { label: "How It Works", href: "/how-it-works" },
   { label: "About", href: "/about" },
 ];
 
@@ -89,7 +91,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 pr-2 py-2 backdrop-blur-[24px] saturate-[1.6] border border-white/[0.08] rounded-[100px] flex items-center gap-1 max-w-[920px] w-[calc(100%-24px)] transition-all duration-300 ${
+        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 pr-2 py-2 backdrop-blur-[24px] saturate-[1.6] border border-white/[0.08] rounded-[100px] flex items-center gap-1 max-w-[1020px] w-[calc(100%-24px)] transition-all duration-300 ${
           scrolled
             ? "bg-[rgba(12,14,20,0.9)] shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
             : "bg-[rgba(12,14,20,0.7)] shadow-[0_4px_24px_rgba(0,0,0,0.05)]"
