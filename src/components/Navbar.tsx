@@ -99,24 +99,23 @@ function Dropdown({ label, items, open, onToggle, onClose }: {
   );
 }
 
-/* ── Dropdown with sub-menu (used by Solutions and About) ── */
-function NestedDropdown({ label, topLinks, subLabel, subLinks, open, onToggle, onClose }: {
+/* ── Dropdown with sub-menus (used by Solutions) ── */
+function NestedDropdown({ label, topLinks, subSections, open, onToggle, onClose }: {
   label: string;
   topLinks: { label: string; href: string }[];
-  subLabel: string;
-  subLinks: { label: string; href: string; accent?: boolean }[];
+  subSections: { label: string; links: { label: string; href: string; accent?: boolean }[] }[];
   open: boolean;
   onToggle: () => void;
   onClose: () => void;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [subOpen, setSubOpen] = useState(false);
+  const [openSub, setOpenSub] = useState<string | null>(null);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         onClose();
-        setSubOpen(false);
+        setOpenSub(null);
       }
     };
     if (open) document.addEventListener("mousedown", handler);
@@ -124,7 +123,7 @@ function NestedDropdown({ label, topLinks, subLabel, subLinks, open, onToggle, o
   }, [open, onClose]);
 
   useEffect(() => {
-    if (!open) setSubOpen(false);
+    if (!open) setOpenSub(null);
   }, [open]);
 
   return (
@@ -149,41 +148,43 @@ function NestedDropdown({ label, topLinks, subLabel, subLinks, open, onToggle, o
             </Link>
           ))}
 
-          <div className="h-px bg-white/[0.08] mx-2 my-1.5" />
+          {subSections.map((section) => (
+            <div key={section.label}>
+              <div className="h-px bg-white/[0.08] mx-2 my-1.5" />
+              <div className="relative">
+                <button
+                  onClick={() => setOpenSub(openSub === section.label ? null : section.label)}
+                  onMouseEnter={() => setOpenSub(section.label)}
+                  className="w-full text-left text-[13px] font-medium text-text-2 px-3.5 py-2.5 rounded-[10px] transition-all duration-200 hover:bg-brand-purple/15 hover:text-brand-purple bg-transparent border-none cursor-pointer flex items-center justify-between"
+                >
+                  {section.label}
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                    <polyline points="9 6 15 12 9 18" />
+                  </svg>
+                </button>
 
-          {/* Sub-menu trigger */}
-          <div className="relative">
-            <button
-              onClick={() => setSubOpen(!subOpen)}
-              onMouseEnter={() => setSubOpen(true)}
-              className="w-full text-left text-[13px] font-medium text-text-2 px-3.5 py-2.5 rounded-[10px] transition-all duration-200 hover:bg-brand-purple/15 hover:text-brand-purple bg-transparent border-none cursor-pointer flex items-center justify-between"
-            >
-              {subLabel}
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                <polyline points="9 6 15 12 9 18" />
-              </svg>
-            </button>
-
-            {subOpen && (
-              <div
-                className={`absolute left-full top-0 ml-1 w-[200px] z-[120] ${panelClass}`}
-                onMouseLeave={() => setSubOpen(false)}
-              >
-                {subLinks.map((item) => (
-                  <Link
-                    key={item.href + item.label}
-                    href={item.href}
-                    onClick={() => { onClose(); setSubOpen(false); }}
-                    className={`block text-[13px] font-medium no-underline px-3.5 py-2 rounded-[10px] transition-all duration-200 hover:bg-brand-purple/15 ${
-                      item.accent ? "text-brand-cyan font-semibold" : "text-text-2 hover:text-brand-purple"
-                    }`}
+                {openSub === section.label && (
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-[200px] z-[120] ${panelClass}`}
+                    onMouseLeave={() => setOpenSub(null)}
                   >
-                    {item.label}
-                  </Link>
-                ))}
+                    {section.links.map((item) => (
+                      <Link
+                        key={item.href + item.label}
+                        href={item.href}
+                        onClick={() => { onClose(); setOpenSub(null); }}
+                        className={`block text-[13px] font-medium no-underline px-3.5 py-2 rounded-[10px] transition-all duration-200 hover:bg-brand-purple/15 ${
+                          item.accent ? "text-brand-cyan font-semibold" : "text-text-2 hover:text-brand-purple"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            </div>
+          ))}
         </div>
       )}
     </div>
@@ -265,8 +266,10 @@ export default function Navbar() {
             <NestedDropdown
               label="Solutions"
               topLinks={solutionTopLinks}
-              subLabel="Products"
-              subLinks={productLinks}
+              subSections={[
+                { label: "Products", links: productLinks },
+                { label: "Industries", links: industryLinks },
+              ]}
               open={openDropdown === "solutions"}
               onToggle={() => setOpenDropdown(openDropdown === "solutions" ? null : "solutions")}
               onClose={closeAll}
@@ -282,11 +285,9 @@ export default function Navbar() {
             />
           </li>
           <li>
-            <NestedDropdown
+            <Dropdown
               label="About"
-              topLinks={aboutTopLinks}
-              subLabel="Industries"
-              subLinks={industryLinks}
+              items={aboutTopLinks}
               open={openDropdown === "about"}
               onToggle={() => setOpenDropdown(openDropdown === "about" ? null : "about")}
               onClose={closeAll}
@@ -328,6 +329,14 @@ export default function Navbar() {
             </Link>
           ))}
 
+          <div className="w-12 h-px bg-white/10 my-1" />
+          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-text-3 mb-1">Industries</span>
+          {industryLinks.filter(l => l.label !== "All Industries").map((l) => (
+            <Link key={l.href + l.label} href={l.href} className="text-[16px] font-semibold text-text-3 no-underline hover:text-brand-purple" onClick={() => setMenuOpen(false)}>
+              {l.label}
+            </Link>
+          ))}
+
           <div className="w-12 h-px bg-white/10 my-2" />
           <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-text-3 mb-1">Learn</span>
           {learnLinks.map((l) => (
@@ -340,14 +349,6 @@ export default function Navbar() {
           <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-text-3 mb-1">About</span>
           {aboutTopLinks.map((l) => (
             <Link key={l.href} href={l.href} className="text-[18px] font-semibold text-text-2 no-underline hover:text-brand-purple" onClick={() => setMenuOpen(false)}>
-              {l.label}
-            </Link>
-          ))}
-
-          <div className="w-12 h-px bg-white/10 my-1" />
-          <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-text-3 mb-1">Industries</span>
-          {industryLinks.filter(l => l.label !== "All Industries").map((l) => (
-            <Link key={l.href + l.label} href={l.href} className="text-[16px] font-semibold text-text-3 no-underline hover:text-brand-purple" onClick={() => setMenuOpen(false)}>
               {l.label}
             </Link>
           ))}
