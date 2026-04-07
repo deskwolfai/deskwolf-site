@@ -161,22 +161,11 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* SMS / Call consent — required for A2P 10DLC compliance */}
-      <div className="flex items-start gap-3 p-4 bg-white/[0.04] border border-white/[0.08] rounded-[var(--radius-sm)]">
-        <input
-          id="smsConsent"
-          name="smsConsent"
-          type="checkbox"
-          required
-          value="yes"
-          className="mt-1 w-4 h-4 accent-brand-purple cursor-pointer flex-shrink-0"
-        />
-        <label htmlFor="smsConsent" className="text-[12px] text-text-3 leading-relaxed cursor-pointer">
-          By checking this box, I agree to receive recurring marketing and informational <strong>calls and text messages</strong> from <strong>DeskWolf LLC</strong> at the phone number I provided, including messages sent by automated technology. Consent is not a condition of any purchase. Message frequency varies. Msg &amp; data rates may apply. Reply <strong>STOP</strong> to unsubscribe or <strong>HELP</strong> for help. View our{" "}
-          <a href="/privacy" className="text-brand-purple hover:text-brand-cyan underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>{" "}and{" "}
-          <a href="/terms" className="text-brand-purple hover:text-brand-cyan underline" target="_blank" rel="noopener noreferrer">Terms of Service</a>. Mobile information will not be shared with third parties or affiliates for marketing purposes.
-        </label>
-      </div>
+      {/* Voice-only callback notice — no SMS opt-in here.
+          SMS opt-in is exclusively via the chat widget per A2P 10DLC campaign. */}
+      <p className="text-[11px] text-text-3 leading-relaxed">
+        By submitting this form, you agree we may <strong>call</strong> the number you provided to deliver your demo and follow up about your inquiry. We will not text you from this form. To opt in to SMS, use the chat widget on this site.
+      </p>
 
       {/* Honeypot — invisible to humans, bots auto-fill it */}
       <div className="absolute -left-[9999px] -top-[9999px]" aria-hidden="true" tabIndex={-1}>
