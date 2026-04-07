@@ -177,7 +177,9 @@ export default function TermsPage() {
               <p>For questions about these Terms, contact us at:</p>
               <div className="p-6 bg-white/[0.04] backdrop-blur-[16px] border border-white/[0.08] rounded-[var(--radius-std)] mt-4">
                 <p className="mb-1"><strong className="text-text">DeskWolf LLC</strong></p>
-                <p className="mb-1">San Bernardino, CA 92407</p>
+                <p className="mb-1">3694 E Highland Ave</p>
+                <p className="mb-1">Highland, CA 92346</p>
+                <p className="mb-1">Phone: <a href="tel:+19097570141" className="text-brand-purple hover:text-brand-cyan transition-colors">(909) 757-0141</a></p>
                 <p className="mb-0">
                   Email: <a href="mailto:contact@deskwolf.ai" className="text-brand-purple hover:text-brand-cyan transition-colors">contact@deskwolf.ai</a>
                 </p>

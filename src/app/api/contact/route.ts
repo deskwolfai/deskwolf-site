@@ -85,6 +85,7 @@ export async function POST(req: NextRequest) {
     }
 
     const { name, email, phone, business, industry, challenge } = validation.data!;
+    const consentTimestamp = new Date().toISOString();
 
     if (!GHL_API_KEY) {
       return NextResponse.json({ error: "Server not configured" }, { status: 500 });
@@ -105,7 +106,7 @@ export async function POST(req: NextRequest) {
         email,
         phone,
         companyName: business,
-        tags: ["website", "contact-form", industry].filter(Boolean),
+        tags: ["website", "contact-form", "sms-consent-given", industry].filter(Boolean),
         source: "deskwolf.ai contact form",
       }),
     });
@@ -140,17 +141,15 @@ export async function POST(req: NextRequest) {
         }),
       });
 
-      // Add note with challenge if provided
-      if (challenge) {
-        await fetch(`${GHL_BASE}/contacts/${contactId}/notes`, {
-          method: "POST",
-          headers: ghlHeaders,
-          body: JSON.stringify({
-            body: `Industry: ${industry || "Not specified"}\nChallenge: ${challenge}`,
-            userId: contactId,
-          }),
-        });
-      }
+      // Add note with challenge + SMS/call consent audit trail
+      await fetch(`${GHL_BASE}/contacts/${contactId}/notes`, {
+        method: "POST",
+        headers: ghlHeaders,
+        body: JSON.stringify({
+          body: `Industry: ${industry || "Not specified"}\nChallenge: ${challenge || "Not provided"}\n\n--- SMS/Call Consent Audit ---\nConsent given: YES\nTimestamp: ${consentTimestamp}\nIP: ${ip}\nSource: deskwolf.ai contact form`,
+          userId: contactId,
+        }),
+      });
     }
 
     return NextResponse.json({ success: true });

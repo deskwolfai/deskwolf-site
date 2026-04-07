@@ -104,13 +104,13 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-3 text-sm text-text-2">
                     <PhoneIcon />
-                    <a href="tel:+19090000000" className="text-text-2 no-underline hover:text-brand-cyan transition-colors">
-                      (909) 000-0000
+                    <a href="tel:+19097570141" className="text-text-2 no-underline hover:text-brand-cyan transition-colors">
+                      (909) 757-0141
                     </a>
                   </div>
-                  <div className="flex items-center gap-3 text-sm text-text-2">
+                  <div className="flex items-start gap-3 text-sm text-text-2">
                     <MapPinIcon />
-                    <span>San Bernardino, CA</span>
+                    <span>3694 E Highland Ave<br />Highland, CA 92346</span>
                   </div>
                 </div>
               </GlassCard>

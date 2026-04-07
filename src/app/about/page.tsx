@@ -394,7 +394,7 @@ export default function AboutPage() {
             That&rsquo;s the vision. Not AI for the sake of AI, but intelligent systems that protect revenue, save time, and let business owners focus on what they do best.
           </p>
           <div className="mt-8 font-mono text-[11px] tracking-[0.1em] uppercase text-text-3">
-            San Bernardino, CA | Est. March 2026
+            Highland, CA | Est. March 2026
           </div>
           <div className="mt-8">
             <a href="/demo" className="inline-flex items-center gap-2 font-semibold text-sm no-underline px-8 py-3.5 rounded-[100px] bg-gradient-to-r from-brand-blue to-brand-purple text-white shadow-[0_4px_20px_rgba(139,92,246,0.3)] transition-all duration-300 hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(139,92,246,0.35)]">

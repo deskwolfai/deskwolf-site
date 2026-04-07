@@ -21,6 +21,7 @@ export interface ContactInput {
   business: string;
   industry: string;
   challenge: string;
+  smsConsent: boolean;
 }
 
 export function validateContactInput(body: Record<string, unknown>): {
@@ -53,9 +54,15 @@ export function validateContactInput(body: Record<string, unknown>): {
     return { valid: false, error: "__honeypot__" };
   }
 
+  // SMS/call consent — required for A2P 10DLC compliance
+  const smsConsent = body.smsConsent === "yes" || body.smsConsent === true;
+  if (!smsConsent) {
+    return { valid: false, error: "SMS and call consent is required" };
+  }
+
   return {
     valid: true,
-    data: { name, email, phone, business, industry, challenge },
+    data: { name, email, phone, business, industry, challenge, smsConsent },
   };
 }
 

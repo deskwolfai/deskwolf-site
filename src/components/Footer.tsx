@@ -41,7 +41,10 @@ export default function Footer() {
               live by the phone.
             </p>
             <div className="font-mono text-[11px] text-text-3 mt-3">
-              San Bernardino, CA. Est. 2026
+              3694 E Highland Ave, Highland, CA 92346
+            </div>
+            <div className="font-mono text-[11px] text-text-3 mt-1">
+              <a href="tel:+19097570141" className="hover:text-brand-cyan transition-colors">(909) 757-0141</a> &middot; Est. 2026
             </div>
           </div>
 

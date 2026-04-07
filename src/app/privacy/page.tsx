@@ -102,7 +102,15 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2>5. Cookies</h2>
+              <h2>5. SMS Communications & Mobile Information</h2>
+              <p>When you provide your phone number to DeskWolf — through our website forms, our chat widget, or during onboarding — and explicitly opt in to receive SMS messages, you consent to receive recurring text messages from DeskWolf LLC related to your inquiry, demo bookings, appointment reminders, account updates, and service communications.</p>
+              <p><strong>Mobile information and SMS opt-in data will not be shared with third parties or affiliates for marketing or promotional purposes.</strong> All categories of personal information described in this Privacy Policy exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties for any purpose other than delivering the messages you have requested.</p>
+              <p>Message and data rates may apply. Message frequency varies based on your interactions with us. You can opt out of SMS communications at any time by replying <strong>STOP</strong> to any message you receive. Reply <strong>HELP</strong> for assistance, or contact us at <a href="mailto:contact@deskwolf.ai" className="text-brand-purple hover:text-brand-cyan transition-colors">contact@deskwolf.ai</a>. Carriers are not liable for delayed or undelivered messages.</p>
+              <p>Consent to receive SMS messages is not a condition of any purchase or service.</p>
+            </div>
+
+            <div>
+              <h2>6. Cookies</h2>
               <p>Our website uses cookies for the following purposes:</p>
               <ul>
                 <li><strong>Essential cookies:</strong> Required for basic website functionality such as navigation and form submissions.</li>
@@ -112,7 +120,7 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2>6. Your Rights</h2>
+              <h2>7. Your Rights</h2>
               <p>You have the following rights regarding your personal information:</p>
               <ul>
                 <li><strong>Access:</strong> You may request a copy of the personal information we hold about you.</li>
@@ -125,27 +133,29 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2>7. Data Security</h2>
+              <h2>8. Data Security</h2>
               <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include encrypted data transmission (TLS/SSL), secure credential storage, access controls, and regular security reviews.</p>
               <p>However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
             </div>
 
             <div>
-              <h2>8. Children&rsquo;s Privacy</h2>
+              <h2>9. Children&rsquo;s Privacy</h2>
               <p>Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child under 18, we will take steps to delete that information promptly. If you believe we have collected information from a minor, please contact us at <a href="mailto:contact@deskwolf.ai" className="text-brand-purple hover:text-brand-cyan transition-colors">contact@deskwolf.ai</a>.</p>
             </div>
 
             <div>
-              <h2>9. Changes to This Policy</h2>
+              <h2>10. Changes to This Policy</h2>
               <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the &ldquo;Last updated&rdquo; date at the top of this page and, where appropriate, notify you by email. Your continued use of our services after any changes constitutes acceptance of the updated policy.</p>
             </div>
 
             <div>
-              <h2>10. Contact Us</h2>
+              <h2>11. Contact Us</h2>
               <p>If you have questions about this Privacy Policy or our data practices, contact us at:</p>
               <div className="p-6 bg-white/[0.04] backdrop-blur-[16px] border border-white/[0.08] rounded-[var(--radius-std)] mt-4">
                 <p className="mb-1"><strong className="text-text">DeskWolf LLC</strong></p>
-                <p className="mb-1">San Bernardino, CA 92407</p>
+                <p className="mb-1">3694 E Highland Ave</p>
+                <p className="mb-1">Highland, CA 92346</p>
+                <p className="mb-1">Phone: <a href="tel:+19097570141" className="text-brand-purple hover:text-brand-cyan transition-colors">(909) 757-0141</a></p>
                 <p className="mb-0">
                   Email: <a href="mailto:contact@deskwolf.ai" className="text-brand-purple hover:text-brand-cyan transition-colors">contact@deskwolf.ai</a>
                 </p>
