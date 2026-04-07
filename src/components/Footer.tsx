@@ -11,9 +11,7 @@ const resourceLinks = [
 ];
 
 const companyLinks = [
-  { label: "Affiliate Program", href: "/affiliate" },
   { label: "Partner With Us", href: "/partners" },
-  { label: "Referral Portal", href: "/referral" },
   { label: "Careers", href: "/careers" },
 ];
 
