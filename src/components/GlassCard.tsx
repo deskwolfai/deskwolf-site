@@ -1,11 +1,13 @@
 interface GlassCardProps {
   children: React.ReactNode;
   className?: string;
+  id?: string;
 }
 
-export default function GlassCard({ children, className = "" }: GlassCardProps) {
+export default function GlassCard({ children, className = "", id }: GlassCardProps) {
   return (
     <div
+      id={id}
       className={`relative overflow-hidden bg-glass-strong backdrop-blur-[16px] saturate-[1.4] border border-white/[0.07] rounded-[var(--radius-std)] shadow-[var(--shadow-std),inset_0_1px_0_rgba(255,255,255,0.05)] transition-all duration-[400ms] cursor-pointer group hover:-translate-y-1.5 hover:shadow-[var(--shadow-lg),var(--shadow-glow),inset_0_1px_0_rgba(255,255,255,0.06)] hover:border-brand-purple/20 ${className}`}
     >
       {/* Gradient border glow on hover */}
