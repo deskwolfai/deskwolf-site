@@ -9,7 +9,7 @@ import { validateDemoCallInput } from "@/lib/validate";
  * who tapped the "Have Angel call me right now" button on /demo.
  *
  * SECURITY (every layer matters — each call costs real $$$):
- * - Rate limit:    1 call per IP per 5 minutes  (per-IP throttle, prevents click spam)
+ * - Rate limit:    3 calls per phone number per 5 minutes  (per-number throttle, allows retries; different people on same network can each call)
  * - Circuit breaker: 30 calls per day, all IPs   (hard daily cap on spend)
  * - Honeypot:      bots filling "website" field get a fake success
  * - TCPA:          requires explicit `consent: true` in body before any call fires
@@ -24,7 +24,7 @@ const EL_KEY = process.env.ELEVENLABS_API_KEY || "";
 const DEMO_AGENT_ID = process.env.ELEVENLABS_DEMO_AGENT_ID || "";
 const AGENT_PHONE_ID = process.env.ELEVENLABS_AGENT_PHONE_ID || "";
 
-const RATE_LIMIT = { max: 1, windowSeconds: 300, prefix: "demo-call-me" };
+const RATE_LIMIT = { max: 3, windowSeconds: 300, prefix: "demo-call-me" };
 const DAILY_MAX = 30;
 
 export async function POST(req: NextRequest) {
@@ -39,27 +39,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // ── Rate limiting (per IP) ──
-    const ip =
-      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-      req.headers.get("x-real-ip") ||
-      "unknown";
-
-    const limit = checkRateLimit(ip, RATE_LIMIT);
-    if (!limit.allowed) {
-      console.warn(`[SECURITY] Rate limited IP ${ip} on /api/demo/call-me`);
-      return NextResponse.json(
-        { error: "You just requested a demo call. Hang tight — Angel should be calling you in a few seconds. If she doesn't, try again in 5 minutes." },
-        {
-          status: 429,
-          headers: {
-            "Retry-After": String(Math.ceil((limit.resetAt - Date.now()) / 1000)),
-          },
-        }
-      );
-    }
-
-    // ── Parse + validate body ──
+    // ── Parse + validate body early so we can key the rate limit on phone number ──
     let body: Record<string, unknown>;
     try {
       body = await req.json();
@@ -79,6 +59,21 @@ export async function POST(req: NextRequest) {
     }
 
     const { first_name, phone, business_type } = validation.data!;
+
+    // ── Rate limiting (per phone number — allows different people on same network) ──
+    const limit = checkRateLimit(phone, RATE_LIMIT);
+    if (!limit.allowed) {
+      console.warn(`[SECURITY] Rate limited phone ${phone.slice(0, 6)}*** on /api/demo/call-me`);
+      return NextResponse.json(
+        { error: "Too many requests for this number. Try again in a few minutes, or call us directly at (909) 757-0141." },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": String(Math.ceil((limit.resetAt - Date.now()) / 1000)),
+          },
+        }
+      );
+    }
 
     // ── Server config check ──
     if (!EL_KEY || !DEMO_AGENT_ID || !AGENT_PHONE_ID) {
